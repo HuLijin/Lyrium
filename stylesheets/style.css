@@ -1,0 +1,143 @@
+/* Global template */
+
+body { 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /*background: #e8e2da url("parchment2.jpg") repeat;*/
+  background: #eadaca;
+  margin: 10px;
+}
+
+main { display: flex; flex: 1 1 auto; }
+main > *+* { margin-left: 10px; }
+aside { width: 25%; }
+.content { flex: 1; }
+
+nav a {
+  display: block;
+  padding: .4em 1em;
+}
+
+a { text-decoration: none; color: #5f1e01; }
+a:hover, a:focus, a:active { color: #9e5f10; }
+
+@media (max-width: 640px) {
+  main { flex-direction: column; }
+  aside { width: auto; }
+  .content { flex-basis: auto; }
+  main > *+* { margin-left: inherit; }
+}
+
+@media (min-width: 1281px) {
+  body { margin-left: 10%; margin-right: 10% }
+}
+@media (min-width: 1601px) {
+  body { margin-left: 20%; margin-right: 20% }
+}
+
+p { font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif; font-size: 14px; }
+
+
+
+/* special font */
+@font-face{ 
+  font-family: 'calendas';
+  src: url('calendas_plus-webfont.eot');
+  src: url('calendas_plus-webfont.eot?#iefix') format('embedded-opentype'),
+       url('calendas_plus-webfont.woff') format('woff'),
+       url('calendas_plus-webfont.ttf') format('truetype'),
+       url('calendas_plus-webfont.svg#webfont') format('svg');
+}
+
+
+
+
+/* styling aside and footer */
+aside { background: #eadaca url("parchment.jpg") repeat; padding: 10px; border: 1px solid #5f1e01; border-radius: 10px; }
+footer { border-top: 1px solid #5f1e01; margin-top: 10px; }
+
+
+
+
+/* Focus on navigation bar */
+body > header > nav > a {
+  background-image: linear-gradient(to right, currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-position: center bottom;
+  transition: background-size .25;
+}
+
+body > header > nav a:hover,
+body > header > nav a:focus,
+body > header > nav a:active { background-size: 100% 3px; outline: 0; color: #9e5f10; }
+
+/* Focus on menu bar */
+aside > nav > a {
+  background-image: linear-gradient(to right, currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 1px 80%;
+  background-position: left center;
+  transition: background-size .25;
+}
+
+aside > nav a:hover,
+aside > nav a:focus,
+aside > nav a:active { background-size: 3px 100%; outline: 0; color: #9e5f10; }
+
+
+
+
+/* Responsive navigation bar */
+
+@media (min-width: 481px) {
+  body > header > nav h1 span { position: absolute; clip: rect(0,0,0,0); }
+  body > header > nav h1 a::before {
+    content: attr(attr-abbr);
+    display: inline-block;
+    width: 9rem;
+    height: 4rem;
+    border: 1px solid #5f1e01;
+    border-radius: 50%;
+    background: #eadaca url("parchment.jpg") repeat;
+    text-align: center;
+    line-height: 4rem;
+    font-family: 'calendas';
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1025px) {
+  body > header { display: flex; justify-content: center; align-items: center; margin-bottom: 10px; }
+  body > header > nav { display: flex; flex-wrap: wrap; }
+  body > header > nav h1 { width: 100%; text-align: center; }
+  body > header > nav > a { width: 50%; text-align: center; padding: .4em 0; }
+}
+
+@media (min-width: 1025px) {
+  body > header > nav { display: flex; justify-content: center; align-items: center; }
+  body > header > nav a:nth-of-type(-n+4) { order: -1; }
+}
+
+
+
+
+/* Custom titles */
+
+h2, h3 { color: #5f1e01; }
+h3::before, h3::after { background: #5f1e01 no-repeat center bottom; }
+h3::after { background-image: linear-gradient(to right, #5f1e01, #c8880c); }
+h4 { color: #9e5f10; }
+h4::before, h4::after { background: #9e5f10 no-repeat center bottom; }
+h4::after { background-image: linear-gradient(to right, #9e5f10, #eadaca); }
+
+h3, h4 { display: flex; }
+h3::before, h3::after,
+h4::before, h4::after { 
+  display: block; /* ie10 */
+  content: "";
+  align-self: center;
+  height: 2px;
+}
+h3::before, h4::before { flex: 0; flex-basis: 2em; margin-right: 5px; }
+h3::after, h4::after { flex: 1; margin-left: 5px; }
