@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Lyrium, le jeu de rôle</title>
   <link rel="stylesheet" href="../stylesheets/style.css">
-  <!--<script src="script.js"></script>-->
+  <script src="voyage.js"></script>
 </head>
 <body>
 
@@ -30,10 +30,48 @@
 
     <section class="content">
       
-      <h2>Présentation de Lyrium</h2>
-      <p>blablabla</p>
-      <h3>test</h3>
-      <h4>test</h4>
+      <h2>Temporaire : listes</h2>
+      <h3>Liste d'objets</h3>
+
+      <table>
+        <tr><th>Aliment</th><th>poids</th><th>prix</th></tr>
+        <tr><td>viande</td><td>1 kg</td><td>10 - 30 pièces</td></tr>
+        <tr><td>légumes</td><td>1 kg</td><td>5 - 20 pièces</td></tr>
+        <tr><td>céréales</td><td>1 kg</td><td>5 - 20 pièces</td></tr>
+        <tr><td>pain</td><td>500 g</td><td>1 - 10 pièces</td></tr>
+        <tr><td>poisson</td><td>1 kg</td><td>10 - 30 pièces</td></tr>
+        <tr><td>alcool</td><td>1 chope</td><td>5 - 10 pièces</td></tr>
+        <tr><td>lait</td><td>1 L</td><td>1 - 10 pièces</td></tr>
+        <tr><td>fromage</td><td>1 kg</td><td>5 - 20 pièces</td></tr>
+        <tr><td>rations</td><td>500 g</td><td>10 - 20 pièces</td></tr>
+      </table>
+
+      <dl>
+        <dt>Viande</dt><dd>- une pièce d'un animal d'élevage</dd>
+        <dt>Légumes</dt><dd>- une botte de légumes comestibles</dd>
+        <dt>Céréales</dt><dd>- un sac de grains qui doivent être transformés avant d'être comestibles</dd>
+        <dt>Pain</dt><dd>- une grosse miche de pain, la base de l'alimentation du royaume de Val</dd>
+        <dt>Poisson</dt><dd>- une pièce d'un gros poisson</dd>
+        <dt>Alcool</dt><dd>- une portion définie d'une boisson, de préférence alcolisée mais aps seulement</dd>
+        <dt>Lait</dt><dd>- un broc de lait frais</dd>
+        <dt>Fromage</dt><dd>- une part de meule de fromages divers</dd>
+        <dt>Rations</dt><dd>- un assortiment de viandes, fromages et pain pour le voyage</dd>
+      </dl>
+
+      <h3>Distances de voyage</h3>
+      <h4>À pieds (6 km/h)</h4>
+      <form name="pieds">
+        <p>Distance à parcourir :</p>
+        <label><input name="dist" type="number" value="30"/>km</label>
+        <p>Qualité des chaussures :</p>
+        <label><input name="qual" type="radio" value="-1"/>médiocre</label>
+        <label><input name="qual" type="radio" value="0"/>moyen</label>
+        <label><input name="qual" type="radio" value="1"/>bon</label>
+        <label><input name="qual" type="radio" value="2"/>excellent</label>
+        <label><input name="qual" type="radio" value="3"/>légendaire</label>
+        <input type="submit" value="calculer"/>
+      </form>
+
       
     </section>
 
