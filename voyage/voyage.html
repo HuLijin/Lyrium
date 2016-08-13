@@ -65,11 +65,11 @@
         <label><input name="dist" type="number" value="30"/>km</label>
         <p>Qualité des chaussures :</p>
         <label><input name="qual" type="radio" value="-1"/>médiocre</label>
-        <label><input name="qual" type="radio" value="0"/>moyen</label>
+        <label><input name="qual" type="radio" value="0" checked="checked"/>moyen</label>
         <label><input name="qual" type="radio" value="1"/>bon</label>
         <label><input name="qual" type="radio" value="2"/>excellent</label>
         <label><input name="qual" type="radio" value="3"/>légendaire</label>
-        <input type="submit" value="calculer"/>
+        <input name="calc" type="button" value="calculer" onClick="calculate(pieds)"/>
       </form>
 
       
