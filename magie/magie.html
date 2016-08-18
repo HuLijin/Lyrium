@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Lyrium, le jeu de rôle</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <script src="magie.js"></script>
+</head>
+<body>
+
+  <header>
+
+    <nav id="navigation">
+      <h1><a href="../index.html" attr-abbr="Lyrium">
+        <span>Lyrium, le jeu de rôle</span>
+      </a></h1>
+      <a href="../personnage/personnage.html">Le personnage</a>
+      <a href="#">Compétences</a>
+      <a href="../voyage/voyage.html">Voyager</a>
+      <a href="#">Univers</a>
+      <a href="#">Art de la magie</a>
+      <a href="#">Art du combat</a>
+      <a href="#">Artisanat</a>
+      <a href="#">Ressources</a>
+    </nav>
+
+  </header>
+
+  <main class="wrapper">
+
+    <section class="content">
+      
+      <h2>La magie dans Lyrium</h2>
+      <h3>Création de sorts</h3>
+      <h4>Calculateur d'intensités</h4>
+
+      <form name="calculateur">
+
+        <fieldset>
+          <legend>Calcul des dégâts</legend>
+          <p>Choix des dés</p>
+          <p>
+            <label><input name="dice" type="radio" value="0" checked="checked"/>(pas de dégâts)</label>
+            <label><input name="dice" type="radio" value="4"/>1D4</label>
+            <label><input name="dice" type="radio" value="6"/>1D6 (5 INT requis)</label>
+            <label><input name="dice" type="radio" value="8"/>1D8 (6 INT requis)</label>
+            <label><input name="dice" type="radio" value="10"/>1D10 (7 INT requis)</label>
+            <label><input name="dice" type="radio" value="12"/>1D12 (8 INT requis)</label>
+          </p>
+
+          <p>Nombre de dés</p>
+          <p><label><input name="nbDice" type="number" value="1"/></label></p>
+
+          <p>Augmentation des dégâts minimaux</p>
+          <p><label><input name="minDice" type="number" value="0"/></label></p>
+
+          <p>Cible supplémentaire (pour les projectiles)</p>
+          <p><label><input name="projDice" type="number" value="0"/> projectiles</label></p>
+
+          <p><input name="calcDice" type="button" value="calculer" onClick="calculateDice()"/></p>
+          <p><span id="answerDice"></span></p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Distances et durée</legend>
+          <p>Distance en ligne droite</p>
+          <p>
+            <label><input name="contact" type="radio" value="0" checked="checked"/>au contact</label>
+            <label><input name="contact" type="radio" value="1"/>à distance</label>
+          </p>
+          <p><label><input name="line" type="number" value="0"/> x 4m</label></p>
+          
+          <p>Aire de la zone d'effet</p>
+          <p><label><input name="aoe" type="number" value="0"/> x 2m de diamètre</label></p>
+
+          <p>Durée du sort</p>
+          <p>
+            <label><input name="tps" type="radio" value="0" checked="checked"/>(pas de durée)</label>
+            <label><input name="tps" type="radio" value="1"/>1D4 tours</label>
+            <label><input name="tps" type="radio" value="2"/>1D6 tours</label>
+            <label><input name="tps" type="radio" value="4"/>2D4 tours</label>
+            <label><input name="tps" type="radio" value="8"/>10 minutes</label>
+            <label><input name="tps" type="radio" value="12"/>1 jour</label>
+          </p>
+          <p><label>(multiplicateur) <input name="multTime" type="number" value="1"/></label></p>
+
+          <p><input name="calcDim" type="button" value="calculer" onClick="calculateDim()"/></p>
+          <p><span id="answerDim"></span></p>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Calcul final</legend>
+          <p>Intensités à ajuster</p>
+          <p><label><input name="it" type="number" value="0"/> intensités</label></p>
+
+          <p>Autres modifications</p>
+          <p>
+            <label><input name="modif" type="radio" value="0"/ checked="checked">(pas de modification)</label>
+            <label><input name="modif" type="radio" value="-1"/>mode : rayon</label>
+            <label><input name="modif" type="radio" value="-2"/>rituel</label>
+          </p>
+
+          <p><input name="calcSkill" type="button" value="calculer" onClick="calculateSkill()"/></p>
+          <p><span id="answerSkill"></span></p>
+        </fieldset>
+        
+      </form>
+      
+    </section>
+
+    <aside>
+
+      <h2>Au sujet de Lyrium</h2>
+      
+      <nav class="menu">
+        <a href="#etape1">lien 1</a>
+      </nav>
+
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>Pied de page / 
+    Texture provenant de <a href="http://www.zingerbug.com/">Zinger Bug</a>
+  </footer>
+
+</body>
+</html>
