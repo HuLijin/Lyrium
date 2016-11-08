@@ -87,7 +87,9 @@ aside > nav a:focus,
 aside > nav a:active { background-size: 3px 100%; outline: 0; color: #9e5f10; }
 
 
-
+.hidden {
+  display: none;
+}
 
 /* Responsive navigation bar */
 

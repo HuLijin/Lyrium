@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Lyrium, le jeu de rôle</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <script src="artisanat.js"></script>
+</head>
+<body>
+
+  <header>
+
+    <nav id="navigation">
+      <h1><a href="../index.html" attr-abbr="Lyrium">
+        <span>Lyrium, le jeu de rôle</span>
+      </a></h1>
+      <a href="#">Le personnage</a>
+      <a href="#">Compétences</a>
+      <a href="../voyage/voyage.html">Voyager</a>
+      <a href="#">Univers</a>
+      <a href="../magie/magie.html">Art de la magie</a>
+      <a href="#">Art du combat</a>
+      <a href="#">Artisanat</a>
+      <a href="#">Ressources</a>
+    </nav>
+
+  </header>
+
+  <main class="wrapper">
+
+    <section class="content">
+      
+      <h2>Artisanat</h2>
+      <h3>Calculateur d'équipement</h3>
+      <h4>Les armes</h4>
+
+      <form name="weaponForm">
+        <p>Choix de l'arme</p>
+        <p>
+          <select name="weapons">
+            <option value="-5,7">arme de poing</option>
+            <option value="0,10">épée courte</option>
+            <option value="3,15">épée à deux mains</option>
+            <option value="1,10">massue à une main</option>
+            <option value="4,15">massue à deux mains</option>
+            <option value="-2,15">arme à allonge</option>
+            <option value="10,17">arme colossale</option>
+            <option value="-2,13">arme souple</option>
+            <option value="-2,13">arme à projectiles</option>
+            <option value="-2,13">arme de jet</option>
+          </select>
+        </p>
+
+        <p>Choix du matériau</p>
+        <p>
+          <select name="weaponMat">
+            <option value="3,-5">tissu</option>
+            <option value="5,-4">peau</option>
+            <option value="7,-3">bois</option>
+            <option value="10,0">os</option>
+            <option value="12,3">pierre</option>
+            <option value="15,5">métal</option>
+            <option value="20,10">alliage</option>
+            </select>
+        </p>
+         
+        <p>Choix de la qualité</p>
+        <p>
+          <select name="weaponQual">
+            <option value="-12,-20">cassé</option>
+            <option value="-6,-5">médiocre</option>
+            <option value="0,0">moyen</option>
+            <option value="6,5">bon</option>
+            <option value="12,10">excellent</option>
+            <option value="18,15">légendaire</option>
+          </select>
+        </p>
+        
+        <p><input name="calcWeapon" type="button" value="calculer" onClick="calculate('weapon')"/></p>
+          <p><span id="weaponAnswer"></span></p>
+      </form>
+
+      <h4>Les armures</h4>
+
+      <form name="armorForm">
+        <p>Choix de l'armure</p>
+        <p>Note : le degré de difficulté n'a aps encore été fixé</p>
+        <p>
+          <select name="armors">
+            <option value="0,0">tissu</option>
+            <option value="2,0">peau</option>
+            <option value="4,0">maille</option>
+            <option value="6,0">plaque</option>
+            <option value="0,0">bijou</option>
+            <option value="5,0">petit bouclier</option>
+            <option value="10,0">bouclier standard</option>
+            <option value="15,0">grand bouclier</option>
+          </select>
+        </p>
+
+        <p>Choix du matériau</p>
+        <p>
+          <select name="armorMat">
+            <option value="3,-5">tissu</option>
+            <option value="5,-4">peau</option>
+            <option value="7,-3">bois</option>
+            <option value="10,0">os</option>
+            <option value="12,3">pierre</option>
+            <option value="15,5">métal</option>
+            <option value="20,10">alliage</option>
+            </select>
+        </p>
+         
+        <p>Choix de la qualité</p>
+        <p>
+          <select name="armorQual">
+            <option value="-12,-20">cassé</option>
+            <option value="-6,-5">médiocre</option>
+            <option value="0,0">moyen</option>
+            <option value="6,5">bon</option>
+            <option value="12,10">excellent</option>
+            <option value="18,15">légendaire</option>
+          </select>
+        </p>
+        
+        <p><input name="calcArmor" type="button" value="calculer" onClick="calculate('armor')"/></p>
+          <p><span id="armorAnswer"></span></p>
+      </form>
+
+      <h4>Les objets</h4>
+
+      <form name="itemForm">
+        <p>Choix de l'objet</p>
+        <p>
+          <select name="items">
+            <option value="0,0">objet d'exemple</option>
+          </select>
+        </p>
+
+        <p>Choix du matériau</p>
+        <p>
+          <select name="itemMat">
+            <option value="3,-5">tissu</option>
+            <option value="5,-4">peau</option>
+            <option value="7,-3">bois</option>
+            <option value="10,0">os</option>
+            <option value="12,3">pierre</option>
+            <option value="15,5">métal</option>
+            <option value="20,10">alliage</option>
+            </select>
+        </p>
+         
+        <p>Choix de la qualité</p>
+        <p>
+          <select name="itemQual">
+            <option value="-12,-20">cassé</option>
+            <option value="-6,-5">médiocre</option>
+            <option value="0,0">moyen</option>
+            <option value="6,5">bon</option>
+            <option value="12,10">excellent</option>
+            <option value="18,15">légendaire</option>
+          </select>
+        </p>
+        
+        <p><input name="calcItem" type="button" value="calculer" onClick="calculate('item')"/></p>
+          <p><span id="itemAnswer"></span></p>
+      </form>
+      
+    </section>
+
+    <aside>
+
+      <h2>Au sujet de Lyrium</h2>
+      
+      <nav class="menu">
+        <a href="#etape1">lien 1</a>
+      </nav>
+
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>Pied de page / 
+    Texture provenant de <a href="http://www.zingerbug.com/">Zinger Bug</a>
+  </footer>
+
+</body>
+</html>
