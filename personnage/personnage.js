@@ -47,12 +47,15 @@ function INTtoDice(intel) {
 function validateStats() {
     
     var ans = update();
+    var s = "s";
 
     if (ans > 0) {
-        document.getElementById("answerVal").innerHTML = "Il reste "+ans+"points à investir !";
+        if (ans == 1) { s = ""; }
+        document.getElementById("answerVal").innerHTML = "Il reste "+ans+" point"+s+" à investir !";
     } else {
         if (ans < 0) {
-            document.getElementById("answerVal").innerHTML = "Le personnage a "+(-ans)+"points en trop !";
+            if (ans == -1) { s = ""; }
+            document.getElementById("answerVal").innerHTML = "Le personnage a "+(-ans)+"point"+s+" en trop !";
         } else {
             var deltaFOR = parseInt(document.calculateur.valFOR.value) - 5;
             var deltaAGI = parseInt(document.calculateur.valAGI.value) - 5;

@@ -19,8 +19,8 @@
       <a href="../voyage/voyage.html">Voyager</a>
       <a href="#">Univers</a>
       <a href="../magie/magie.html">Art de la magie</a>
-      <a href="#">Art du combat</a>
-      <a href="#">Artisanat</a>
+      <a href="../combat/combat.html">Art du combat</a>
+      <a href="../artisanat/artisanat.html">Artisanat</a>
       <a href="#">Ressources</a>
     </nav>
 
@@ -40,12 +40,11 @@
           <legend>Statistiques primaires</legend>
           <p>Réserve de points : <span id="answerPts">2</span></p>
 
-          <p>Statistiques primaires</p>
           <p><label>Force <input name="valFOR" type="number" value="5" min="3" max="7" onclick="update()"/></label> Représente la puissance physique.</p>
           <p><label>Agilité <input name="valAGI" type="number" value="5" min="3" max="7" onclick="update()"/></label> Représente la souplesse, les réflexes et l'habileté.</p>
           <p><label>Constitution <input name="valCON" type="number" value="5" min="3" max="7" onclick="update()"/></label> Représente la résistance aux dégâts physiques et l'endurance à l'effort.</p>
-          <p><label>Intelligence <input name="valINT" type="number" value="5"min="3" max="7"  onclick="update()"/></label> Représente la faculté d'analyse et de réfléchir vite et bien. Intensité des sorts d'attaque : <span id="infoINT">1D6</span>.</p>
-          <p><label>Mémorisation <input name="valMEM" type="number" value="5" min="3" max="7" onclick="update()"/></label> Représente la faculté d'apprendre et de retenir. Points de manoeuvre : <span id="infoPdm">6</span>.</p>
+          <p><label>Intelligence <input name="valINT" type="number" value="5"min="3" max="7"  onclick="update()"/></label> Représente la faculté d'analyse et de réfléchir vite et bien. <i>Intensité des sorts d'attaque : <span id="infoINT">1D6</span></i>.</p>
+          <p><label>Mémorisation <input name="valMEM" type="number" value="5" min="3" max="7" onclick="update()"/></label> Représente la faculté d'apprendre et de retenir. <i>Points de manoeuvre : <span id="infoPdm">6</span></i>.</p>
           <p><label>Volonté <input name="valVOL" type="number" value="5" min="3" max="7" onclick="update()"/></label> Représente la résistance aux attaques psychologiques et l'aptitude à s'imposer.</p>
           <p><label>Charisme <input name="valCHA" type="number" value="5" min="3" max="7" onclick="update()"/></label> Représente le charisme dans son sens le plus large : ne se limite pas à la beauté.</p>
 
@@ -58,16 +57,16 @@
 
           <p>Statistiques secondaires (efficacité au combat)</p>
           <ul>
-            <li>Maestria : <span id="infoMAE">10</span> : capacité à attaquer et se défendre avec ses armes</li>
-            <li>Pouvoir : <span id="infoPOU">10</span> : capacité à attaquer et se défendre grâce à la magie</li>
-            <li>Adaptabilité : <span id="infoADA">10</span> : regroupe à la fois l'initiative en combat, les attaques en finesse et les esquives</li>
+            <li><i>Maestria : <span id="infoMAE">10</span></i> : capacité à attaquer et se défendre avec ses armes</li>
+            <li><i>Pouvoir : <span id="infoPOU">10</span></i> : capacité à attaquer et se défendre grâce à la magie</li>
+            <li><i>Adaptabilité : <span id="infoADA">10</span></i> : regroupe à la fois l'initiative en combat, les attaques en finesse et les esquives</li>
           </ul>
 
           <p>Jauges</p>
           <ul>
-            <li>Points de vie : <span id="infoPV">15</span> : représente le nombre de dégâts que le personnage peut encaisser.</li>
-            <li>Points de fatigue physique : <span id="infoPF">15</span> : le personange en perd chaque fois qu'il doit effectuer un effort physique intense ou soutenu</li>
-            <li>Points de fatigue mentale : <span id="infoPM">15</span> : le personange en perd chaque fois qu'il lance un sort ou qu'il est sous l'effet d'une intense réflexion</li>
+            <li><i>Points de vie : <span id="infoPV">15</span></i> : représente le nombre de dégâts que le personnage peut encaisser.</li>
+            <li><i>Points de fatigue physique : <span id="infoPF">15</span></i> : le personange en perd chaque fois qu'il doit effectuer un effort physique intense ou soutenu</li>
+            <li><i>Points de fatigue mentale : <span id="infoPM">15</span></i> : le personange en perd chaque fois qu'il lance un sort ou qu'il est sous l'effet d'une intense réflexion</li>
             <li>Notez que les points attribués ne sont qu'une base, il sera possible de répartir 45 points supplémentaires librement entre ces trois jauges.</li>
           </ul>
         </fieldset>
