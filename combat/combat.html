@@ -31,13 +31,71 @@
     <section class="content">
       
       <h2>Art du combat</h2>
+
+      <h3>Règles du combat</h3>
+
+      <quote>Note des rédacteurs : les règles énoncées ici sont basiques et ne couvrent pas tous les cas possible. Si les joueurs se retrouvent dans une situation qui n'est pas couverte par les règles (par exemple, s'ils sont pris par surprise) l'adaptation des règles se fait à la discrétion du Meneur de jeu.
+      <br/>Par ailleurs, il est possible que nous fournissions des règles additionnelles un jour ou l'autre.</quote>
+
+      <p>Lors d'un combat, les personnages-joueurs sont amenés à affronter les ennemis imaginés par le Meneur de Jeu. Dans un soucis de clarté, le combat est divisé en tours : à chaque tour, les combattants jouent selon un ordre imposé. Une fois que tous les combattants ont joué, le tour est fini et un nouveau commence, s'il reste des ennemis à vaincre.</p>
+
+      <h4>Calcul de l'initiative</h4>
+
+      <p>La première étape d'un combat est le calcul de l'initiative, ou plus simplement l'étape qui va désigner l'ordre d'action des combatants.</p>
+
+      <p>Le calcul de l'initiative se fait en additionnant le score d'ADA et le nombre de dés de réserve d'ADA. Les combattants sont ensuite classé dans l'ordre décroissant de leur résultat : celui qui a le plus gros résultat commence en premier.</p>
+
+      <P>S'il y a égalité, le premier est celui qui a le plus gros score d'ADA. S'il y a toujours égalité, les combattants lancent 1D10 jusqu'à se départager, celui qui obtient le plus gros lancer commence.<p>
+
+      <p>Une fois l'ordre défini, il est conservé pour l'ensemble du combat.</p>
+
+      <h4>Tour d'action</h4>
+
+      <p>Quand c'est au tour d'un combattant de jouer, il peut effectuer les actions suivantes (dans l'ordre de son choix) :</p>
+      <ul>
+       <li>se déplacer (sacrifier 1 dé d'ADA par tranche de 4 mètres parcourus)
+       <li>lancer des attaques physiques (sacrifier 1 dé de MAE par attaque)
+       <li>lancer des sorts (sacrifier 1 dé de POU par sort lancé)
+       <li>utiliser des compétences
+       <li>utiliser des manoeuvres (coût variable)
+       <li>discuter avec ses alliés
+       <li>passer son tour
+      </ul>
+
+      <p>Lorsque ce n'est pas son tour d'action, le combattant peut effectuer l'une des actions suivantes en réaction à une action offensive de l'adversaire :</p>
+      <ul>
+        <li>parer une attaque physique (sacrifier 1 dé de MAE)
+        <li>parer une attaque magique (sacrifier 1 dé de POU)
+        <li>parer à l'aide d'une manoeuvre d'évitement (coût variable)
+        <li>encaisser l'attaque sans rien faire
+      </ul>
+
+      <p>La plupart des actions coûtent un dé de réserve de MAE / POU / ADA. Le secret pour gagner un combat est de dépenser intelligemment ses dés de réserve entre actions offensives et actions défensives, en fonction de son score d'initiative. Une réserve réduite à zéro se solde le plus souvent par un coup critique, ce qui peut amener très vite un personnage joueur (ou un ennemi) à mourir.</p>
+
+      <h4>Résolution des effets</h4>
+
+      <h5>action offensive sans visée</h5>
+
+      <h5>action offensive avec visée</h5>
+
+      <h5>autre type d'actions</h5>
+
+      <h3>Règles particulières des armes à distance</h3>
+
+      <p><strong>Règle principale : toute attaque à distance nécessite de cibler une partie spécifique du corps de l'adversaire ET subit un malus de 3 points au test de visée.</strong>
+      <br/>La manoeuvre Viser, accessible à tous, permet de s'affranchir de ce malus.</p>
+
+      <p>Armes à munition à recharge manuelle : si le joueur veut recharger son arme pendant son tour d'action, il devra sacrifier <var>1</var> dé de réserve d'ADA à chaque fois qu'il recharge. S'il s'investit dans les manoeuvres de tir, la manoeuvre Recharger lui permet de ne pas avoir à sacrifier de dés.</p>
+
+      <p>Tir improvisé : il est possible d'attaquer à distance avec une arme ou un objet qui n'est pas prévu pour cela. Dans ce cas, les dégâts infligés ne peuvent pas dépasser <var>1</var> intensité.</p>
+
       <h3>Manoeuvres</h3>
 
       <p>Les manoeuvres sont divisées en six catégories, deux catégories offensives (corps à corps et distance), une catégorie défensive, deux catégories mixtes (magie et esquive) et une catégorie utilitaire.</p>
 
       <p>Les personnages connaissent tous la manoeuvre principale de chacune des six catégories (identifiée par le symbole &diams;) à son niveau le plus faible.</p>
 
-      <h4>Apprentiassage et perfectionnement de nouvelles manoeuvres</h4>
+      <h4>Apprentissage et perfectionnement de nouvelles manoeuvres</h4>
 
       <p>Un personnage ne peut maitriser au plus que 10 manoeuvres. Maitriser une manoeuvre revient à dépenser au moins un point de manoeuvre pour elle. Par conséquent, les 6 manoeuvres principales ne comptent pas si elles ne sont utilisées qu'à leur niveau le plus faible (si le personnage n'a aps dépensé de point pour les perfectionner).</p>
 
@@ -81,30 +139,38 @@
           <h4>Manoeuvres de tir</h4>
           <div class="ppalManoeuver">
             <h5>&diams; Viser <a href="javascript:toggle('tir1')" class="tir1Link">(afficher)</a></h5>
-            <p class="tir1 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
-            </br>Autre condition</p>
+            <p class="tir1 hidden">Dépenser <var>1</var> PM. La prochaine attaque à distance ne subit pas le malus de 3 points sur le test de visée. Peut se cumuler avec les manoeuvres Tir à bout portant et Tir en aveugle et peut être utilisée avant la manoeuvre Rebond.</p>
+            <p class="tir1 hidden">Chaque point investi dans cette manoeuvre réduit d'<var>1</var> point le degré de difficulté du test de visée. Tous les deux points investis, augmente d'<var>1</var> PM le coût de la manoeuvre.</p>
           </div>
           <div class="2ndManoeuver">
             <h5>Recharger <a href="javascript:toggle('tir2')" class="tir2Link">(afficher)</a></h5>
-            <p class="tir2 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
-            </br>Autre condition</p>
+            <p class="tir2 hidden">Passif : permet d'éviter de sacrifier <var>1</var> dé de réserve d'ADA pour pouvoir recharger son arme à distance.</p>
+            <p class="tir2 hidden">Permet d'éviter de sacrifier <var>1</var> dé de réserve d'ADA pour pouvoir recharger son arme à distance.</p>
           </div>
           <div class="2ndManoeuver">
-            <h5>Bout portant <a href="javascript:toggle('tir3')" class="tir3Link">(afficher)</a></h5>
-            <p class="tir3 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
-            </br>Autre condition</p>
+            <h5>Tir à bout portant <a href="javascript:toggle('tir3')" class="tir3Link">(afficher)</a></h5>
+            <p class="tir3 hidden">Passif : le personnage gagne une réduction d'<var>1</var> point du degré de difficulté du test de visée par point investi et <var>1</var> intensité de dégâts tous les 2 points investis.</p>
+            <p class="tir3 hidden">Restriction : la cible du tir doit se trouver à moins de 8 mètres de distance.</p>
           </div>
           <div class="2ndManoeuver">
-            <h5>Tir improvisé <a href="javascript:toggle('tir4')" class="tir4Link">(afficher)</a></h5>
-            <p class="tir4 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
-            </br>Autre condition</p>
+            <h5>Tir en nuée <a href="javascript:toggle('tir4')" class="tir4Link">(afficher)</a></h5>
+            <p class="tir4 hidden">Sacrifier <var>1</var> dé de réserve de MAE pour tirer une multitude de projectiles dans une zone circulaire donnée. Les flèches blessent les alliés et les ennemis sans distinction.</p>
+            <p class="tir4 hidden">Pour chaque point dépensé dans cette manoeuvre, la portée minimale augmente de <var>4</var> mètres et la zone d'effet maximale augmente de <var>2</var> mètres de diamètre. Le personnage choisit la portée et le diamètre de la zone d'effet au lancement. Portée minimale : 4 mètres. Diamètre minimal : 2 mètres.</p>
+            <p class="tir4 hidden">Note : les tests à effectuer pour cette attaque sont des tests de toucher pour chaque cible (alliée ou ennemie) dans la zone d'effet. <b>Cette manoeuvre, bien qu'à distance, ne nécessite pas de test de visée</b>.</p>
           </div>
           <div class="2ndManoeuver">
             <h5>Tir en aveugle &rarr; Rebond <a href="javascript:toggle('tir5')" class="tir5Link">(afficher)</a></h5>
-            <p class="tir5 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
-            </br>Autre condition</p>
+            <p class="tir5 hidden">Passif : pour chaque point investi, réduit de <var>1</var> le degré de difficulté du test de visée lorsque l'adversaire est dans le noir ou à couvert.</p>
+            <p class="tir5 hidden">À partir de 5 points investis dans cette manoeuvre, le personnage devient si habile qu'il apprend également la manoeuvre <b>Rebond</b> : sacrifier <var>1</var> dé de MAE pour faire ricocher le projectile sur une seconde cible. La seconde cible reçoit la moitié des dégâts de la cible initiale. Il n'est aps possible de viser une partie spécifique du corps de la seconde cible. Pour chaque point investi au-delà du cinquième, le degré de difficulté du test de visée est réduit d'<var>1</var> point.</p>
+            <p class="tir5 hidden">Note : les tests successifs à faire pour cette manoeuvre sont : </p>
+            <ul class="tir5 hidden">
+              <li>visée sur la cible initiale (avec malus de 3 points si la manoeuvre Viser ne peut pas être utilisée), 
+              <li>toucher sur la cible initiale,</li>
+              <li>toucher sur la cible secondaire.</li>
+            </ul>
+            <p class="tir5 hidden">Si le test de visée est une réussite critique mineure, l'attaque prend par surprise la cible secondaire (le test de toucher sur la cible secondaire est automatiquement une réussite).</p>
           </div>
-          <p>Avantage si toutes les manoeuvres sont débloquées : </p>
+          <p>Avantage si toutes les manoeuvres sont débloquées : +4 mètres de portée pour les armes à distance conventionnelles (ne fonctionne pas pour les armes de tir improvisées).</p>
         </article>
 
         <article class="manoeuver">
@@ -184,17 +250,18 @@
             <p class="esq2 hidden">Note : le personnage conserve la possibilité d'utiliser Feinte s'il le souhaite. Il doit annoncer la manoeuvre qu'il veut utiliser avant d'effectuer son test de discrétion.</p>
           </div>
           <div class="2ndManoeuver">
-            <h5>Contre-attaque <a href="javascript:toggle('esq3')" class="esq3Link">(afficher)</a></h5>
+            <h5>Contre-attaque - NEW <a href="javascript:toggle('esq3')" class="esq3Link">(afficher)</a></h5>
             <p class="esq3 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
             </br>Autre condition</p>
           </div>
           <div class="2ndManoeuver">
             <h5>Evasion <a href="javascript:toggle('esq4')" class="esq4Link">(afficher)</a></h5>
-            <p class="esq4 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
-            </br>Autre condition</p>
+            <p class="esq4 hidden">Effectuer un test d'évasion pour se sortir d'un emprisonnement physique ou magique. Ne requiert aucun sacrifice de dé de réserve. Le degré de difficulté du test est égal au score obtenu par l'ennemi pour emprisonner.</p>
+            <p class="esq4 hidden">Chaque point investi dans cette manoeuvre réduit d'<var>1</var> point le degré de difficulté du test.</p>
+            <p class="esq4 hidden">Tenter une évasion met automatiquement fin au tour, que la manoeuvre soit réussie ou non.</p>
           </div>
           <div class="2ndManoeuver">
-            <h5>Aveugler <a href="javascript:toggle('esq5')" class="esq5Link">(afficher)</a></h5>
+            <h5>Aveugler - NEW <a href="javascript:toggle('esq5')" class="esq5Link">(afficher)</a></h5>
             <p class="esq5 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
             </br>Autre condition</p>
           </div>
