@@ -32,11 +32,23 @@
       
       <h2>Art du combat</h2>
       <h3>Manoeuvres</h3>
+
+      <p>Les manoeuvres sont divisées en six catégories, deux catégories offensives (corps à corps et distance), une catégorie défensive, deux catégories mixtes (magie et esquive) et une catégorie utilitaire.</p>
+
+      <p>Les personnages connaissent tous la manoeuvre principale de chacune des six catégories (identifiée par le symbole &diams;) à son niveau le plus faible.</p>
+
+      <h4>Apprentiassage et perfectionnement de nouvelles manoeuvres</h4>
+
+      <p>Un personnage ne peut maitriser au plus que 10 manoeuvres. Maitriser une manoeuvre revient à dépenser au moins un point de manoeuvre pour elle. Par conséquent, les 6 manoeuvres principales ne comptent pas si elles ne sont utilisées qu'à leur niveau le plus faible (si le personnage n'a aps dépensé de point pour les perfectionner).</p>
+
+      <p>Investir au moins un point dans une manoeuvre principale débloque toutes les manoeuvres secondaires d'une catégorie donnée. Mais débloquer ne veut pas dire que le personange est apte à les utiliser. Pour pouvoir les utiliser, il devra dépenser au moins un point dans chaque manoeuvre secondaire qui l'intéresse. Cela revient à dire que les manoeuvres secondaires requièrent un minimum de maitrise avant d'être utilisées en combat. Bien sûr, le personnage n'est aps obligé de maitriser l'ensemble des manoeuvres d'une catégorie, même si cela peut lui procurer certains avantages.</p>
+
+      <p>Pour finir, perfectionner une manoeuvre revient à investir davantage de points de manoeuvre dans une manoeuvre donnée. Ainsi, les effets seront plus importants au combat. Dans certains cas, ce^gain de puissance se traduit même par une évolution de la manoeuvre !</p>
       
       <article class="manoeuver">
         <h4>Manoeuvres d'attaque</h4>
         <div class="ppalManoeuver">
-          <h5>Frappe puissante <a href="javascript:toggle('atk1')" class="atk1Link">(afficher)</a></h5>
+          <h5>&diams; Frappe puissante <a href="javascript:toggle('atk1')" class="atk1Link">(afficher)</a></h5>
           <p class="atk1 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
@@ -60,12 +72,13 @@
           <p class="atk5 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
+        <p>Avantage si toutes les manoeuvres sont débloquées : </p>
       </article>
 
       <article class="manoeuver">
         <h4>Manoeuvres de tir</h4>
         <div class="ppalManoeuver">
-          <h5>Viser <a href="javascript:toggle('tir1')" class="tir1Link">(afficher)</a></h5>
+          <h5>&diams; Viser <a href="javascript:toggle('tir1')" class="tir1Link">(afficher)</a></h5>
           <p class="tir1 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
@@ -85,126 +98,131 @@
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Tir en aveugle - Rebond <a href="javascript:toggle('tir5')" class="tir5Link">(afficher)</a></h5>
+          <h5>Tir en aveugle &rarr; Rebond <a href="javascript:toggle('tir5')" class="tir5Link">(afficher)</a></h5>
           <p class="tir5 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
+        <p>Avantage si toutes les manoeuvres sont débloquées : </p>
       </article>
 
       <article class="manoeuver">
-        <h4>Manoeuvres X</h4>
+        <h4>Manoeuvres de magie</h4>
         <div class="ppalManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>&diams; Focalisation <a href="javascript:toggle('mag1')" class="mag1Link">(afficher)</a></h5>
+          <p class="mag1 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Aura <a href="javascript:toggle('mag2')" class="mag2Link">(afficher)</a></h5>
+          <p class="mag2 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Attaque magique <a href="javascript:toggle('mag3')" class="mag3Link">(afficher)</a></h5>
+          <p class="mag3 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Défense magique <a href="javascript:toggle('mag4')" class="mag4Link">(afficher)</a></h5>
+          <p class="mag4 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
+          <h5>Duel de flux <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
           <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
+        <p>Avantage si toutes les manoeuvres sont débloquées : </p>
       </article>
 
       <article class="manoeuver">
-        <h4>Manoeuvres X</h4>
+        <h4>Manoeuvres de défense</h4>
         <div class="ppalManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>&diams; Encaisser <a href="javascript:toggle('def1')" class="def1Link">(afficher)</a></h5>
+          <p class="def1 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Parade de projectiles &harr; rayons <a href="javascript:toggle('def2')" class="def2Link">(afficher)</a></h5>
+          <p class="def2 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Parade de zone <a href="javascript:toggle('def3')" class="def3Link">(afficher)</a></h5>
+          <p class="def3 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Position défensive <a href="javascript:toggle('def4')" class="def4Link">(afficher)</a></h5>
+          <p class="def4 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Couvrir <a href="javascript:toggle('def5')" class="def5Link">(afficher)</a></h5>
+          <p class="def5 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
+        <p>Avantage si toutes les manoeuvres sont débloquées : </p>
       </article>
 
       <article class="manoeuver">
-        <h4>Manoeuvres X</h4>
+        <h4>Manoeuvres d'esquive</h4>
         <div class="ppalManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>&diams; Esquive <a href="javascript:toggle('esq1')" class="esq1Link">(afficher)</a></h5>
+          <p class="esq1 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Feinte &rarr; Backstab <a href="javascript:toggle('esq2')" class="esq2Link">(afficher)</a></h5>
+          <p class="esq2 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Contre-attaque <a href="javascript:toggle('esq3')" class="esq3Link">(afficher)</a></h5>
+          <p class="esq3 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Evasion <a href="javascript:toggle('esq4')" class="esq4Link">(afficher)</a></h5>
+          <p class="esq4 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Aveugler <a href="javascript:toggle('esq5')" class="esq5Link">(afficher)</a></h5>
+          <p class="esq5 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
+        <p>Avantage si toutes les manoeuvres sont débloquées : </p>
       </article>
 
       <article class="manoeuver">
-        <h4>Manoeuvres X</h4>
+        <h4>Manoeuvres utilitaires</h4>
         <div class="ppalManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>&diams; Deviner le sort <a href="javascript:toggle('util1')" class="util1Link">(afficher)</a></h5>
+          <p class="util1 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Rituel rapide <a href="javascript:toggle('util2')" class="util2Link">(afficher)</a></h5>
+          <p class="util2 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Contrecarrer <a href="javascript:toggle('util3')" class="util3Link">(afficher)</a></h5>
+          <p class="util3 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Bouclier mental <a href="javascript:toggle('util4')" class="util4Link">(afficher)</a></h5>
+          <p class="util4 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
         <div class="2ndManoeuver">
-          <h5>Y <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
-          <p class="Y hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
+          <h5>Dissimuler <a href="javascript:toggle('util5')" class="util5Link">(afficher)</a></h5>
+          <p class="util5 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
           </br>Autre condition</p>
         </div>
+        <p>Avantage si toutes les manoeuvres sont débloquées : </p>
       </article>
       
     </section>
