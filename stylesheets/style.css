@@ -143,3 +143,11 @@ h4::before, h4::after {
 }
 h3::before, h4::before { flex: 0; flex-basis: 2em; margin-right: 5px; }
 h3::after, h4::after { flex: 1; margin-left: 5px; }
+
+aside h2 { text-align: center; }
+
+/* Miniatures */
+.container-miniature { display: flex; flex: 1 1 auto; margin: 0 auto; flex-wrap: wrap; }
+.container-miniature > *+* { margin-left: 10px; }
+.miniature { flex: 1; text-align: center; }
+
