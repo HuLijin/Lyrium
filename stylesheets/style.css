@@ -22,7 +22,7 @@ nav a {
 a { text-decoration: none; color: #5f1e01; }
 a:hover, a:focus, a:active { color: #9e5f10; }
 
-@media (max-width: 768px), (max-device-width: 768px){
+@media (max-width: 768px) {
   main { flex-direction: column; }
   aside { width: auto; }
   .content { flex-basis: auto; }
