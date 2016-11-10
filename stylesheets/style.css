@@ -22,7 +22,7 @@ nav a {
 a { text-decoration: none; color: #5f1e01; }
 a:hover, a:focus, a:active { color: #9e5f10; }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   main { flex-direction: column; }
   aside { width: auto; }
   .content { flex-basis: auto; }
@@ -151,3 +151,7 @@ aside h2 { text-align: center; }
 .container-miniature > *+* { margin-left: 10px; }
 .miniature { flex: 1; text-align: center; }
 
+/* Articles */
+.container { display: flex; flex: 1 1 auto; flex-wrap: wrap; align-items: stretch; justify-content: space-between; }
+.container > article { flex: 0 1 48%; }
+@media (max-width: 1025px) { .container > article { flex: 1 0 100%; } }
