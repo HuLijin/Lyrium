@@ -22,7 +22,7 @@ nav a {
 a { text-decoration: none; color: #5f1e01; }
 a:hover, a:focus, a:active { color: #9e5f10; }
 
-@media (max-width: 768px), (max-device-width: 768px) and (orientation: portrait) {
+@media (max-width: 768px) {
   main { flex-direction: column; }
   aside { width: auto; }
   .content { flex-basis: auto; }
@@ -54,7 +54,7 @@ h1, h2 { font-size: x-large; }
 h3, h4 { font-size: large; }
 h5 { font-size: inherit; margin-bottom: 0; }
 body > header > nav a { font-size: 16px; font-weight: normal; }
-article:not(h3) { font-size: 13px; }
+@media (min-width: 481px) { article:not(h3) { font-size: 13px; } }
 
 
 
