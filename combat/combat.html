@@ -32,10 +32,14 @@
       
       <h2>Art du combat</h2>
 
+      <p>Paragraphe sur le coté tactique</p>
+
       <h3>Règles du combat</h3>
 
-      <quote>Note des rédacteurs : les règles énoncées ici sont basiques et ne couvrent pas tous les cas possible. Si les joueurs se retrouvent dans une situation qui n'est pas couverte par les règles (par exemple, s'ils sont pris par surprise) l'adaptation des règles se fait à la discrétion du Meneur de jeu.
-      <br/>Par ailleurs, il est possible que nous fournissions des règles additionnelles un jour ou l'autre.</quote>
+      <p class="NdA">Note des rédacteurs : les règles énoncées ici sont basiques et ne couvrent pas tous les cas possible. Si les joueurs se retrouvent dans une situation qui n'est pas couverte par les règles (par exemple, s'ils sont pris par surprise) l'adaptation des règles se fait à la discrétion du Meneur de jeu.
+      <br/>Par ailleurs, il est possible que nous fournissions des règles additionnelles un jour ou l'autre.</p>
+
+      <h4>Déroulement d'un combat</h4>
 
       <p>Lors d'un combat, les personnages-joueurs sont amenés à affronter les ennemis imaginés par le Meneur de Jeu. Dans un soucis de clarté, le combat est divisé en tours : à chaque tour, les combattants jouent selon un ordre imposé. Une fois que tous les combattants ont joué, le tour est fini et un nouveau commence, s'il reste des ennemis à vaincre.</p>
 
@@ -100,6 +104,8 @@
       <p>Un personnage ne peut maitriser au plus que 10 manoeuvres. Maitriser une manoeuvre revient à dépenser au moins un point de manoeuvre pour elle. Par conséquent, les 6 manoeuvres principales ne comptent pas si elles ne sont utilisées qu'à leur niveau le plus faible (si le personnage n'a aps dépensé de point pour les perfectionner).</p>
 
       <p>Investir au moins un point dans une manoeuvre principale débloque toutes les manoeuvres secondaires d'une catégorie donnée. Mais débloquer ne veut pas dire que le personange est apte à les utiliser. Pour pouvoir les utiliser, il devra dépenser au moins un point dans chaque manoeuvre secondaire qui l'intéresse. Cela revient à dire que les manoeuvres secondaires requièrent un minimum de maitrise avant d'être utilisées en combat. Bien sûr, le personnage n'est aps obligé de maitriser l'ensemble des manoeuvres d'une catégorie, même si cela peut lui procurer certains avantages.</p>
+
+      <p class="NdA">Note : la webmaster a pris quelques libertés concernant les dits avantages, l'auteur du jeu va peut-être modifier tout cela dans un avenir plus ou moins proche.</p>
 
       <p>Pour finir, perfectionner une manoeuvre revient à investir davantage de points de manoeuvre dans une manoeuvre donnée. Ainsi, les effets seront plus importants au combat. Dans certains cas, ce^gain de puissance se traduit même par une évolution de la manoeuvre !</p>
       
@@ -171,26 +177,29 @@
         <article class="manoeuver">
           <h4>Manoeuvres de magie</h4>
           <div class="ppalManoeuver">
-            <h5>&diams; Focalisation <a href="javascript:toggle('mag1')" class="mag1Link">(afficher)</a></h5>
-            <p class="mag1 hidden"></p>
+            <h5>&diams; Focalisation - NEW <a href="javascript:toggle('mag1')" class="mag1Link">(afficher)</a></h5>
+            <p class="mag1 hidden">Quelque chose pour réduire l'impact des fumbles ?</p>
           </div>
           <div class="2ndManoeuver">
-            <h5>Aura <a href="javascript:toggle('mag2')" class="mag2Link">(afficher)</a></h5>
-            <p class="mag2 hidden"></p>
+            <h5>Aura - NEW <a href="javascript:toggle('mag2')" class="mag2Link">(afficher)</a></h5>
+            <p class="mag2 hidden">Déplacer protection instinctive ici ? Me parait beaucoup trop puissant !</p>
           </div>
           <div class="2ndManoeuver">
             <h5>Attaque magique <a href="javascript:toggle('mag3')" class="mag3Link">(afficher)</a></h5>
-            <p class="mag3 hidden"></p>
+            <p class="mag3 hidden">Sacrifier <var>1</var> dé de réserve de MAE. Effectue une attaque magique au contact comme s'il s'agissait d'une attaque physique au corps à coprs, en utilisant un jet de POU au lieu du jet de MAE pour le calcul des dégâts.</p>
+            <p class="mag3 hidden">Note : d'un point de vue de la mécanique de combat, l'attaque magique est considérée comme une attaque physique. L'adversaire pare en sacrifiant un dé de réserve de MAE et non un dé de réserve de POU.</p>
+            <p class="mag3 hidden">Chaque point investi dans cette manoeuvre permet d'effectuer <var>1</var> Attaque magique supplémentaire par tour.</p>
           </div>
           <div class="2ndManoeuver">
             <h5>Défense magique <a href="javascript:toggle('mag4')" class="mag4Link">(afficher)</a></h5>
-            <p class="mag4 hidden"></p>
+            <p class="mag4 hidden">Sacrifier <var>1</var> dé de réserve de MAE pour parer une attaque physique (au corps à corps ou à distance). Contrairement à une parade physique classique, le personange utilise un jet de POU au lieu du jet de MAE pour le calcul des dégâts.</p>
+            <p class="mag4 hidden">Chaque point investi dans cette manoeuvre permet d'effectuer <var>1</var> Défense magique supplémentaire par tour.</p>
           </div>
           <div class="2ndManoeuver">
             <h5>Duel de flux <a href="javascript:toggle('Y')" class="YLink">(afficher)</a></h5>
             <p class="Y hidden"></p>
           </div>
-          <p>Avantage si toutes les manoeuvres sont débloquées : </p>
+          <p>Avantage si toutes les manoeuvres sont débloquées : un dé de réserve de POU est ajouté de manière permanente à la réserve initiale du personnage.</p>
         </article>
 
         <article class="manoeuver">
@@ -240,7 +249,7 @@
           </div>
           <div class="2ndManoeuver">
             <h5>Evasion <a href="javascript:toggle('esq4')" class="esq4Link">(afficher)</a></h5>
-            <p class="esq4 hidden">Effectuer un test d'évasion pour se sortir d'un emprisonnement physique ou magique. Ne requiert aucun sacrifice de dé de réserve. Le degré de difficulté du test est égal au score obtenu par l'ennemi pour emprisonner.</p>
+            <p class="esq4 hidden">Effectuer un test de compétence d'Acrobatie pour se sortir d'un emprisonnement physique ou magique. Ne requiert aucun sacrifice de dé de réserve. Le degré de difficulté du test est égal au score obtenu par l'ennemi pour emprisonner.</p>
             <p class="esq4 hidden">Chaque point investi dans cette manoeuvre réduit d'<var>1</var> point le degré de difficulté du test.</p>
             <p class="esq4 hidden">Tenter une évasion met automatiquement fin au tour, que la manoeuvre soit réussie ou non.</p>
           </div>
@@ -249,7 +258,7 @@
             <p class="esq5 hidden">Sacrifier <var>n</var> dé pour <var>n</var> effet.
             </br>Autre condition</p>
           </div>
-          <p>Avantage si toutes les manoeuvres sont débloquées : un dé de réserve d'ADA est ajouté à la réserve initiale du personnage.</p>
+          <p>Avantage si toutes les manoeuvres sont débloquées : un dé de réserve d'ADA est ajouté de manière permanente à la réserve initiale du personnage.</p>
         </article>
 
         <article class="manoeuver">

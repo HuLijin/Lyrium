@@ -36,11 +36,10 @@ a:hover, a:focus, a:active { color: #9e5f10; }
   body { margin-left: 20%; margin-right: 20% }
 }
 
-p { font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif; font-size: 14px; }
 
 
 
-/* special font */
+/* special font and font reset */
 @font-face{ 
   font-family: 'calendas';
   src: url('calendas_plus-webfont.eot');
@@ -49,6 +48,13 @@ p { font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif; font
        url('calendas_plus-webfont.ttf') format('truetype'),
        url('calendas_plus-webfont.svg#webfont') format('svg');
 }
+body { font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif; font-size: 14px; }
+h1, h2, h3, h4, body > header > nav a { font-family: "Times New Roman", Georgia, Serif; font-weight: bold; }
+h1, h2 { font-size: x-large; }
+h3, h4 { font-size: large; }
+h5 { font-size: inherit; margin-bottom: 0; }
+body > header > nav a { font-size: 16px; font-weight: normal; }
+article:not(h3) { font-size: 13px; }
 
 
 
@@ -105,7 +111,9 @@ aside > nav a:active { background-size: 3px 100%; outline: 0; color: #9e5f10; }
     background: #eadaca url("parchment.jpg") repeat;
     text-align: center;
     line-height: 4rem;
-    font-family: 'calendas';
+    font-style: 'calendas';
+    font-weight: bold;
+    font-size: x-large;
   }
 }
 
@@ -155,3 +163,7 @@ aside h2 { text-align: center; }
 .container { display: flex; flex: 1 1 auto; flex-wrap: wrap; align-items: stretch; justify-content: space-between; }
 .container > article { flex: 0 1 48%; }
 @media (max-width: 1025px) { .container > article { flex: 1 0 100%; } }
+
+/* Quotation styles */
+p.eg { font-style: italic; font-size: smaller; }
+p.NdA { margin-left: 30px; }
