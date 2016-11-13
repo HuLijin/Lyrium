@@ -1,0 +1,2 @@
+document.write("<h2>Au sujet de Lyrium</h2>");
+document.write("<p>Lyrium est un jeu de rôle de type Fantasy doté d'un système qui vous permettra d'incarner le personnage de vos rêves. Adieu classes, adieu sorts prétirés. Vous n'inventez pas seulement l'histoire, vous inventez votre propre manière de jouer !</p>");
