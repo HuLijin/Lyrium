@@ -1,45 +1,56 @@
-/* Global template */
+/* 
+ * CSS pour Lyrium 
+ * (largement inspiré du livre CSS3 Flexbox, plongez dans les CSS modernes 
+ * de Raphaël Goetter, grand merci à lui !)
+ */
 
-body { 
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /*background: #e8e2da url("parchment2.jpg") repeat;*/
-  background: #eadaca;
-  margin: 10px;
-}
 
+
+
+
+
+/* Mise en forme principale en 2 colonnes, affichage responsive */
+body { min-height: 100vh; display: flex; flex-direction: column; margin: 10px; }
 main { display: flex; flex: 1 1 auto; }
 main > *+* { margin-left: 10px; }
 aside { width: 25%; }
 .content { flex: 1; }
+nav a { display: block; padding: .4em 1em; }
 
-nav a {
-  display: block;
-  padding: .4em 1em;
-}
-
-a { text-decoration: none; color: #5f1e01; }
-a:hover, a:focus, a:active { color: #9e5f10; }
-
-@media (max-width: 768px) {
-  main { flex-direction: column; }
+@media (max-width: 768px) { 
+  main { flex-direction: column; } 
   aside { width: auto; }
   .content { flex-basis: auto; }
   main > *+* { margin-left: inherit; }
 }
-
-@media (min-width: 1281px) {
-  body { margin-left: 10%; margin-right: 10% }
-}
-@media (min-width: 1601px) {
-  body { margin-left: 20%; margin-right: 20% }
-}
+@media (min-width: 1281px) { body { margin-left: 10%; margin-right: 10% } }
+@media (min-width: 1601px) { body { margin-left: 20%; margin-right: 20% } }
 
 
+/* Couleurs (de fond, de police et de bordures) */
+/* Attention, les couleurs liées au titre principal dans l'ovale stylisé sont définies là-bas */
+body { background: #eadaca; font: #000; }
+a { text-decoration: none; color: #5f1e01; }
+a:hover, a:focus, a:active { color: #9e5f10; }
+aside { background: #eadaca url("parchment.jpg") repeat; padding: 10px; border: 1px solid #5f1e01; border-radius: 10px; }
+footer { border-top: 1px solid #5f1e01; margin-top: 10px; }
+body > header > nav a:hover,
+body > header > nav a:focus,
+body > header > nav a:active { background-size: 100% 3px; outline: 0; color: #9e5f10; }
+aside > nav a:hover,
+aside > nav a:focus,
+aside > nav a:active { background-size: 3px 100%; outline: 0; color: #9e5f10; }
+h2, h3 { color: #5f1e01; }
+h3::before, 
+h3::after { background: #5f1e01 no-repeat center bottom; }
+h3::after { background-image: linear-gradient(to right, #5f1e01, #c8880c); }
+h4 { color: #9e5f10; }
+h4::before, 
+h4::after { background: #9e5f10 no-repeat center bottom; }
+h4::after { background-image: linear-gradient(to right, #9e5f10, #eadaca); }
 
 
-/* special font and font reset */
+/* Polices spéciales, reset de tailles de police, graisse */
 @font-face{ 
   font-family: 'calendas';
   src: url('calendas_plus-webfont.eot');
@@ -54,51 +65,23 @@ h1, h2 { font-size: x-large; }
 h3, h4 { font-size: large; }
 h5 { font-size: inherit; margin-bottom: 0; }
 body > header > nav a { font-size: 16px; font-weight: normal; }
-@media (min-width: 481px) { article:not(h3) { font-size: 13px; } }
+@media (min-width: 1024px) { article:not(h3), article:not(h4) { font-size: 13px; } }
 
 
 
 
-/* styling aside and footer */
-aside { background: #eadaca url("parchment.jpg") repeat; padding: 10px; border: 1px solid #5f1e01; border-radius: 10px; }
-footer { border-top: 1px solid #5f1e01; margin-top: 10px; }
 
 
 
-
-/* Focus on navigation bar */
-body > header > nav > a {
-  background-image: linear-gradient(to right, currentColor, currentColor);
-  background-repeat: no-repeat;
-  background-size: 100% 1px;
-  background-position: center bottom;
+/* Barre de navigation principale : responsive (3 états) */
+/* Etat 1 : s'affiche sous forme de liste pour les smartphones */
+body > header > nav > a { 
+  background-image: linear-gradient(to right, currentColor, currentColor); 
+  background-repeat: no-repeat; background-size: 100% 1px; background-position: center bottom; 
   transition: background-size .25;
 }
 
-body > header > nav a:hover,
-body > header > nav a:focus,
-body > header > nav a:active { background-size: 100% 3px; outline: 0; color: #9e5f10; }
-
-/* Focus on menu bar */
-aside > nav > a {
-  background-image: linear-gradient(to right, currentColor, currentColor);
-  background-repeat: no-repeat;
-  background-size: 1px 80%;
-  background-position: left center;
-  transition: background-size .25;
-}
-
-aside > nav a:hover,
-aside > nav a:focus,
-aside > nav a:active { background-size: 3px 100%; outline: 0; color: #9e5f10; }
-
-
-.hidden {
-  display: none;
-}
-
-/* Responsive navigation bar */
-
+/* Etats 2 et 3 : affichage du titre abbrégé dans un ovale stylisé */
 @media (min-width: 481px) {
   body > header > nav h1 span { position: absolute; clip: rect(0,0,0,0); }
   body > header > nav h1 a::before {
@@ -117,6 +100,7 @@ aside > nav a:active { background-size: 3px 100%; outline: 0; color: #9e5f10; }
   }
 }
 
+/* Etat 2 : s'affiche sous forme de tableau avec 2 liens par ligne pour les petits écrans et les tablettes */
 @media (min-width: 481px) and (max-width: 1025px) {
   body > header { display: flex; justify-content: center; align-items: center; margin-bottom: 10px; }
   body > header > nav { display: flex; flex-wrap: wrap; }
@@ -124,6 +108,7 @@ aside > nav a:active { background-size: 3px 100%; outline: 0; color: #9e5f10; }
   body > header > nav > a { width: 50%; text-align: center; padding: .4em 0; }
 }
 
+/* Etat 3 : s'affiche sur une seule ligne pour les écrans larges */
 @media (min-width: 1025px) {
   body > header > nav { display: flex; justify-content: center; align-items: center; }
   body > header > nav a:nth-of-type(-n+4) { order: -1; }
@@ -132,27 +117,10 @@ aside > nav a:active { background-size: 3px 100%; outline: 0; color: #9e5f10; }
 
 
 
-/* Custom titles */
 
-h2, h3 { color: #5f1e01; }
-h3::before, h3::after { background: #5f1e01 no-repeat center bottom; }
-h3::after { background-image: linear-gradient(to right, #5f1e01, #c8880c); }
-h4 { color: #9e5f10; }
-h4::before, h4::after { background: #9e5f10 no-repeat center bottom; }
-h4::after { background-image: linear-gradient(to right, #9e5f10, #eadaca); }
 
-h3, h4 { display: flex; }
-h3::before, h3::after,
-h4::before, h4::after { 
-  display: block; /* ie10 */
-  content: "";
-  align-self: center;
-  height: 2px;
-}
-h3::before, h4::before { flex: 0; flex-basis: 2em; margin-right: 5px; }
-h3::after, h4::after { flex: 1; margin-left: 5px; }
-
-aside h2 { text-align: center; }
+/* Articles et miniatures : responsive */
+/* Nécessitent d'être contenus dans une div "container" */
 
 /* Miniatures */
 .container-miniature { display: flex; flex: 1 1 auto; margin: 0 auto; flex-wrap: wrap; }
@@ -162,8 +130,33 @@ aside h2 { text-align: center; }
 /* Articles */
 .container { display: flex; flex: 1 1 auto; flex-wrap: wrap; align-items: stretch; justify-content: space-between; }
 .container > article { flex: 0 1 48%; }
+.container.triple > article { flex: 0 1 30%; }
 @media (max-width: 1025px) { .container > article { flex: 1 0 100%; } }
 
-/* Quotation styles */
+
+
+
+
+
+/* Quelques mises en forme qui restent, par ordre alphabétique */
+
+aside > nav > a { 
+  background-image: linear-gradient(to right, currentColor, currentColor); 
+  background-repeat: no-repeat; background-size: 1px 80%; background-position: left center; 
+  transition: background-size .25; 
+}
+aside h2 { text-align: center; }
+
+h3, h4 { display: flex; }
+h3::before, h3::after,
+h4::before, h4::after { display: block; content: ""; align-self: center; height: 2px; }
+h3::before, 
+h4::before { flex: 0; flex-basis: 2em; margin-right: 5px; }
+h3::after, 
+h4::after { flex: 1; margin-left: 5px; }
+
+.hidden { display: none; }
+
 p.eg { font-style: italic; font-size: smaller; }
 p.NdA { margin-left: 30px; }
+p.boxed { border: 1px solid currentColor; border-radius: 2%; padding: 5px; }
