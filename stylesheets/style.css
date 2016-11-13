@@ -147,6 +147,8 @@ aside > nav > a {
 }
 aside h2 { text-align: center; }
 
+.centered { text-align: center; }
+
 h3, h4 { display: flex; }
 h3::before, h3::after,
 h4::before, h4::after { display: block; content: ""; align-self: center; height: 2px; }
@@ -156,6 +158,8 @@ h3::after,
 h4::after { flex: 1; margin-left: 5px; }
 
 .hidden { display: none; }
+
+ol > li { margin-bottom: 14px; }
 
 p.eg { font-style: italic; font-size: smaller; }
 p.NdA { margin-left: 30px; }
