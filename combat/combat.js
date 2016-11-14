@@ -7,8 +7,19 @@ function toggle(name){
             elt2[0].innerHTML = "(cacher)";
         }
         else { 
-            elt[i].className = name+" hidden"; 
-            elt2[0].innerHTML = "(afficher)";
+            if (elt[i].className == name+" hidden eg") { 
+            elt[i].className = name+" eg"; 
+            elt2[0].innerHTML = "(cacher)";
+            }
+            else { 
+                if (elt[i].className == name+" eg") { 
+                    elt[i].className = name+" hidden eg"; 
+                    elt2[0].innerHTML = "(afficher)";
+                } else {
+                    elt[i].className = name+" hidden"; 
+                    elt2[0].innerHTML = "(afficher)";
+                }
+            }
         }
     }
 }

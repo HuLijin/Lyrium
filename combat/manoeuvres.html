@@ -31,15 +31,15 @@
 
     <section class="content">
       
-      <h2>Art du combat</h2>
+      <h2>Les manoeuvres</h2>
 
-      <h3>Manoeuvres</h3>
+      <p class="ariane">Art du combat &gt; Règles du combat</p>
 
       <p>Les manoeuvres sont divisées en six catégories, deux catégories offensives (corps à corps et distance), une catégorie défensive, deux catégories mixtes (magie et esquive) et une catégorie utilitaire.</p>
 
       <p>Les personnages connaissent tous la manoeuvre principale de chacune des six catégories (identifiée par le symbole &diams;) à son niveau le plus faible.</p>
 
-      <h4>Apprentissage et perfectionnement de nouvelles manoeuvres</h4>
+      <h3>Apprentissage et perfectionnement de nouvelles manoeuvres</h3>
 
       <p>Un personnage ne peut maitriser au plus que 10 manoeuvres. Maitriser une manoeuvre revient à dépenser au moins un point de manoeuvre pour elle. Par conséquent, les 6 manoeuvres principales ne comptent pas si elles ne sont utilisées qu'à leur niveau le plus faible (si le personnage n'a aps dépensé de point pour les perfectionner).</p>
 
@@ -50,6 +50,19 @@
       <p>Pour finir, perfectionner une manoeuvre revient à investir davantage de points de manoeuvre dans une manoeuvre donnée. Ainsi, les effets seront plus importants au combat. Dans certains cas, ce^gain de puissance se traduit même par une évolution de la manoeuvre !</p>
 
       <p class="NdA">Note : réuniformiser les descriptions des manoeuvres : celles qui consomment des dés de réservent DOIVENT mentionner qu'un point investi offre une occasion supplémentaire d'utiliser la manoeuvre au cours d'un tour d'action et les autres doivent mentionner qu'elles sont utilisables à volonté.</p>
+
+      <h3>Liste des manoeuvres</h3>
+
+      <p>Indépendamment de leur regroupement en six catégories, les manoeuvres ci-dessous sont également répertoriées sous quatre appellations : les manoeuvres offensives, les manoeuvres défensives, les manoeuvres de soutien et les passifs.</p>
+      <p>Les manoeuvres offensives et de soutien ne peuvent être utilisées que pendant le tour d'action du personnage. À de rares exceptions près, les manoeuvres défensives sont utilisées en dehors du tour d'action du personnage.</p>
+
+      <h5>Petits rappels de vocabulaire</h5>
+      <dl>
+        <dt>Phase de combat et tour d'action :</dt><dd>  le combat est divisé en phases : à chaque phase, les combattants jouent selon un ordre imposé. Une fois que tous les combattants ont participé, la phase est finie et une nouvelle commence. Le tour d'action d'un personnage correspond au moment de la phase de combat où il participe activement.</dd>
+        <dt>DDP : Degré de Difficulté de Parade :</dt><dd> c'est une valeur déterminée par l'attaquant qui représente la puissance de son attaque. Plus il est élevé, plus la cible de l'attaque aura du mal à parer.</dd>
+        <dt>Test de parade :</dt><dd> test effectué par la cible de l'attaquant. La cible lance <var>1D10</var> et additionne son score de MAE/POU. Si le résultat obtenu est supérieur ou égal au DDP, la parade est une réussite et la cible évite les blessures.</dd>
+        <dt>Faire appel à l'expérience :</dt><dd> le personnage peut choisir de sacrifier tout ou une partie de ses dés de réserve pour tenter d'améliorer un lancer. En l'occurence, chaque fois qu'une manoeuvre mentionne qu'il faut faire un jet de statistique, un jet de compétence ou un jet de parade, le personnage peut faire appel à son expérience.</dd>
+      </dl>
       
       <div class="container">
 
@@ -57,31 +70,34 @@
 
         <article class="manoeuver">
           <h4>Manoeuvres d'attaque</h4>
+
+          <p>Note : je verrai bien désarmer qui donne briser et rajouter charge, et dépalcer la partie sur le cassage de mur dans charge...</p>
           <div class="ppalManoeuver">
             <h5>&diams; Frappe puissante <a href="javascript:toggle('atk1')" class="atk1Link">(afficher)</a></h5>
-            <p class="atk1 hidden"></p>
+            <p class="atk1 hidden eg">Manoeuvre offensive</p>
+            <p class="atk1 hidden">Depenser des PM pour augmenter le DDP, cf foca.</p>
           </div>
 
           <div class="2ndManoeuver">
             <h5>Briser <a href="javascript:toggle('atk2')" class="atk2Link">(afficher)</a></h5>
-            <p class="atk2 hidden"></p>
+            <p class="atk2 hidden">cette manœuvre permet au personnage de briser l'arme ou l'armure d'un adversaire, mais aussi de briser d'autres objets. Note : pour détruire un mur le test de maestria n'est pas nécessaire, néanmoins seul les armes dépassant 1D10 de dégâts peuvent les endommager, et aucun critique ne peut être appliqué (sauf contraire précisé).</p>
           </div>
 
           <div class="2ndManoeuver">
             <h5>Désarmer <a href="javascript:toggle('atk3')" class="atk3Link">(afficher)</a></h5>
-            <p class="atk3 hidden"></p>
+            <p class="atk3 hidden">le personnage tente de désarmer son adversaire (il est vraiment vide le wiki...)</p>
           </div>
 
           <div class="2ndManoeuver">
             <h5>Assommer <a href="javascript:toggle('atk4')" class="atk4Link">(afficher)</a></h5>
-            <p class="atk4 hidden"></p>
+            <p class="atk4 hidden">le personnage tente d’assommer sa cible d'un coup sur la tête, ce qui immobilisera l’adversaire. Condition : une telle manœuvre ne peut être lancé que si la cible est prise par surprise (jet de sens opposé a discrétion).</p>
           </div>
 
           <div class="2ndManoeuver">
             <h5>Maitriser <a href="javascript:toggle('atk5')" class="atk5Link">(afficher)</a></h5>
-            <p class="atk5 hidden"></p>
+            <p class="atk5 hidden">le personnage tente de maîtriser sa cible, clef de bras, prise, tout est bon. La cible est immobilisée et ne peut agir. Condition : le lanceur ne peut se déplacer tant que la prise est effective, attaquer deviens une action complexe au tour suivant.</p>
           </div>
-          <p class="boxed">Avantage si toutes les manoeuvres sont débloquées : </p>
+          <p class="boxed">Avantage si toutes les manoeuvres sont débloquées : un dé de réserve de MAE est ajouté de manière permanente à la réserve du personnage.</p>
         </article>
 
 
@@ -194,20 +210,29 @@
 
           <div class="2ndManoeuver">
             <h5>Parade de zone <a href="javascript:toggle('def3')" class="def3Link">(afficher)</a></h5>
-            <p class="def3 hidden"></p>
+            <p class="def3 hidden">Sacrifier <var>1</var> dé de MAE pour parer une attaque de zone (physique ou magique). Une parade réussie n'annule pas l'attaque de zone, elle réduit juste l'impact de l'attaque sur le personnage qui utilise cette manoeuvre.</p>
+            <p class="def3 hidden">Restriction : le personnage doit porter un bouclier ou une arme à deux mains.</p>
+            <p class="def3 hidden">Chaque point investi dans cette manoeuvre permet d'effectuer <var>1</var> Parade supplémentaire par tour d'action et diminue le degré de difficulté du test de parade d'<var>1</var> point.</p>
+            <p class="def2 hidden">Au bout de <var>3</var> points investis, le personnage peut également protéger un allié situé à moins de 4 mètres de lui.</p>
+
           </div>
 
           <div class="2ndManoeuver">
             <h5>Position défensive <a href="javascript:toggle('def4')" class="def4Link">(afficher)</a></h5>
-            <p class="def4 hidden"></p>
+            <p class="def4 hidden"><b>Cette manoeuvre est à annoncer au début d'une nouvelle phase de combat. Cet effet s'applique pour la totalité de la phase de combat, tour d'action compris.</b></p>
+            <p class="def4 hidden">Le personnage gagne <var>1</var> dé de réserve de MAE ou POU qui ne pourra être utilisé que pour des actions défensives. En particulier, il ne peut pas sacrifier ce dé pour <b>faire appel à l'expérience</b> ou pour effectuer une attaque supplémentaire.</p>
+            <p class="def4 hidden">En contrepartie, toute action offensive lui coûtera <var>5</var> PF/PM suppémentaires pendant son tour d'action.</p>
+            <p class="def4 hidden">Chaque point investi augmente d'<var>1</var> le nombre de dés de réserve de défense gagnés. Le personnage choisit librement la proportion de dés de MAE et de dés de POU qu'il gagne. Le personnage peut utiliser cette manoeuvre à chaque phase de combat s'il le souhaite et si sa jauge de PF/PM suit.</p>
           </div>
 
           <div class="2ndManoeuver">
             <h5>Couvrir <a href="javascript:toggle('def5')" class="def5Link">(afficher)</a></h5>
-            <p class="def5 hidden"></p>
+            <p class="def5 hidden">Sacrifier <var>1</var> dé de MAE/POU pour foncer sur un allié et parer une attaque physique/magique à sa place. Quelle que soit l'issue du test de parade, le personnage encaisse les éventuelles blessures à la place de l'allié.</p>
+            <p class="def5 hidden">Restrictions : l'allié doit être à moins de 8 mètres et cette manoeuvre ne peut pas être utilisée pour les attaques de zone.</p>
+            <p class="def3 hidden">Chaque point investi dans cette manoeuvre permet d'effectuer <var>1</var> couverture supplémentaire par tour d'action et diminue le degré de difficulté du test de parade d'<var>1</var> point.</p>
           </div>
 
-          <p class="boxed">Avantage si toutes les manoeuvres sont débloquées : diminue le DDP d'<var>1</var> point supplémentaire pour les manoeuvres Parade de projectiles, Parade de rayons, Parade de zone, Position défensive et Couvrir.</p>
+          <p class="boxed">Avantage si toutes les manoeuvres sont débloquées : diminue le DDP d'<var>1</var> point supplémentaire pour les manoeuvres Parade de projectiles, Parade de rayons, Parade de zone et Couvrir.</p>
         </article>
 
 

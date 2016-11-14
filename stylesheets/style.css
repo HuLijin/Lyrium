@@ -25,6 +25,7 @@ nav a { display: block; padding: .4em 1em; }
 }
 @media (min-width: 1281px) { body { margin-left: 10%; margin-right: 10% } }
 @media (min-width: 1601px) { body { margin-left: 20%; margin-right: 20% } }
+@media (min-width: 769px) { .ariane { display: none; } }
 
 
 /* Couleurs (de fond, de police et de bordures) */
@@ -140,6 +141,8 @@ body > header > nav > a {
 
 
 /* Quelques mises en forme qui restent, par ordre alphabétique */
+
+.ariane { font-size: smaller; font-weight: bold; margin-bottom: 30px; }
 
 aside > nav > a { 
   background-image: linear-gradient(to right, currentColor, currentColor); 

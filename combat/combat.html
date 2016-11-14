@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lyrium, le jeu de rôle</title>
   <link rel="stylesheet" href="../stylesheets/style.css">
-  <script src="combat.js"></script>
 </head>
 <body>
 
@@ -33,136 +32,13 @@
       
       <h2>Art du combat</h2>
 
-      <p>Paragraphe sur le coté tactique</p>
-
-      <h3>Règles du combat</h3>
-
-      <p class="NdA">Note des rédacteurs : les règles énoncées ici sont basiques et ne couvrent pas tous les cas possible. Si les joueurs se retrouvent dans une situation qui n'est pas couverte par les règles (par exemple, s'ils sont pris par surprise) l'adaptation des règles se fait à la discrétion du Meneur de jeu.
-      <br/>Par ailleurs, il est possible que nous fournissions des règles additionnelles un jour ou l'autre.</p>
-
-      <h4>Déroulement d'un combat</h4>
-
-      <p>Lors d'un combat, les personnages-joueurs sont amenés à affronter les ennemis imaginés par le Meneur de Jeu. Dans un soucis de clarté, le combat est divisé en tours : à chaque tour, les combattants jouent selon un ordre imposé. Une fois que tous les combattants ont joué, le tour est fini et un nouveau commence, s'il reste des ennemis à vaincre.</p>
-
-      <h4>Calcul de l'initiative</h4>
-
-      <p>La première étape d'un combat est le calcul de l'initiative, ou plus simplement l'étape qui va désigner l'ordre d'action des combatants.</p>
-
-      <p>Le calcul de l'initiative se fait en additionnant le score d'ADA et le nombre de dés de réserve d'ADA. Les combattants sont ensuite classé dans l'ordre décroissant de leur résultat : celui qui a le plus gros résultat commence en premier.</p>
-
-      <P>S'il y a égalité, le premier est celui qui a le plus gros score d'ADA. S'il y a toujours égalité, les combattants lancent 1D10 jusqu'à se départager, celui qui obtient le plus gros lancer commence.<p>
-
-      <p>Une fois l'ordre défini, il est conservé pour l'ensemble du combat.</p>
-
-      <h4>Tour d'action</h4>
-
-      <p>Quand c'est au tour d'un combattant de jouer, il peut effectuer les actions suivantes (dans l'ordre de son choix) :</p>
-      <ul>
-       <li>se déplacer (sacrifier 1 dé d'ADA par tranche de 4 mètres parcourus)</li>
-       <li>lancer des attaques physiques (sacrifier 1 dé de MAE par attaque)</li>
-       <li>lancer des sorts (sacrifier 1 dé de POU par sort lancé)</li>
-       <li>utiliser des compétences</li>
-       <li>utiliser des manoeuvres (coût variable)</li>
-       <li>discuter avec ses alliés</li>
-       <li>passer son tour</li>
+      <p class="ariane">Sous-sections</p>
+      <ul class="ariane">
+        <li>Les règles du combat</li>
+        <li>Les coups critiques</li>
+        <li>les manoeuvres</li>
+        <li>Tactiques avancées de combat</li>
       </ul>
-
-      <p>Lorsque ce n'est pas son tour d'action, le combattant peut effectuer l'une des actions suivantes en réaction à une action offensive de l'adversaire :</p>
-      <ul>
-        <li>parer une attaque physique (sacrifier 1 dé de MAE)</li>
-        <li>parer une attaque magique (sacrifier 1 dé de POU)</li>
-        <li>parer une attaque de tout type avec une manoeuvre (coût variable)</li>
-        <li>encaisser l'attaque sans rien faire</li>
-      </ul>
-
-      <p>La plupart des actions coûtent un dé de réserve de MAE / POU / ADA. Le secret pour gagner un combat est de dépenser intelligemment ses dés de réserve entre actions offensives et actions défensives, en fonction de son score d'initiative. Une réserve réduite à zéro se solde le plus souvent par un coup critique, ce qui peut amener très vite un personnage joueur (ou un ennemi) à mourir.</p>
-
-      <h3>Résolution des effets</h3>
-
-      <p>Le personnage choisit l'ordre dans lequel il effectue ses actions et effectue les tests, s'il y a lieu, les uns après les autres. Mais ils doit conserver deux choses en tête :</p>
-
-      <ul>
-        <li>S'il épuise une de ses réserves de dés de POU ou de MAE, il met automatiquement fin à son tour.</li>
-        <li>S'il rate un de ses sorts, il met automatiquement fin à son tour.</li>
-      </ul>
-
-      <h5>Rappels sur le lancement de sorts</h5>
-
-      <p>Les détails sont disponibles dans la section <a href="../magie/magie.html">Art de la magie</a>.</p>
-
-      <p>Lorsqu'un magicien tente de lancer un sort, il y a une chance qu'il n'y parvienne pas. Pour le savoir, le magicien lance <var>1D10</var> et additionne son score de POU et un éventuel bonus issu d'une manoeuvre.  Il peut également <b>faire appel à son expérience</b> pour améliorer son résultat si besoin. Si le résultat obtenu est supérieur ou égal au degré de difficulté du sort (DDS) qu'il tente de lancer, c'est une réussite ! Sinon, c'est un échec et le personnage perd son tour d'action.</p>
-
-      <div class="centered"><img height="400px" src="../img/exp_DDS.png" alt="Avoir les yeux plus gros que le ventre quand on lance un sort peut faire mal !"></div>
-
-      <p>Il est également possible de rater un sort en obtenant un 1 sur le lancer de dé puis 3 ou moins sur un lancer d'<var>1D10</var>. Si cela arrive, se référer à la section <a href="../magie.magie.html">Art de la magie</a> pour voir les conséquences d'un sort raté doublé d'un fumble. Là encore, le personnage met fin à son tour d'action.</p>
-
-      <h4>Résolution des blessures</h4>
-
-      <p>La plupart des tours d'action contiendra une à plusieurs attaques qui conduiront à une phase de résolution des blessures. L'approche choisie pour résoudre ces confrontations est de faire effectuer un <strong>test de parade</strong> par la cible de l'attaquant. Le degré de difficulté du test de parade est sobrement appelé <strong>Degré de Difficulté de Parade</strong> (DDP). Il représente la puissance de l'attaque subie par la cible. Le résultat du test détermine le nombre de blessures reçues par la cible et la gravité de l'attaque.</p>
-
-      <p>Il existe deux manières d'infliger des blessures : en visant grossièrement sa cible ou en visant très précisément une partie du corps de la cible. Ces deux approches sont détaillées ci-dessous. Notez que les attaques physiques à distance nécessitent de viser obligatoirement avant d'attaquer.</p>
-
-      <h5>Action offensive sans visée</h5>
-
-      <ol>
-        <li>L'attaquant désigne sa cible.</li>
-        <li>L'attaquant calcule le degré de difficulté de parade (DDP) de son attaque : pour un guerrier, lancer <var>1D10</var> et ajouter son score de MAE ; pour un mage, il s'agit du score obtenu précédemment pour lancer le sort.<br/>
-        Note : le guerrier peut <b>faire appel à son expérience</b> pour améliorer son DDP.</li>
-        <li>La cible regarde sa réserve de dés : une parade nécessite de sacrifier <var>1</var> dé de réserve de MAE contre une attaque physique ou de POU contre une attaque magique. La cible n'est pas obligée de parer, même si elle le peut.</li>
-        <li>Si la cible choisit de parer, elle effectue un test de parade : lancer <var>1D10</var> et ajouter le score de MAE/POU. Le test est réussi si la valeur obtenue est supérieure ou égale au DDP.<br/><b>FIN DU COMBAT</b>.</li>
-        <li>Sinon, elle compare son score de MAE/POU au DDP. Si la valeur est supérieure ou égale au DDP, l'attaque est évitée.<br/><b>FIN DU COMBAT</b>.</li>
-        <li>Dans les deux cas, si la valeur obtenue est inférieure stricte au DDP, la cible reçoit des blessures. L'attaquant calcule le montant des blessures : dégâts du sort pour les magiciens ou dégâts de l'arme pour le guerrier.</li>
-        <li>On calcule ensuite la marge d'échec de la parade : c'est la différence entre le DDP et la valeur obtenue par la cible pour parer (ou son score de MAE/POU si elle n'a pas pu parer)</li>
-        <li>Si la marge d'échec est inférieure stricte à 5, l'attaquant inflige les blessures à la cible, celle-ci perd autant de PV que de blessures subies.<br/><b>FIN DU COMBAT</b>.</li>
-        <li>Si la marge d'échec est supérieure ou égale à 5, l'attaque est un coup critique ! Certains coups critiques ayant des effets additionnels en fonction de la zone ciblée, l'attaquant lance <var>1D6</var> pour savoir quelle zone est touchée :</li>
-        <ul style="list-style:none; margin-bottom: 14px;">
-          <li>1. Tête</li>
-          <li>2. Torse</li>
-          <li>3. Abdomen</li>
-          <li>4. Bras</li>
-          <li>5. Jambes</li>
-          <li>6. Pieds</li>
-        </ul>
-        <li>Appliquer l'effet du critique sur la cible (voir la sous-section Coups critiques) puis les blessures. La cible perd autant de PV que de blessures subies.<br/><b>FIN DU COMBAT</b>.</li>
-      </ol>
-
-      <h5>Action offensive avec visée</h5>
-
-      <p>C'est exactement la même chose sauf qu'après avoir désigné sa cible (étape 1), l'attaquant choisit la zone qu'il cible.</p>
-
-      <p>La visée influence le DDP :</p>
-      <ul>
-        <li>Si la zone visée est la tête ou les pieds, le DDP est diminué de 2 points.</li>
-        <li>Si la zone visée est un bras ou une jambe, le DDP est diminué de 1 points.</li>
-        <li>Si l'attaque est à distance et que l'attaquant n'utilise pas la manoeuvre Viser, le DDP est diminué de 3 points.</li>
-        <li>Si l'attaquant utilise la manoeuvre Visée, le DDP est augmenté d'autant de points que le nombre de points investis dans la manoeuvre !</li>
-      </ul>
-
-      <p>Ensuite, tout se passe comme pour l'action offensive sans visée, jusqu'à l'application d'un coup critique (étape 9) : en effet, la zone visée étant déjà désignée, il n'est pas nécessaire de la tirer aux dés.</p>
-
-      <h5>Intervention de manoeuvres</h5>
-
-      <p>À quasiment toutes les étapes d'un résolution de blessures, il est possible d'utiliser des manoeuvres : l'attaquant peut en utiliser pour améliorer sa visée ou pour renforcer son attaque et augmenter le DDP, la cible peut en utiliser pour parer et diminuer le DDP, etc. Voir la sous-section <a href="manoeuvres.html">Manoeuvres</a> et la sous-section <a href="./tactiques_avancees.html">Tactiques avancées</a> pour les découvrir.</p>
-
-      <p>Si cela arrive, bien suivre la description des manoeuvres utilisées. Certains effets s'appliquent à la visée, d'autres lors du calcul du DDP ou lors du test de parade, d'autres encore lors de l'attribution des blessures.</p>
-
-      <p><strong>Très important : si un personnage souhaite utiliser une manoeuvre, il doit le dire AVANT d'effectuer un test. Il n'est pas possible de vouloir utiliser une manoeuvre <i>a posteriori</i> pour limiter les conséquences d'un jet désastreux.</strong></p>
-
-      <p class="desc">Yeoun, répondant aux provocations de son cousin, décide de l'attaquer avec son épée. Sa maestria [MAE 9, réserve 1] n'est vraiment pas son point fort. Elle tente quand même le coup et, manque de chance, obtient un 2 sur son jet. Au total, elle obtient un DDP de 11. Même un paysan sans éducation militaire serait apte à détourner son coup, alors son cousin rompu au combat...<br/>
-      Ayant déjà lancé ses dés, elle ne peut plus faire appel à la manoeuvre Frappe puissante (qui améliore le DDP en échange de PF). Il ne lui reste plus que deux choix : sacrifier son seul dé de réserve de MAE pour relancer son jet, et mettre fin à son tour par la même occasion, ou accepter d'être la risée de ses amis.</p>
-
-      <h4>Fin du tour d'action</h4>
-
-      <p>On applique au personnage tout effet sur le temps qu'il peut avoir sur lui et on passe au combattant suivant.</p>
-
-      <h3>Règles particulières des armes à distance</h3>
-
-      <p><strong>Règle principale : toute attaque à distance nécessite de cibler une partie spécifique du corps de l'adversaire ET subit un malus de 3 points au test de visée.</strong>
-      <br/>La manoeuvre Viser, accessible à tous, permet de s'affranchir de ce malus.</p>
-
-      <p>Armes à munition à recharge manuelle : si le joueur veut recharger son arme pendant son tour d'action, il devra sacrifier <var>1</var> dé de réserve d'ADA à chaque fois qu'il recharge. S'il s'investit dans les manoeuvres de tir, la manoeuvre Recharger lui permet de ne pas avoir à sacrifier de dés.</p>
-
-      <p>Tir improvisé : il est possible d'attaquer à distance avec une arme ou un objet qui n'est pas prévu pour cela. Dans ce cas, les dégâts infligés ne peuvent pas dépasser <var>1</var> intensité.</p>
       
     </section>
 

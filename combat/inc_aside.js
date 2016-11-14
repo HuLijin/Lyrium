@@ -1,9 +1,11 @@
 document.write("<h3>Navigation rapide</h3>");
 document.write("<nav class='menu'>");
-document.write("<a href='./combat.html'>Les règles du combat</a>");
+document.write("<a href='./combat.html'>L'art du combat</a>");
+document.write("<p class='eg'>Où l'on explique les principes fondateurs de cet art quelque peu violent</p>");
+document.write("<a href='./regles_combat.html'>Les règles du combat</a>");
 document.write("<p class='eg'>Où est fait mention d'initiative, tour d'action, DDP, test de parade, attribution des blessures et visée</p>");
-document.write("<a href='./combat.html'>Coups critiques</a>");
-document.write("<p class='eg'>Pour tout savoir sur les effets critiques en fonction du mode d'attaque</p>");
+//document.write("<a href='./combat.html'>Coups critiques</a>");
+//document.write("<p class='eg'>Pour tout savoir sur les effets critiques en fonction du mode d'attaque</p>");
 document.write("<a href='./manoeuvres.html'>Les manoeuvres</a>");
 document.write("<p class='eg'>Pour pimenter les combats !</p>");
 document.write("<a href='./tactiques_avancees.html'>Tactiques avancées</a>");
