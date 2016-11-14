@@ -45,24 +45,24 @@
 
       <p>Investir au moins un point dans une manoeuvre principale débloque toutes les manoeuvres secondaires d'une catégorie donnée. Mais débloquer ne veut pas dire que le personange est apte à les utiliser. Pour pouvoir les utiliser, il devra dépenser au moins un point dans chaque manoeuvre secondaire qui l'intéresse. Cela revient à dire que les manoeuvres secondaires requièrent un minimum de maitrise avant d'être utilisées en combat. Bien sûr, le personnage n'est aps obligé de maitriser l'ensemble des manoeuvres d'une catégorie, même si cela peut lui procurer certains avantages.</p>
 
-      <p class="NdA">Note : la webmaster a pris quelques libertés concernant les dits avantages, l'auteur du jeu va peut-être modifier tout cela dans un avenir plus ou moins proche.</p>
-
       <p>Pour finir, perfectionner une manoeuvre revient à investir davantage de points de manoeuvre dans une manoeuvre donnée. Ainsi, les effets seront plus importants au combat. Dans certains cas, ce^gain de puissance se traduit même par une évolution de la manoeuvre !</p>
-
-      <p class="NdA">Note : réuniformiser les descriptions des manoeuvres : celles qui consomment des dés de réservent DOIVENT mentionner qu'un point investi offre une occasion supplémentaire d'utiliser la manoeuvre au cours d'un tour d'action et les autres doivent mentionner qu'elles sont utilisables à volonté.</p>
 
       <h3>Liste des manoeuvres</h3>
 
       <p>Indépendamment de leur regroupement en six catégories, les manoeuvres ci-dessous sont également répertoriées sous quatre appellations : les manoeuvres offensives, les manoeuvres défensives, les manoeuvres de soutien et les passifs.</p>
       <p>Les manoeuvres offensives et de soutien ne peuvent être utilisées que pendant le tour d'action du personnage. À de rares exceptions près, les manoeuvres défensives sont utilisées en dehors du tour d'action du personnage.</p>
 
-      <h5>Petits rappels de vocabulaire</h5>
-      <dl>
+      <p><b>Petits rappels de vocabulaire <a href="javascript:toggle('vocab')" class="vocabLink">(afficher)</a></b></p>
+      <dl class="vocab hidden">
         <dt>Phase de combat et tour d'action :</dt><dd>  le combat est divisé en phases : à chaque phase, les combattants jouent selon un ordre imposé. Une fois que tous les combattants ont participé, la phase est finie et une nouvelle commence. Le tour d'action d'un personnage correspond au moment de la phase de combat où il participe activement.</dd>
         <dt>DDP : Degré de Difficulté de Parade :</dt><dd> c'est une valeur déterminée par l'attaquant qui représente la puissance de son attaque. Plus il est élevé, plus la cible de l'attaque aura du mal à parer.</dd>
         <dt>Test de parade :</dt><dd> test effectué par la cible de l'attaquant. La cible lance <var>1D10</var> et additionne son score de MAE/POU. Si le résultat obtenu est supérieur ou égal au DDP, la parade est une réussite et la cible évite les blessures.</dd>
-        <dt>Faire appel à l'expérience :</dt><dd> le personnage peut choisir de sacrifier tout ou une partie de ses dés de réserve pour tenter d'améliorer un lancer. En l'occurence, chaque fois qu'une manoeuvre mentionne qu'il faut faire un jet de statistique, un jet de compétence ou un jet de parade, le personnage peut faire appel à son expérience.</dd>
+        <dt>Faire appel à l'expérience :</dt><dd> le personnage peut choisir de sacrifier tout ou une partie de ses dés de réserve pour tenter d'améliorer un lancer.</dd>
       </dl>
+
+      <p>Rappel : chaque fois qu'une manoeuvre mentionne qu'il faut faire un jet de statistique, un jet de compétence ou un jet de parade, le personnage peut <b>faire appel à son expérience</b> pour tenter d'améliorer le résultat de son jet.</p>
+
+      <p class="NdA">Note : réuniformiser les descriptions des manoeuvres : celles qui consomment des dés de réservent DOIVENT mentionner qu'un point investi offre une occasion supplémentaire d'utiliser la manoeuvre au cours d'un tour d'action et les autres doivent mentionner qu'elles sont utilisables à volonté.</p>
       
       <div class="container">
 
@@ -71,21 +71,28 @@
         <article class="manoeuver">
           <h4>Manoeuvres d'attaque</h4>
 
-          <p>Note : je verrai bien désarmer qui donne briser et rajouter charge, et dépalcer la partie sur le cassage de mur dans charge...</p>
           <div class="ppalManoeuver">
             <h5>&diams; Frappe puissante <a href="javascript:toggle('atk1')" class="atk1Link">(afficher)</a></h5>
             <p class="atk1 hidden eg">Manoeuvre offensive</p>
-            <p class="atk1 hidden">Depenser des PM pour augmenter le DDP, cf foca.</p>
+            <p class="atk1 hidden">Dépenser <var>1</var> PF pour augmenter le DDP de la prochaine attaque physique de <var>1</var>.</p>
+            <p class="atk1 hidden">Chaque point investi dans cette manoeuvre permet de dépenser <var>1</var> PF supplémentaire, donc d'aumenter le DDP d'<var>1</var> point supplémentaire. Le personnage choisit combien de PF il souhaite dépenser de cette manière.</p>
+            <p class="atk1 hidden">Le personnage peut utiliser cette manoeuvre autant de fois qu'il le souhaite pendant son tour d'action.</p>
           </div>
 
           <div class="2ndManoeuver">
             <h5>Briser <a href="javascript:toggle('atk2')" class="atk2Link">(afficher)</a></h5>
-            <p class="atk2 hidden">cette manœuvre permet au personnage de briser l'arme ou l'armure d'un adversaire, mais aussi de briser d'autres objets. Note : pour détruire un mur le test de maestria n'est pas nécessaire, néanmoins seul les armes dépassant 1D10 de dégâts peuvent les endommager, et aucun critique ne peut être appliqué (sauf contraire précisé).</p>
+            <p class="atk2 hidden eg">Manoeuvre offensive</p>
+            <p class="atk2 hidden">Sacrifier <var>1</var> dé de réserve de MAE pour tenter de briser l'arme ou l'armure de la cible. La manoeuvre se déroule comme si le personnage effectuait une attaque physique. Si l'attaque passe, au lieu d'infliger des blessures à la cible, le personnage fait un jet de Puissance (FOR) opposé à la solidité de l'arme ou de l'armure. Si le test est réussi, pour chaque point au dessus de la valeur de solidité, la cible retranche 1 point de solidité à son arme ou son armure. Si l'attaque passe avec un coup critique, la cible retranche encore <var>1</var> point de solidité pour un critique mineur ou <var>3</var> points de solidité pour un critique majeur.</p>
+            <p class="atk2 hidden">Note : si le personnage vise une arme ou un bouclier avec une arme de contact, il applique les règles du combat relatives à une <b>attaque offensive sans visée</b>. Cependant, s'il vise une pièce d'armure ou s'il attaque avec une arme à distance, il applique les règles du combat relatives à une <b>attaque offensive avec visée</b>.</p>
+            <p class="atk2 hidden">Chaque point investi dans cette manoeuvre permet d'augmenter de <var>1</var> point le score du jet de Puissance. <b>Cette manoeuvre n'est utilisable qu'<var>1</var> seule fois par tour d'action.</b></p>
+            <p class="atk2 hidden">Note : cette manoeuvre offre un passif permanent aux jets de Puissance visant à détruire des objets, comme les murs par exemple. Chaque point investi dans cette manoeuvre augmente d'<var>1</var> point le score du jet de Puissance.</p>
           </div>
 
           <div class="2ndManoeuver">
-            <h5>Désarmer <a href="javascript:toggle('atk3')" class="atk3Link">(afficher)</a></h5>
+            <h5>Désarmer &rarr; Maitriser <a href="javascript:toggle('atk3')" class="atk3Link">(afficher)</a></h5>
+            <p class="atk3 hidden eg">Manoeuvre offensive</p>
             <p class="atk3 hidden">le personnage tente de désarmer son adversaire (il est vraiment vide le wiki...)</p>
+            <p class="atk3 hidden">le personnage tente de maîtriser sa cible, clef de bras, prise, tout est bon. La cible est immobilisée et ne peut agir. Condition : le lanceur ne peut se déplacer tant que la prise est effective, attaquer deviens une action complexe au tour suivant.</p>
           </div>
 
           <div class="2ndManoeuver">
@@ -94,8 +101,8 @@
           </div>
 
           <div class="2ndManoeuver">
-            <h5>Maitriser <a href="javascript:toggle('atk5')" class="atk5Link">(afficher)</a></h5>
-            <p class="atk5 hidden">le personnage tente de maîtriser sa cible, clef de bras, prise, tout est bon. La cible est immobilisée et ne peut agir. Condition : le lanceur ne peut se déplacer tant que la prise est effective, attaquer deviens une action complexe au tour suivant.</p>
+            <h5>Charger <a href="javascript:toggle('atk5')" class="atk5Link">(afficher)</a></h5>
+            <p class="atk5 hidden">CF wiki</p>
           </div>
           <p class="boxed">Avantage si toutes les manoeuvres sont débloquées : un dé de réserve de MAE est ajouté de manière permanente à la réserve du personnage.</p>
         </article>
