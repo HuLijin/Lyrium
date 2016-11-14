@@ -88,7 +88,9 @@
 
       <h5>Rappels sur le lancement de sorts</h5>
 
-      <p>Lorsqu'un magicien tente de lancer un sort, il y a une chance qu'il n'y parvienne pas. Pour le savoir, le magicien lance <var>1D10</var> et additionne son score de POU et un éventuel bonus issu d'une manoeuvre. Si le résultat obtenu est supérieur ou égal au degré de difficulté du sort (DDS) qu'il tente de lancer, c'est une réussite ! Sinon, c'est un échec et le personnage perd son tour d'action.</p>
+      <p>Les détails sont disponibles dans la section <a href="../magie/magie.html">Art de la magie</a>.</p>
+
+      <p>Lorsqu'un magicien tente de lancer un sort, il y a une chance qu'il n'y parvienne pas. Pour le savoir, le magicien lance <var>1D10</var> et additionne son score de POU et un éventuel bonus issu d'une manoeuvre.  Il peut également <b>faire appel à son expérience</b> pour améliorer son résultat si besoin. Si le résultat obtenu est supérieur ou égal au degré de difficulté du sort (DDS) qu'il tente de lancer, c'est une réussite ! Sinon, c'est un échec et le personnage perd son tour d'action.</p>
 
       <div class="centered"><img height="400px" src="../img/exp_DDS.png" alt="Avoir les yeux plus gros que le ventre quand on lance un sort peut faire mal !"></div>
 
@@ -104,22 +106,23 @@
 
       <ol>
         <li>L'attaquant désigne sa cible.</li>
-        <li>L'attaquant calcule le degré de difficulté de parade (DDP) de son attaque : pour un guerrier, lancer <var>1D10</var> et ajouter son score de MAE ; pour un mage, il s'agit du score obtenu précédemment pour lancer le sort.</li>
+        <li>L'attaquant calcule le degré de difficulté de parade (DDP) de son attaque : pour un guerrier, lancer <var>1D10</var> et ajouter son score de MAE ; pour un mage, il s'agit du score obtenu précédemment pour lancer le sort.<br/>
+        Note : le guerrier peut <b>faire appel à son expérience</b> pour améliorer son DDP.</li>
         <li>La cible regarde sa réserve de dés : une parade nécessite de sacrifier <var>1</var> dé de réserve de MAE contre une attaque physique ou de POU contre une attaque magique. La cible n'est pas obligée de parer, même si elle le peut.</li>
         <li>Si la cible choisit de parer, elle effectue un test de parade : lancer <var>1D10</var> et ajouter le score de MAE/POU. Le test est réussi si la valeur obtenue est supérieure ou égale au DDP.<br/><b>FIN DU COMBAT</b>.</li>
         <li>Sinon, elle compare son score de MAE/POU au DDP. Si la valeur est supérieure ou égale au DDP, l'attaque est évitée.<br/><b>FIN DU COMBAT</b>.</li>
         <li>Dans les deux cas, si la valeur obtenue est inférieure stricte au DDP, la cible reçoit des blessures. L'attaquant calcule le montant des blessures : dégâts du sort pour les magiciens ou dégâts de l'arme pour le guerrier.</li>
         <li>On calcule ensuite la marge d'échec de la parade : c'est la différence entre le DDP et la valeur obtenue par la cible pour parer (ou son score de MAE/POU si elle n'a pas pu parer)</li>
         <li>Si la marge d'échec est inférieure stricte à 5, l'attaquant inflige les blessures à la cible, celle-ci perd autant de PV que de blessures subies.<br/><b>FIN DU COMBAT</b>.</li>
-        <li>Si la marge d'échec est supérieure ou égale à 5, l'attaque est un coup critique ! Certains coups critiques ayant des effets additionnels en fonction de la zone ciblée, l'attaquant lance <var>1D6</var> pour savoir quelle zone est touchée :
-        <ul style="list-style:none;">
+        <li>Si la marge d'échec est supérieure ou égale à 5, l'attaque est un coup critique ! Certains coups critiques ayant des effets additionnels en fonction de la zone ciblée, l'attaquant lance <var>1D6</var> pour savoir quelle zone est touchée :</li>
+        <ul style="list-style:none; margin-bottom: 14px;">
           <li>1. Tête</li>
           <li>2. Torse</li>
           <li>3. Abdomen</li>
           <li>4. Bras</li>
           <li>5. Jambes</li>
           <li>6. Pieds</li>
-        </ul></li>
+        </ul>
         <li>Appliquer l'effet du critique sur la cible (voir la sous-section Coups critiques) puis les blessures. La cible perd autant de PV que de blessures subies.<br/><b>FIN DU COMBAT</b>.</li>
       </ol>
 
@@ -142,6 +145,11 @@
       <p>À quasiment toutes les étapes d'un résolution de blessures, il est possible d'utiliser des manoeuvres : l'attaquant peut en utiliser pour améliorer sa visée ou pour renforcer son attaque et augmenter le DDP, la cible peut en utiliser pour parer et diminuer le DDP, etc. Voir la sous-section <a href="manoeuvres.html">Manoeuvres</a> et la sous-section <a href="./tactiques_avancees.html">Tactiques avancées</a> pour les découvrir.</p>
 
       <p>Si cela arrive, bien suivre la description des manoeuvres utilisées. Certains effets s'appliquent à la visée, d'autres lors du calcul du DDP ou lors du test de parade, d'autres encore lors de l'attribution des blessures.</p>
+
+      <p><strong>Très important : si un personnage souhaite utiliser une manoeuvre, il doit le dire AVANT d'effectuer un test. Il n'est pas possible de vouloir utiliser une manoeuvre <i>a posteriori</i> pour limiter les conséquences d'un jet désastreux.</strong></p>
+
+      <p class="desc">Yeoun, répondant aux provocations de son cousin, décide de l'attaquer avec son épée. Sa maestria [MAE 9, réserve 1] n'est vraiment pas son point fort. Elle tente quand même le coup et, manque de chance, obtient un 2 sur son jet. Au total, elle obtient un DDP de 11. Même un paysan sans éducation militaire serait apte à détourner son coup, alors son cousin rompu au combat...<br/>
+      Ayant déjà lancé ses dés, elle ne peut plus faire appel à la manoeuvre Frappe puissante (qui améliore le DDP en échange de PF). Il ne lui reste plus que deux choix : sacrifier son seul dé de réserve de MAE pour relancer son jet, et mettre fin à son tour par la même occasion, ou accepter d'être la risée de ses amis.</p>
 
       <h4>Fin du tour d'action</h4>
 

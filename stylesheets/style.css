@@ -29,7 +29,7 @@ nav a { display: block; padding: .4em 1em; }
 
 /* Couleurs (de fond, de police et de bordures) */
 /* Attention, les couleurs liées au titre principal dans l'ovale stylisé sont définies là-bas */
-body { background: #eadaca; font: #000; }
+body { background: #eadaca; color: #000; }
 a { text-decoration: none; color: #5f1e01; }
 a:hover, a:focus, a:active { color: #9e5f10; }
 aside { background: #eadaca url("parchment.jpg") repeat; padding: 10px; border: 1px solid #5f1e01; border-radius: 10px; }
@@ -48,6 +48,7 @@ h4 { color: #9e5f10; }
 h4::before, 
 h4::after { background: #9e5f10 no-repeat center bottom; }
 h4::after { background-image: linear-gradient(to right, #9e5f10, #eadaca); }
+p.desc { color: #5f1e01; }
 
 
 /* Polices spéciales, reset de tailles de police, graisse */
@@ -162,5 +163,6 @@ h4::after { flex: 1; margin-left: 5px; }
 ol > li { margin-bottom: 14px; }
 
 p.eg { font-style: italic; font-size: smaller; }
+p.desc { font-style: italic; margin-left: 30px; margin-right: 30px; }
 p.NdA { margin-left: 30px; }
 p.boxed { border: 1px solid currentColor; border-radius: 2%; padding: 5px; }
