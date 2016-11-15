@@ -70,7 +70,7 @@ h1, h2 { font-size: x-large; }
 h3, h4 { font-size: large; }
 h5 { font-size: inherit; margin-bottom: 0; }
 body > header > nav a { font-size: 16px; font-weight: normal; }
-@media (min-width: 1024px) { article:not(h3), article:not(h4) { font-size: 13px; } }
+@media (min-width: 1024px) { article:not(h3), article:not(h4), dl.boxed { font-size: 13px; } }
 
 
 
@@ -171,6 +171,7 @@ ol > li:last-child { margin-bottom: initial; }
 
 p.eg { font-style: italic; font-size: smaller; }
 p.desc { font-style: italic; margin-left: 30px; margin-right: 30px; }
+p.desc .source::before { content: "\2013  "; }
 p.NdA { margin-left: 30px; }
 .boxed { border: 1px solid currentColor; padding: 5px; }
 
@@ -184,7 +185,7 @@ dl dd { margin-left: 0; margin-bottom: 1em; }
 dl dt { font-weight: bold; }
 dl > div { display: flex; flex-wrap: nowrap; margin-bottom: 1ex; justify-content: flex-start; width: 100%;  }
 dl > div dd { flex: 1; margin-bottom: 0; }
-dl > div dt { flex: 0; margin-right: 3pt; }
+dl > div dt { flex: 0 1 none; margin-right: 3pt; }
 dl > div dd::before { content: "\2013  "; }
 
 table { border-collapse: collapse; width: 100%; }
@@ -205,3 +206,9 @@ table > caption { caption-side: bottom; }
 .t_aliments tr * { flex: 1 1 30%; }
 .t_aliments tr td:last-child,
 .t_aliments tr th:last-child { flex: 1 1 40%; }
+.t_consommables tr * { flex: 1 1 40%; }
+.t_consommables tr td:nth-child(2),
+.t_consommables tr th:nth-child(2) { flex: 1 1 20%; }
+.t_objets tr * { flex: 1 1 15%; }
+.t_objets tr td:first-child, .t_objets tr td:last-child,
+.t_objets tr th:first-child, .t_objets tr th:last-child { flex: 1 1 35%; }

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lyrium, le jeu de rôle</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <script src="voyage.js"></script>
+</head>
+<body>
+
+  <header>
+
+    <nav id="navigation">
+      <h1><a href="../index.html" attr-abbr="Lyrium">
+        <span>Lyrium, le jeu de rôle</span>
+      </a></h1>
+      <a href="../personnage/personnage.html">Le personnage</a>
+      <a href="../competences/competences.html">Compétences</a>
+      <a href="#">Voyager</a>
+      <a href="../lore/lore.html">Univers</a>
+      <a href="../magie/magie.html">Art de la magie</a>
+      <a href="../combat/combat.html">Art du combat</a>
+      <a href="../artisanat/artisanat.html">Artisanat</a>
+      <a href="../ressources/ressources.html">Ressources</a>
+    </nav>
+
+  </header>
+
+  <main class="wrapper">
+
+    <section class="content">
+      
+      <h2>Listes d'objets de voyage</h2>
+
+      <p><strong>Règle d'achat : pour chaque niveau de qualité au-dessus de moyen, le prix de l'objet est doublé !</strong></p>
+
+      <p class="desc">Il ne faudrait pas me prendre pour un pigeon !<br/><span class="source">Un marchand du Val</span></p>
+
+      <h3>Objets à usage unique</h3>
+
+      <p>Les aliments et les consommables sont des objet dont la solidité est négligeable, par exemple une ration de nourriture ou de l'huile pour une lampe a huile. Ces objets ne sont définis que par un poids et leur qualité n'a pas forcément d'effet supplémentaires. Ils possèdent un nombre d'utilisation limité, en fonction de la tache a accomplir, mais en général on considère que l'objet est consumé après son utilisation.</p>
+
+      <table class="t_50 t_aliments">
+        <tr><th>Aliment</th><th>poids</th><th>prix</th></tr>
+        <tr><td>viande</td><td>1 kg</td><td>10 - 30 pièces</td></tr>
+        <tr><td>légumes</td><td>1 kg</td><td>5 - 20 pièces</td></tr>
+        <tr><td>céréales</td><td>1 kg</td><td>5 - 20 pièces</td></tr>
+        <tr><td>pain</td><td>500 g</td><td>1 - 10 pièces</td></tr>
+        <tr><td>poisson</td><td>1 kg</td><td>10 - 30 pièces</td></tr>
+        <tr><td>alcool</td><td>1 chope</td><td>5 - 10 pièces</td></tr>
+        <tr><td>lait</td><td>1 L</td><td>1 - 10 pièces</td></tr>
+        <tr><td>fromage</td><td>1 kg</td><td>5 - 20 pièces</td></tr>
+        <tr><td>rations</td><td>500 g</td><td>10 - 20 pièces</td></tr>
+        <caption>Aliments fréquement trouvés dans les auberges de Lyrium. <a href="javascript:toggle('aliments')" class="alimentsLink">(afficher la description des aliments)</a></caption>
+      </table>
+
+      <dl class="aliments hidden boxed">
+        <div><dt>Viande</dt><dd>une pièce d'un animal d'élevage</dd></div>
+        <div><dt>Légumes</dt><dd>une botte de légumes comestibles</dd></div>
+        <div><dt>Céréales</dt><dd>un sac de grains qui doivent être transformés avant d'être comestibles</dd></div>
+        <div><dt>Pain</dt><dd>une grosse miche de pain, la base de l'alimentation du royaume de Val</dd></div>
+        <div><dt>Poisson</dt><dd>une pièce d'un gros poisson</dd></div>
+        <div><dt>Alcool</dt><dd>une portion définie d'une boisson, de préférence alcolisée mais aps seulement</dd></div>
+        <div><dt>Lait</dt><dd>un broc de lait frais</dd></div>
+        <div><dt>Fromage</dt><dd>une part de meule de fromages divers</dd></div>
+        <div><dt>Rations</dt><dd>un assortiment de viandes, fromages et pain pour le voyage</dd></div>
+      </dl>
+
+      <p></p>
+
+      <table class="t_50 t_consommables">
+        <tr><th>Consommable</th><th>poids</th><th>prix</th></tr>
+        <tr><td>huile</td><td>50 cL</td><td>10 - 20 pièces</td></tr>
+        <tr><td>plume</td><td>25 g</td><td>1 - 5 pièces</td></tr>
+        <tr><td>encre</td><td>25 cL</td><td>25 - 50 pièces</td></tr>
+        <tr><td>pierre d'arcane</td><td>50 g</td><td>100 - 250 pièces</td></tr>
+        <tr><td>potion de soin</td><td>12 cL</td><td>100 - 250 pièces</td></tr>
+        <tr><td>extrait d'énergie</td><td>12 cL</td><td>100 - 250 pièces</td></tr>
+        <tr><td>bougie</td><td>100 g</td><td>5 - 25 pièces</td></tr>
+        <tr><td>craie</td><td>50 g</td><td>1 - 10 pièces</td></tr>
+        <tr><td>torche</td><td>1 kg</td><td>5 - 10 pièces</td></tr>
+        <caption>Consommables faciles d'accès dans les boutiques de Lyrium. Comprend également les composants d'artisanat et les outils pour rituels. <a href="javascript:toggle('consommables')" class="consommablesLink">(afficher la description des consommables)</a></caption>
+      </table>
+
+      <dl class="consommables hidden boxed">
+        <div><dt>Huile</dt><dd>permet d'entretenir une lanterne a huile pendant 2 h, plus la qualité est élevée moins la fumée dégagée sera épaisse</dd></div>
+        <div><dt>Plume</dt><dd>permet d'écrire sur des parchemins, il en faut souvent plusieurs dizaines pour écrire un livre</dd></div>
+        <div><dt>Encre</dt><dd>permet d'écrire sur un support, 25 cl permettent d'écrire sur une dizaine de parchemins ou pour un rituel</dd></div>
+        <div><dt>Pierre d'arcane</dt><dd>permet de retrouver des points de fatigue mentale en se consumant, le montant rendu est égal a sa qualité (+10 par qualité au dessus de cassé)</dd></div>
+        <div><dt>Potion de soin</dt><dd>permet de retrouver des points de vie en s'ingérant, le montant rendu est égal a sa qualité (+10 par qualité au dessus de cassé)</dd></div>
+        <div><dt>Extrait d'énergie</dt><dd>permet de retrouver des points de fatigue en s'ingérant, le montant rendue est égal a sa qualité (+10 par qualité au dessus de cassé)</dd></div>
+        <div><dt>Bougie</dt><dd>principale façon de s'éclairer dans les chaumières, permet d'éclairer pendant 4 h (sur une zone d'environ 4 m), peut servir pour un rituel</dd></div>
+        <div><dt>Craie</dt><dd>principalement utilisé par les mages pour leurs rituels, on s'en sert également pour écrire sur les ardoises dans les commerces</dd></div>
+        <div><dt>Torche</dt><dd>principale façon de s'éclairer en aventure, permet d'éclairer pendant 4 h (sur une zone de 12 m)</dd></div>
+      </dl>
+
+      <h3>Les objets communs</h3>
+
+      <p>Les objets communs sont des objets utilisés dans la vie de tous les jours, ils sont plus chers que les consommables mais ils sont utilisables plus longtemps. L'usure des objets communs suit la règle suivante, ils perdent un point s'ils sont utilisés de manière intensives.</p>
+
+      <table class="t_75 t_objets">
+        <tr><th>Objet</th><th>solidité</th><th>poids</th><th>prix</th></tr>
+        <tr><td>corde</td><td>10</td><td>200 g/m</td><td>5 - 10 pièces/m</td></tr>
+        <tr><td>grappin</td><td>15</td><td>2,5 kg</td><td>50 - 75 pièces/m</td></tr>
+        <tr><td>fiole</td><td>3</td><td>500 g</td><td>10 - 20 pièces/m</td></tr>
+        <tr><td>gourde</td><td>5</td><td>1 kg</td><td>10 - 20 pièces/m</td></tr>
+        <tr><td>sac à dos</td><td>10</td><td>1 kg</td><td>50 - 100 pièces/m</td></tr>
+        <tr><td>sac sans fond</td><td>25</td><td>500 g</td><td>1k - 2,5k pièces/m</td></tr>
+        <tr><td>petite tente</td><td>20</td><td>2,5 kg</td><td>10 - 50 pièces/m</td></tr>
+        <tr><td>grande tente</td><td>30</td><td>10 kg</td><td>50 - 150 pièces/m</td></tr>
+        <tr><td>pavillon</td><td>40</td><td>50 kg</td><td>150 - 1k pièces/m</td></tr>
+        <tr><td>livre vierge</td><td>10</td><td>2,5 kg</td><td>100 - 250 pièces/m</td></tr>
+        <tr><td>lanterne</td><td>10</td><td>500 g</td><td>10 - 25 pièces/m</td></tr>
+        <tr><td>trousse de forge</td><td>25</td><td>5 kg</td><td>50 - 100 pièces/m</td></tr>
+        <tr><td>trousse de crochetage</td><td>20</td><td>1 kg</td><td>50 - 100 pièces/m</td></tr>
+        <tr><td>trousse de soins</td><td>15</td><td>2,5 kg</td><td>50 - 100 pièces/m</td></tr>
+        <caption>Objets achetables dans les boutiques de Lyrium. Les objets les plus chers ne sont trouvables que dnas les capitales. <a href="javascript:toggle('objets')" class="objetsLink">(afficher la description des objets)</a></caption>
+      </table>
+
+      <dl class="objets hidden boxed">
+        <div><dt>Corde</dt><dd>une corde solide qui permet de multiples usages, peut supporter un poids de 150 kg avant d’être utilisé de manière intensive</dd></div>
+        <div><dt>Grappin</dt><dd>une tête de fer qui se fixe sur une corde pour grimper, nécessite un jet d’habileté manuel en fonction de la situation</dd></div>
+        <div><dt>Fiole</dt><dd>un petit récipient en terre ou en verre, refermable, qui peut contenir un liquide, se brise si lancé au sol (poids indiqué à vide)</dd></div>
+        <div><dt>Gourde</dt><dd>une Poche en peau qui peut contenir du liquide, principalement des liquides potables (poids indiqué à vide)</dd></div>
+        <div><dt>Sac a dos</dt><dd>un grand sac en cuir étudié pour le voyage (poids indiqué à vide)</dd></div>
+        <div><dt>Sac sans fond</dt><dd>une petite sacoche enchantée, très prisée par les aventuriers, tout ce qui peut rentrer dans le sac est conservé sans tenir compte du poids</dd></div>
+        <div><dt>Petite tente</dt><dd>une petite tente une place, il faut 30 minutes pour la monter</dd></div>
+        <div><dt>Grande tente</dt><dd>une tente de taille moyenne qui permet de faire dormir jusqu’à 4 personnes</dd></div>
+        <div><dt>Pavillon</dt><dd>un petit chapiteau, permet d'abriter jusqu’à 10 personnes, très utilisé en campagne militaire</dd></div>
+        <div><dt>Livre vierge</dt><dd>un livre dont toutes les pages sont vierges, prêt a être remplis</dd></div>
+        <div><dt>Lanterne</dt><dd>une lanterne qui permet d'éclairer les environs sans éblouir son porteur, éclaire pendant 2 h dans un cône de 8 m devant le porteur (poids indiqué à vide)</dd></div>
+        <div><dt>Trousse de forge</dt><dd>petite trousse de voyage qui permet l'entretient des armes et des armures (donne un bonus de +2 aux tests de réparations)</dd></div>
+        <div><dt>Trousse de crochetage</dt><dd>petite sacoche qui contient tout le matériel pour crocheter les mécanismes, indispensable pour crocheter</dd></div>
+        <div><dt>Trousse de soins</dt><dd>petite trousse de voyage qui contient le matériel nécessaire pour effectuer les premiers soins, son utilisation permet au blessé de reprendre conscience et de passer a 0 PV s'ils étaient négatifs</dd></div>
+      </dl>
+
+      <h3>Équipement</h3>
+
+      <p class="ndA">Cette section est vide pour le moment.</p>
+ 
+    </section>
+
+    <aside>
+      <script src="../inc_Lyrium.js"></script>
+      <script src="inc_aside.js"></script>
+    </aside>
+
+  </main>
+
+  <footer>
+    <script src="../inc_footer.js"></script>
+  </footer>
+
+</body>
+</html>
