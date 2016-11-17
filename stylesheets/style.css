@@ -153,6 +153,7 @@ aside > nav > a {
   transition: background-size .25; 
 }
 aside h2 { text-align: center; }
+aside p.eg { margin-top: 0; }
 
 .centered { text-align: center; }
 
