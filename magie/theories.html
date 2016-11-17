@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lyrium, le jeu de rôle</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+
+  <header>
+
+    <nav id="navigation">
+      <h1><a href="../index.html" attr-abbr="Lyrium">
+        <span>Lyrium, le jeu de rôle</span>
+      </a></h1>
+      <a href="../personnage/personnage.html">Le personnage</a>
+      <a href="../competences/competences.html">Compétences</a>
+      <a href="../voyage/voyage.html">Voyager</a>
+      <a href="../lore/lore.html">Univers</a>
+      <a href="#">Art de la magie</a>
+      <a href="../combat/combat.html">Art du combat</a>
+      <a href="../artisanat/artisanat.html">Artisanat</a>
+      <a href="../ressources/ressources.html">Ressources</a>
+    </nav>
+
+  </header>
+
+  <main class="wrapper">
+
+    <section class="content">
+
+      <h2>Théorie : dissection d'un sort</h3>
+
+      <p>Un sort, ce n'est pas seulement la volonté d'un individu qui matérialise la magie de Lyrium. Il y a toute une théorie derrière que tout lanceur de sort se doit de connaitre. Cette section couvre deux aspects du lancement d'un sort : les media (ou comment le lanceur de sort canalise la magie pour la matérialiser) et la classification des sorts (parce que certains types de sorts reposent sur des principes avancés pour être lancés à leur plein potentiel).</p>
+
+      <p class="NdA">Tout ce qui est expliqué ici ne s'applique pas à l'art de la convocation. Cet art exquis est tellement complexe qu'il a droit à sa page dédiée.</p>
+
+      <h3>Théorie des media</h3>
+
+      <p>La première chose à assimiler concernant le lancement de sorts, c'est que la magie se manifeste différemment selon le sous-domaine auquel elle est rattachée. Ce principe est plus facile à appréhender en étidiant la magie offensive : les blessures sont classées selon six modes, trois modes physiques (perçant, contondant et tranchant) et trois modes d'énergie (gel, chaleur et un mode d'énergie pure). Le mode quant à lui définit le vecteur par lequel le lanceur de sort va matérialiser sa magie. On appelle ce vecteur un medium (media au pluriel).</p>
+
+      <p>Sachant que les modes physiques excluent tout vecteur de magie qui ne serait pas tangible, sachant que certains media ont la particularité d'être intangibles, cela implique donc que les lanceurs de sorts ont un éventail de media limités pour lancer les sorts des sous-domaines liés à un mode physique. Sachant de plus que la connaissance, par essence, est le seul sous-domaine qui ne peut pas être utilisé pour infliger des blessures, il en résulte que certains media ne sont d'aucune utilité pour matérialiser la magie de la connaissance.</p>
+
+      <h4>Contraintes imposées par le sous-domaine</h4>
+
+      <p>Une fois la théorie assimilée, tout lanceur digne de ce nom qui souhaite inventer un nouveau sort l'oublie bien vite et se contente de se référer au tableau suivant.</p>
+
+      <table class="t_domaine_mode_medium">
+        <tr><th>Sous-domaine</th><th>Mode</th><th>Medium compatible</th></tr>
+        <tr><td>minéral et végétal (Terre), glace* et liquide (Eau), vent (Air)</td><td>physique (perforant, contondant ou tranchant)</td><td>projectile, zone d'effet et contact</td></tr>
+        <tr><td>chaleur (Feu), vapeur (Eau), foudre (Air)</td><td>chaleur</td><td>tous les media</td></tr>
+        <tr><td>glace* (Eau) et gravité (Dimensions)</td><td>gel</td><td>tous les media</td></tr>
+        <tr><td>vie (Terre), esprit/nécromancie (Feu), arcane, hasard et inconnu (Arcane), temps et espace (Dimensions)</td><td>énergie</td><td>tous les media</td></tr>
+        <tr><td>connaissance (Air)</td><td>aucun mode d'attaque</td><td>zone d'effet, contact et attaque mentale</td></tr>
+        <caption>Relations entre sous-domaine (domaine rattaché), mode d'attaque et media compatibles.<br/>* La glace dispose de deux modes.</caption>
+      </table>
+
+      <p>Note : les modes ont une autre utilité, en dehors de lier un sous-domaine à un panel de media plus ou moins réduits. En combat, selon la gravité des blessures, un coup critique peut être appliqué. Les effets du coup critique sont directement lié au mode, qu'on appelle pour cette raison mode d'attaque. En temps normal les lanceurs de sorts se préoccupent peu de ces considérations mais les mages de glace seraient bien avisés de garder cela en tête.</p>
+
+      <h4>Avantages et inconvénients des media</h4>
+
+      <p>Quelques informations et rappels préalables.</p>
+
+      <p>Quel que soit le médium utilisé, les sorts ont un coût en fatigue mentale (PM) et un degré de difficulté (DDS) proportionnels à leur efficacité générale. Cette efficacité est mesurée en intensités. Certains media permettent de canaliser la magie plus facilement, rendant la création de sorts plus facile. Cela se traduit par une diminution du DDS (et du coût en PM) tout en conservant la même efficacité en intensités !</p>
+
+      <p>La description des media ci-dessous est adaptée aux sorts à cible unique (à l'exception notable de la zone d'effet). Dans le cas où le lanceur de sorts souhaite affecter plusieurs cibles, le processus consiste à lancer des copies du sort simultanément, chaque copie ayant une cible distincte. Le coût en intensités du sort est multiplié par le nombre de copies du sort. Cependant, il existe une exception notable : le sort lancé par le médium projectile.</p>
+
+      <h5>Projectile</h5>
+      <p>Lancer un sort sous forme de projectile est sans doute la façon la plus facile à appréhender pour tout lanceur de sort. Un objet physique de taille variable est projeté vers une cible et applique l’effet du sort.</p>
+      <p class="desc">Donc un projectile est un objet physique... Ça ressemble à quoi un objet physique de temps ?<br/><span class="source">Yeoun, du haut de ses six ans</span></p>
+
+      <p>En tant qu'attaque multiple, le projectile a un comportement un peu particulier. Il est très facile d'en faire de multiples copies pour un coût en intensités faible : <b>4 It par copie du projectile</b>, quel que soit la valeur en intensités du sort initial. De plus, les copies peuvent partager la même cible.</p>
+      <p>Du fait d'être un objet tangible, le projectile a une autre propriété amusante : une fois qu'il a atteint sa cible, <b>le projectile peut ricocher</b> sur une autre cible ! En théorie, une copie du sort est générée lorsque le projectile atteint sa cible et c'est cette copie qui va se diriger vers la cible suivante. Chaque rebond augmente donc le coût du sort de <var>4</var> It. En pratique le projectile donne vraiment l'impression de rebondir d'une cible à l'autre.</p>
+
+      <h5>Rayon</h5>
+      <p>Sous cette forme, le sort prend l'apparence d'un... rayon qui part du lanceur de sort et qui va jusqu'à sa cible. Les mages les plus imaginatifs sont capables de produire de magnifiques effets pyrotechniques avec ce médium : arcs électriques, trainées de particules lumineuses, arcs-en-ciel etc.</p>
+      <p class="desc">Wahou !<br/><span class="source">Sam, à un concert de rock de Ramez Stan</span></p>
+
+      <p>Le rayon étant un vecteur d'énergie pure, c'est un médium à double tranchant. Moins facile à appréhender qu'un projectile mais plus facile à lancer, il fait bénéficier le sort d'une <b>réduction du DDS de 2 <var>points</var></b>. Or, le rayon est également une des media les plus faciles à contrer. Il peut même être réfléchi et renvoyé au lanceur ou à ses alliés.</p>
+
+      <h5>Zone d’effet</h5>
+      <p>Lorsque un sort est lancé avec une zone d’effet il affecte tous ceux qui se trouve a l'intérieur de cette zone. Si un personnage est de taille au dessus de Moyenne alors il subira des dommages supplémentaires, multiplié par le nombre de catégorie de tailles au dessus de moyenne. les zones d’effets sont de formes variables, on peut avoir par exemple des rectangles, des cercles, des cônes … etc.</p>
+
+      <h5>Attaque mentale</h5>
+      <p>L’attaque mentale est un médium qui permet au lanceur d'être discret. Un jet de Deviner sort est requis avant de se protéger contre une attaque mentale mais utiliser la manoeuvre bouclier mental ne requiert pas de deviner le sort.</p>
+      <p>Avant que j'oublie : il est possible d'associer un effet visuel à une attaque mentale (comme envoyer un buff à un allié sous forme d'un petit oiseau). À la différence du projectile cependant, qui est réel, l'effet visuel est intangible.</p>
+
+      <h5>Au contact</h5>
+      <p>Le contact est la manière la plus simple mais aussi la plus risquée de lancer des sorts, il faut que le personnage soit au contact de sa cible pour lancer le sort. Un sort au contact bénéficie d’un bonus de +2 pour être lancé.</p>
+      
+    </section>
+
+    <aside>
+      <script src="../inc_Lyrium.js"></script>
+      <script src="inc_aside.js"></script>
+    </aside>
+
+  </main>
+
+  <footer>
+    <script src="../inc_footer.js"></script>
+  </footer>
+
+</body>
+</html>
