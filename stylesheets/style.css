@@ -133,7 +133,7 @@ body > header > nav > a {
 .miniature { flex: 1; text-align: center; }
 
 /* Articles */
-.container { display: flex; flex: 1 1 auto; flex-wrap: wrap; align-items: stretch; justify-content: space-between; }
+.container { display: flex; flex: 1 1 auto; flex-wrap: wrap; align-items: stretch; justify-content: space-between; margin-top: -1em; }
 .container > article { flex: 0 1 48%; }
 .container.triple > article { flex: 0 1 30%; }
 @media (max-width: 1025px) { .container > article { flex: 1 0 100%; } }
