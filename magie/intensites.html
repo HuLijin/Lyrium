@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lyrium, le jeu de rôle</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <script src="magie.js"></script>
+</head>
+<body>
+
+  <header>
+
+    <nav id="navigation">
+      <h1><a href="../index.html" attr-abbr="Lyrium">
+        <span>Lyrium, le jeu de rôle</span>
+      </a></h1>
+      <a href="../personnage/personnage.html">Le personnage</a>
+      <a href="../competences/competences.html">Compétences</a>
+      <a href="../voyage/voyage.html">Voyager</a>
+      <a href="../lore/lore.html">Univers</a>
+      <a href="#">Art de la magie</a>
+      <a href="../combat/combat.html">Art du combat</a>
+      <a href="../artisanat/artisanat.html">Artisanat</a>
+      <a href="../ressources/ressources.html">Ressources</a>
+    </nav>
+
+  </header>
+
+  <main class="wrapper">
+
+    <section class="content">
+      
+      <h2>L'intensité : unité de mesure de la puissance d'un sort</h2>
+
+      <h3>Définition</h3>
+
+      <p class="NdA">Toute cette section risque de rester bien avare en commentaires un long moment</p>
+
+      <p>Les <a href="#communes"><strong>échelles d'intensité communes</strong></a> sont celles qui sont le plus souvent utilisées pour les sorts de divination et les sorts d'évocation basiques. Les <strong>échelles d'intensité peu communes</strong> sont utilisées majoritairement par les sorts de transformation et les sorts d'évocation plus évolués. Enfin, les <strong>échelles d'intensité spécifiques</strong> sont réservées aux sorts de manipulation et aux sorts d'évocation causant un changement de température.</p>
+
+      <p>Une quatrième catégorie est dédiée aux sorts du domaine des Dimensions : les <strong>échelles d'intensité des Dimensions</strong>. Seuls les mages de haut niveau (dont l'intelligence est au moins égale à 8) sont capables de lancer de tels sorts et prendront la peine de se renseigner sur ces échelles très particulières.</p>
+
+      <h3 id="communes">Échelles d'intensités communes</h3>
+      <h4>Récapitulatif</h4>
+
+      <table class="t_it1 t_smallfont">
+        <tr><th>Intensité</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th></tr>
+        <tr><th>Dégâts 1D4</th><td>1 dé</td><td> </td><td>2 dés</td><td> </td><td>3 dés</td><td> </td><td> </td><td>4 dés</td></tr>
+        <tr><th>Dégâts 1D6</th><td> </td><td>1 dé</td><td> </td><td> </td><td>2 dés</td><td> </td><td> </td><td>3 dés</td></tr>
+        <tr><th>Dégâts 1D8</th><td> </td><td>1 dé</td><td> </td><td> </td><td>2 dés</td><td> </td><td> </td><td>3 dés</td></tr>
+        <tr><th>Dégâts 1D10</th><td> </td><td> </td><td>1 dé</td><td> </td><td> </td><td>2 dés</td><td> </td><td> </td></tr>
+        <tr><th>Dégâts 1D12</th><td> </td><td> </td><td>1 dé</td><td> </td><td> </td><td>2 dés</td><td> </td><td> </td></tr>
+        <tr><th>Portée</th><td>4 m</td><td>8 m</td><td>12 m</td><td>16 m</td><td>20 m</td><td>24 m</td><td>28 m</td><td>32 m</td></tr>
+        <tr><th>Zone d'effet</th><td>2 m</td><td>4 m</td><td>6 m</td><td>8 m</td><td>10 m</td><td>12 m</td><td>14 m</td><td>16 m</td></tr>
+        <tr><th>Cible suppl.</th><td> </td><td> </td><td> </td><td>1</td><td> </td><td> </td><td> </td><td>2</td></tr>
+      </table>
+
+      <p><a href="javascript:toggleTable()" class="tablePlusLink">Afficher les intensités suivantes (9 à 16)</a></p>
+
+      <table class="t_it1 t_smallfont tablePlus hidden">
+        <tr><th>Intensité</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th></tr>
+        <tr><th>Dégâts 1D4</th><td> </td><td> </td><td>5 dés</td><td> </td><td> </td><td> </td><td>6 dés</td><td> </td></tr>
+        <tr><th>Dégâts 1D6</th><td> </td><td> </td><td> </td><td>4 dés</td><td> </td><td> </td><td> </td><td>5 dés</td></tr>
+        <tr><th>Dégâts 1D8</th><td> </td><td> </td><td> </td><td>4 dés</td><td> </td><td> </td><td> </td><td>5 dés</td></tr>
+        <tr><th>Dégâts 1D10</th><td> </td><td> </td><td>3 dés</td><td> </td><td> </td><td> </td><td> </td><td>4 dés</td></tr>
+        <tr><th>Dégâts 1D12</th><td> </td><td> </td><td>3 dés</td><td> </td><td> </td><td> </td><td> </td><td>4 dés</td></tr>
+        <tr><th>Portée</th><td>36 m</td><td>40 m</td><td>44 m</td><td>48 m</td><td>52 m</td><td>56 m</td><td>60 m</td><td>64 m</td></tr>
+        <tr><th>Zone d'effet</th><td>18 m</td><td>20 m</td><td>22 m</td><td>24 m</td><td>26 m</td><td>28 m</td><td>30 m</td><td>32 m</td></tr>
+        <tr><th>Cible suppl.</th><td> </td><td> </td><td> </td><td>3</td><td> </td><td> </td><td> </td><td>4</td></tr>
+      </table>
+
+      <h4>Description des échelles communes</h4>
+
+      <h5>Echelle d'intensités de dégâts</h5>
+
+      <p>Cette échelle est utilisée pour les sorts d'évocation qui infligent, préviennent ou guérissent les blessures (donc des sorts d'attaque, des boucliers et des soins). C'est l'une des échelles les plus complexes :</p>
+      <ul>
+        <li>L'amplitude des dégâts dépend de l'intelligence du lanceur de sort.</li>
+        <li>Le coût en intensité dépend de l'amplitude des dégâts</li>
+        <li>Le coût en intensité augmente de manière exponentielle avec l'amplitude des dégâts</li>
+      </ul>
+
+      <p>Il en résulte les règles suivantes : (et pour ceux qui ne veulent pas les retenir, il suffit de se référer au tableau récapitulatif)</p>
+      <ol>
+        <li>Lien entre intelligence et amplitude :
+          <ul>
+            <li>Intelligence de 4 ou moins &rarr; 1D4 dégâts</li>
+            <li>Intelligence de 5 &rarr; 1D4 ou 1D6 dégâts au choix</li>
+            <li>Intelligence de 6 &rarr; 1D4, 1D6 ou 1D8 dégâts au choix</li>
+            <li>Intelligence de 7 &rarr; 1D4, 1D6, 1D8 ou 1D10 de dégâts au choix</li>
+            <li>Intelligence de 8 ou plus &rarr; 1D4 à 1D12 au choix</li>
+          </ul>
+        </li>
+        <li>Les dés ont un coût converti en Intensité :
+          <ul>
+            <li>1D4 &rarr; le premier dé coûte 1 It</li>
+            <li>1D6 et 1D8 &rarr; le premier dé coûte 2 It</li>
+            <li>1D10 et 1D12 &rarr; le premier dé coûte 3 It</li>
+          </ul>
+        </li>
+        <li>Les dés suivants voient leur coût augmenter selon la règle :
+          <ul>
+            <li>2<sup>è</sup>, 4<sup>è</sup>, 6<sup>è</sup> etc dé (numéro pair) : coût du dé précédent + 1 It</li>
+            <li>3<sup>è</sup>, 5<sup>è</sup>, 7<sup>è</sup> etc dé (numéro impair) : coût du dé précédent</li>
+          </ul>
+        </li>
+      </ol>
+
+      <p class="desc">Exemple : Yeoun, qui est une lanceuse de sort plutôt intelligente (Int 7), souhaite invoquer un projectile de glace pour infliger des blessures à un ennemi. Elle choisit de calibrer ses dégâts à 2D4 + 2D8. Le coût converti en intensités est de 1+2 It pour 2D4 et 2+3 It pour 2D8, soit 8 It au total et une amplitude de 4 à 24 dégâts.</p>
+      <p class="desc">Elle aurait pu choisir 3D8 pour un coût de 2+3+3 = 8 It également, pour une amplitude de 3 à 24 dégâts, ou encore 1D10 et 3D4, toujours pour un coût de 3+(1+2+2) = 8 It et une amplitude de 4 à 22 dégâts. Il existe une petite différence d'amplitude entre ces trois choix, négligeable certes, mais il serait inacceptable pour Yeoun de laisser passer ce genre de petits détails !</p>
+
+      <p>Oui, lancer des sorts d'évocation peut relever du véritable casse-tête mathématique pour les adeptes de l'optimisation. C'est pourquoi le site dispose d'un <a href="./calculateur_intensites.html"><strong>calculateur d'intensités</strong></a> pour trouver plus facilement la bonne combinaison.</p>
+
+      <p>Enfin, le terme "dégâts" n'est pas anodin : les dégâts peuvent tout aussi bien être des blessures physiques (qui diminuent les PV) que des sources d'épuisement (qui diminuent les PM ou les PF). Les sorts d'évocation peuvent également être défensifs, auquel cas les "dégâts" correspondent à la quantité de PV, de PM ou de PF prévenus ou restaurés.</p>
+      <p>Un sort d'évocation peut parfaitement diminuer deux types de ressources, ou les trois à la fois, ou les restaurer deux, ou en diminuer tout en en restaurant d'autres. En revanche, le décompte du coût en intensité n'est pas partagé par les trois ressources. Chaque ressource modifiée a son propre jet de dégâts et doit donc avoir son propre décompte.</p>
+
+      <p class="desc">Exemple : Kylo a découvert comment optimiser son sort de furie pour lui permettre de restaurer des PV en plus du gain de PF que procure habituellement le sort. Voulant l'utiliser sur lui et voulant le calibrer à 4 It, il choisit de restaurer 1D4 PV et 1d4+1d6 PF. Le coût total en intensité est bien de de 1 It pour les PV et 1+2 It pour les PF, soit 4 It. Lors du lancement du sort, il obtient 2 et 1+5 sur ses jets, il récupère donc 4 PV et 6 PF.</p>
+
+      <p><b>Cas particulier des sorts d'absorbtion</b> (tout sort qui inflige des dégâts qui vont ensuite être absorbés par le lanceur de sort ou un allié) : il ne faut compter les dégâts qu'une seule fois. Partant du postulat que la quantité de dégâts absorbés est la même que la quantité de dégâts infligés, les théoriciens ont prouvé qu'il n'est pas nécessaire de compter les intensités une première fois pour la blessure puis une deuxième fois pour l'absorbtion.</p>
+
+      <h3>Échelles d'intensités peu communes</h3>
+
+      <h4>Récapitulatif</h4>
+
+      <h4>Description des échelles peu communes</h4>
+
+      <h3>Échelles d'intensités spécifiques</h3>
+
+      <h4>Récapitulatif</h4>
+
+      <h4>Description des échelles spécifiques</h4>
+
+      
+
+    </section>
+
+    <aside>
+      <script src="../inc_Lyrium.js"></script>
+      <script src="inc_aside.js"></script>
+    </aside>
+
+  </main>
+
+  <footer>
+    <script src="../inc_footer.js"></script>
+  </footer>
+
+</body>
+</html>

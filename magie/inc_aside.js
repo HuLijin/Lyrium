@@ -9,7 +9,7 @@ document.write("<h3>Création de sorts</h3>");
 document.write("<nav class='menu'>");
 document.write("<a href='./theories.html'>Dissection d'un sort</a>");
 document.write("<p class='eg'>Où l'on apprend tout de la théorie des media et des différentes classes de sorts.</p>");
-document.write("<a href='#'>L'intensité d'un sort</a>");
+document.write("<a href='./intensites.html'>L'intensité d'un sort</a>");
 document.write("<p class='eg'>Où l'on peut trouver les différentes échelles d'intensité qui existent.</p>");
 document.write("<a href='./calculateur_intensites.html'>Calculateur d'intensités</a>");
 document.write("<p class='eg'>Parce que c'est rudement plus pratique d'estimer rapidement le coût d'un sort sur un champ de bataille.</p>");

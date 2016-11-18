@@ -71,6 +71,7 @@ h3, h4 { font-size: large; }
 h5 { font-size: inherit; margin-bottom: 0; }
 body > header > nav a { font-size: 16px; font-weight: normal; }
 @media (min-width: 1024px) { article:not(h3), article:not(h4), dl.boxed { font-size: 13px; } }
+@media (max-width: 768px) { .t_smallfont { font-size: 13px; } }
 
 
 
@@ -213,3 +214,5 @@ table > caption { caption-side: bottom; }
 .t_objets tr * { flex: 1 1 15%; }
 .t_objets tr td:first-child, .t_objets tr td:last-child,
 .t_objets tr th:first-child, .t_objets tr th:last-child { flex: 1 1 35%; }
+.t_it1 tr * { flex: 1 1 10%; text-align: center; }
+.t_it1 tr th:first-child { flex: 1 1 20%; }

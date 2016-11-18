@@ -12,6 +12,20 @@ function toggle(name){
     }
 }
 
+function toggleTable(){
+    var elt = document.getElementsByClassName("tablePlus");
+    var elt2 = document.getElementsByClassName("tablePlusLink");
+    for (var i = 0; i < elt.length; i++) {
+        if (elt[i].className == "t_it1 t_smallfont tablePlus hidden") { 
+            elt[i].className = "t_it1 t_smallfont tablePlus"; 
+            elt2[0].innerHTML = "Cacher les intensités suivantes (9 à 16)";
+        } else { 
+            elt[i].className = "t_it1 t_smallfont tablePlus hidden"; 
+            elt2[0].innerHTML = "Afficher les intensités suivantes (9 à 16)";
+        }
+    }
+}
+
 function calculateDice() {
     var dice = parseInt(document.calculateur.dice.value);
     
