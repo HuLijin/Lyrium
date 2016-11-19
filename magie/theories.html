@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lyrium, le jeu de rôle</title>
   <link rel="stylesheet" href="../stylesheets/style.css">
+  <script src="magie.js"></script>
 </head>
 <body>
 
@@ -77,7 +78,14 @@
       <p>Sous cette forme, le sort prend l'apparence d'un... rayon qui part du lanceur de sort et qui va jusqu'à sa cible. Les mages les plus imaginatifs sont capables de produire de magnifiques effets pyrotechniques avec ce médium : arcs électriques, trainées de particules lumineuses, arcs-en-ciel etc.</p>
       <p class="desc">Wahou !<br/><span class="source">Sam, à un concert de rock de Ramez Stan</span></p>
 
-      <p>Le rayon étant un vecteur d'énergie pure, c'est un médium à double tranchant. Moins facile à appréhender qu'un projectile mais plus facile à lancer, il fait bénéficier le sort d'une <b>réduction du DDS de 2 <var>points</var></b>. Or, le rayon est également une des media les plus faciles à contrer. Il peut même être réfléchi et renvoyé au lanceur ou à ses alliés.</p>
+      <p>Le rayon étant un vecteur d'énergie pure, c'est un médium à double tranchant. Moins facile à appréhender qu'un projectile mais plus facile à lancer, il fait bénéficier le sort d'une <b>réduction du DDS de <var>2</var> points</b>. Or, le rayon est également une des media les plus faciles à contrer. Il peut même être réfléchi et renvoyé au lanceur ou à ses alliés (voir la manoeuvre <b>Parade de Rayons</b> pour plus de détails).</p>
+
+      <p class="opt">Règle optionnelle : <strong>chaine d'éclairs</strong>. <a href="javascript:toggle('chaineEclair')" class="chaineEclairLink">(afficher)</a></p>
+      <div class="chaineEclair hidden">
+        <p class="opt">Le lanceur de sorts peut choisir de perdre le bonus de réduction de DDS et d'ajouter au rayon la capacité de se diviser en deux après avoir atteint sa cible. Si le rayon n'est pas renvoyé, les deux personnes les plus proches de la cible sont également affectées par le sort. Le coût en intensités du sort reste inchangé. Attention à ne pas toucher accidentellement un combattant allié !</p>
+        <p class="opt">La chaine d'éclair est réservée aux sorts infligeant des blessures (réduction de PV) uniquement.</p>
+        <p class="opt">La mécanique de renvoi d'une chaine d'éclair est potentiellement contre-intuitif : si la cible initiale parvient à renvoyer le rayon, celui-ci ne se divise pas, peu importe ce qu'il touche ensuite. Si elle n'y parvient pas, les deux cibles secondaires peuvent tenter de renvoyer le rayon qui les atteint vers le lanceur initial.</p>
+      </div>
 
       <p class="NdA">À partir d'ici, il faut reformuler jusqu'à la fin de la section.</p>
 
