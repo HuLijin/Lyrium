@@ -72,16 +72,19 @@
 
       <h4>Description des échelles communes</h4>
 
-      <h5>Echelle d'intensités de dégâts</h5>
+      <h5>Echelle d'intensités de dégâts <a href="javascript:toggle('degats',' les règles complètes')" class="degatsLink">(afficher les règles complètes)</a></h5>
 
-      <p>Cette échelle est utilisée pour les sorts d'évocation qui infligent, préviennent ou guérissent les blessures (donc des sorts d'attaque, des boucliers et des soins). C'est l'une des échelles les plus complexes :</p>
-      <ul>
-        <li>L'amplitude des dégâts dépend de l'intelligence du lanceur de sort.</li>
-        <li>Le coût en intensité dépend de l'amplitude des dégâts</li>
-        <li>Le coût en intensité augmente de manière exponentielle avec l'amplitude des dégâts</li>
-      </ul>
+      <div class="degats hidden">
+        <p>Cette échelle est utilisée pour les sorts d'évocation qui infligent, préviennent ou guérissent les blessures (donc des sorts d'attaque, des boucliers et des soins). C'est l'une des échelles les plus complexes :</p>
+        <ul>
+          <li>L'amplitude des dégâts dépend de l'intelligence du lanceur de sort.</li>
+          <li>Le coût en intensité dépend de l'amplitude des dégâts</li>
+          <li>Le coût en intensité augmente de manière exponentielle avec l'amplitude des dégâts</li>
+        </ul>
 
-      <p>Il en résulte les règles suivantes : (et pour ceux qui ne veulent pas les retenir, il suffit de se référer au tableau récapitulatif)</p>
+        <p>Il en résulte les règles suivantes : (et pour ceux qui ne veulent pas les retenir, il suffit de se référer au tableau récapitulatif)</p>
+      </div>
+
       <ol>
         <li>Lien entre intelligence et amplitude :
           <ul>
@@ -107,17 +110,41 @@
         </li>
       </ol>
 
-      <p class="desc">Exemple : Yeoun, qui est une lanceuse de sort plutôt intelligente (Int 7), souhaite invoquer un projectile de glace pour infliger des blessures à un ennemi. Elle choisit de calibrer ses dégâts à 2D4 + 2D8. Le coût converti en intensités est de 1+2 It pour 2D4 et 2+3 It pour 2D8, soit 8 It au total et une amplitude de 4 à 24 dégâts.</p>
-      <p class="desc">Elle aurait pu choisir 3D8 pour un coût de 2+3+3 = 8 It également, pour une amplitude de 3 à 24 dégâts, ou encore 1D10 et 3D4, toujours pour un coût de 3+(1+2+2) = 8 It et une amplitude de 4 à 22 dégâts. Il existe une petite différence d'amplitude entre ces trois choix, négligeable certes, mais il serait inacceptable pour Yeoun de laisser passer ce genre de petits détails !</p>
+      <div class="degats hidden">
+        <p class="desc">Exemple : Yeoun, qui est une lanceuse de sort plutôt intelligente (Int 7), souhaite invoquer un projectile de glace pour infliger des blessures à un ennemi. Elle choisit de calibrer ses dégâts à 2D4 + 2D8. Le coût converti en intensités est de 1+2 It pour 2D4 et 2+3 It pour 2D8, soit 8 It au total et une amplitude de 4 à 24 dégâts.</p>
+        <p class="desc">Elle aurait pu choisir 3D8 pour un coût de 2+3+3 = 8 It également, pour une amplitude de 3 à 24 dégâts, ou encore 1D10 et 3D4, toujours pour un coût de 3+(1+2+2) = 8 It et une amplitude de 4 à 22 dégâts. Il existe une petite différence d'amplitude entre ces trois choix, négligeable certes, mais il serait inacceptable pour Yeoun de laisser passer ce genre de petits détails !</p>
 
-      <p>Oui, lancer des sorts d'évocation peut relever du véritable casse-tête mathématique pour les adeptes de l'optimisation. C'est pourquoi le site dispose d'un <a href="./calculateur_intensites.html"><strong>calculateur d'intensités</strong></a> pour trouver plus facilement la bonne combinaison.</p>
+        <p>Oui, lancer des sorts d'évocation peut relever du véritable casse-tête mathématique pour les adeptes de l'optimisation. C'est pourquoi le site dispose d'un <a href="./calculateur_intensites.html"><strong>calculateur d'intensités</strong></a> pour trouver plus facilement la bonne combinaison.</p>
 
-      <p>Enfin, le terme "dégâts" n'est pas anodin : les dégâts peuvent tout aussi bien être des blessures physiques (qui diminuent les PV) que des sources d'épuisement (qui diminuent les PM ou les PF). Les sorts d'évocation peuvent également être défensifs, auquel cas les "dégâts" correspondent à la quantité de PV, de PM ou de PF prévenus ou restaurés.</p>
-      <p>Un sort d'évocation peut parfaitement diminuer deux types de ressources, ou les trois à la fois, ou les restaurer deux, ou en diminuer tout en en restaurant d'autres. En revanche, le décompte du coût en intensité n'est pas partagé par les trois ressources. Chaque ressource modifiée a son propre jet de dégâts et doit donc avoir son propre décompte.</p>
+        <p>Enfin, le terme "dégâts" n'est pas anodin : les dégâts peuvent tout aussi bien être des blessures physiques (qui diminuent les PV) que des sources d'épuisement (qui diminuent les PM ou les PF). Les sorts d'évocation peuvent également être défensifs, auquel cas les "dégâts" correspondent à la quantité de PV, de PM ou de PF prévenus ou restaurés.</p>
+        <p>Un sort d'évocation peut parfaitement diminuer deux types de ressources, ou les trois à la fois, ou les restaurer deux, ou en diminuer tout en en restaurant d'autres. En revanche, le décompte du coût en intensité n'est pas partagé par les trois ressources. Chaque ressource modifiée a son propre jet de dégâts et doit donc avoir son propre décompte.</p>
 
-      <p class="desc">Exemple : Kylo a découvert comment optimiser son sort de furie pour lui permettre de restaurer des PV en plus du gain de PF que procure habituellement le sort. Voulant l'utiliser sur lui et voulant le calibrer à 4 It, il choisit de restaurer 1D4 PV et 1d4+1d6 PF. Le coût total en intensité est bien de de 1 It pour les PV et 1+2 It pour les PF, soit 4 It. Lors du lancement du sort, il obtient 2 et 1+5 sur ses jets, il récupère donc 4 PV et 6 PF.</p>
+        <p class="desc">Exemple : Kylo a découvert comment optimiser son sort de furie pour lui permettre de restaurer des PV en plus du gain de PF que procure habituellement le sort. Voulant l'utiliser sur lui et voulant le calibrer à 4 It, il choisit de restaurer 1D4 PV et 1d4+1d6 PF. Le coût total en intensité est bien de de 1 It pour les PV et 1+2 It pour les PF, soit 4 It. Lors du lancement du sort, il obtient 2 et 1+5 sur ses jets, il récupère donc 4 PV et 6 PF.</p>
 
-      <p><b>Cas particulier des sorts d'absorbtion</b> (tout sort qui inflige des dégâts qui vont ensuite être absorbés par le lanceur de sort ou un allié) : il ne faut compter les dégâts qu'une seule fois. Partant du postulat que la quantité de dégâts absorbés est la même que la quantité de dégâts infligés, les théoriciens ont prouvé qu'il n'est pas nécessaire de compter les intensités une première fois pour la blessure puis une deuxième fois pour l'absorbtion.</p>
+        <p><b>Cas particulier des sorts d'absorbtion</b> (tout sort qui inflige des dégâts qui vont ensuite être absorbés par le lanceur de sort ou un allié) : il ne faut compter les dégâts qu'une seule fois. Partant du postulat que la quantité de dégâts absorbés est la même que la quantité de dégâts infligés, les théoriciens ont prouvé qu'il n'est pas nécessaire de compter les intensités une première fois pour la blessure puis une deuxième fois pour l'absorbtion.</p>
+      </div>
+
+      <h5>Échelle d'intensités de portée <a href="javascript:toggle('portee',' les règles complètes')" class="porteeLink">(afficher les règles complètes)</a></h5>
+
+      <p class="portee hidden">Cette échelle est utilisée pour caractériser la portée maximale d'un sort, soit la distance maximale à laquelle il peut être lancé.</p>
+
+      <p>Le sort coûte 1 It par tranche de 4 mètres de portée.
+      <br/>Pour les sorts de divination (et uniquement ceux-là), le sort coût 1 It par tranche de 12 mètres de portée.</p>
+
+      <div class="portee hidden">
+        <p class="desc">Exemple : Yeoun évalue que sa cible se trouve approximativement à 10 mètres d'elle. Elle calibre donc la portée de son projectile de glace à 12 mètres pour être sûre de l'atteindre. Le coût converti en intensités est de 3 It, auquel s'ajoute le coût converti en dégâts qui était de 8 It. Au total, le sort de Yeoun équivaut à un sort de 11 intensités.</p>
+
+        <p>Note : par définition, il n'est pas possible d'associer une portée à un sort lancé avec le medium contact.</p>
+      </div>
+
+      <h5>Échelle d'intensités de zone d'effet  <a href="javascript:toggle('zoneEffet',' les règles complètes')" class="zoneEffetLink">(afficher les règles complètes)</a></h5>
+
+      <p class="zoneEffet hidden">Comme son nom l'indique, cette échelle est utilisée pour tous les sorts lancés via le médium zone d'effet. Il permet de déterminer le diamètre de la zone d'effet.</p>
+
+      <p>Le sort coûte 1 It par tranche de 2 mètres de diamètre.
+      <br/>Pour les sorts de divination (et uniquement ceux-là), le sort coûte 1 It par tranche de 6 mètres de diamètre.</p>
+
+      <div class="zoneEffet hidden"><p class="desc">Exemple avec el sort de divination raté d'Aria</p></div>
 
       <h3>Échelles d'intensités peu communes</h3>
 
