@@ -51,6 +51,7 @@ h4::after { background: #9e5f10 no-repeat center bottom; }
 h4::after { background-image: linear-gradient(to right, #9e5f10, #eadaca); }
 p.desc { color: #5f1e01; }
 p.opt { color: #555; }
+li.stroke { color: #777; text-decoration: line-through; }
 table { border: 1px solid #5f1e01; background: #eadaca url("parchment.jpg") repeat; } 
 tr > th { border: 1px solid #9e5f10; background-color: rgba(158,95,16,0.1); }
 tr > td { border: 1px solid #9e5f10; }
