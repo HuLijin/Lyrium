@@ -161,6 +161,7 @@ aside p.eg { margin-top: 0; }
 
 .centered { text-align: center; }
 
+.content h3 { margin-top: 4em; }
 h3, h4 { display: flex; }
 h3::before, h3::after,
 h4::before, h4::after { display: block; content: ""; align-self: center; height: 2px; }

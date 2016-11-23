@@ -1,0 +1,9 @@
+/* Domaines de magie */
+.container-sous-domaines, .container-domaine { margin: 2em auto; text-align: center;  }
+.container-sous-domaines label, .container-domaine label { font-weight: bold; }
+
+/* Caractéristiques principales */
+.container-carac { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-end; width: 60%; margin: 2em auto; }
+.container-carac p { flex: 1 1 30%; text-align: center; margin: 0.5em 0; }  
+.container-carac label { display: inline-block; width: 3em; font-weight: bold; }
+.container-carac input { width: 2.5em; padding-left: 1ex; }

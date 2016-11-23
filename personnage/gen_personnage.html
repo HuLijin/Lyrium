@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lyrium, le jeu de rôle</title>
   <link rel="stylesheet" href="../stylesheets/style.css">
-  <script src="personnage.js"></script>
+  <link rel="stylesheet" href="../stylesheets/gen_personnage.css">
+  <script src="gen_personnage.js"></script>
 </head>
 <body>
 
@@ -33,6 +34,8 @@
       
       <h2>Création d'un personnage</h2>
 
+      <p class="NdA"><b>Note d'Hu Lijin : attention ! Les liens présents sur cette page ne fonctionnent pas encore. Les formulaires non plus. Ceci est juste de la mise en page.</b></p>
+
       <h3>Le concept</h3>
 
       <p>Le joueur définit ce que va être son personnage : son apparence, son caractère, ce qu'il fait dans la vie, ce qu'il compte faire dans la vie. Il ne s'agit pas de faire une description détaillée du background de son personnage, il s'agit simplement de résumer le personnage à quelques idées-clés.</p>
@@ -46,21 +49,158 @@
       <p>La magie étant un élément absolument banal de Lyrium, chaque personnage maitrise habituellement 3 sous-domaines de magie. C'est le moment de les choisir à l'aide de <a href="../magie/magie.html" target="_blank">cette page</a>.</p>
       <p>Deux exceptions notables : si un personnage maitrise l'Esprit, il maitrise automatiquement la Nécromancie, et vice-versa. Et un personnage qui maitrise un des sous-domaines des Dimensions maitrise en réalité les trois sous-domaines, et peut quand même maitriser deux-autres sous-domaines.</p>
 
-      <form name="choixSousDomaine">
-        <p>Sous-domaine 1</p>
-        <p>Sous-domaine 2</p>
-        <p>Sous-domaine 3</p>
+      <form name="choixSousDomaine" class="container-sous-domaines">
+        <p><label>Sous-domaine 1  </label>
+          <select id="sous-domaine-1">
+            <optgroup label="Domaine de l'Air">
+              <option value="1Air">Vent</option>
+              <option value="2Air">Foudre</option>
+              <option value="3Air">Connaissance</option>
+            </optgroup>
+            <optgroup label="Domaine de l'Eau">
+              <option value="1Air">Vapeur</option>
+              <option value="2Air">Liquide</option>
+              <option value="3Air">Glace</option>
+            </optgroup>
+            <optgroup label="Domaine du Feu">
+              <option value="1Air">Chaleur</option>
+              <option value="2Air">Esprit/Nécromancie</option>
+            </optgroup>
+            <optgroup label="Domaine de la Terre">
+              <option value="1Air">Minéral</option>
+              <option value="2Air">Végétal</option>
+              <option value="3Air">Vie</option>
+            </optgroup>
+            <optgroup label="Domaine de l'Arcane">
+              <option value="1Ar">Réel</option>
+              <option value="2Ar">Hasard</option>
+              <option value="3Ar">Inconnu</option>
+            </optgroup>
+            <optgroup label="Domaine des Dimensions">
+              <option value="1Dimensions">Temps/Espace/Gravité</option>
+            </optgroup>
+          </select> 
+        </p>
+        <p><label>Sous-domaine 2  </label>
+          <select id="sous-domaine-3">
+            <optgroup label="Domaine de l'Air">
+              <option value="1Air">Vent</option>
+              <option value="2Air">Foudre</option>
+              <option value="3Air">Connaissance</option>
+            </optgroup>
+            <optgroup label="Domaine de l'Eau">
+              <option value="1Air">Vapeur</option>
+              <option value="2Air">Liquide</option>
+              <option value="3Air">Glace</option>
+            </optgroup>
+            <optgroup label="Domaine du Feu">
+              <option value="1Air">Chaleur</option>
+              <option value="2Air">Esprit/Nécromancie</option>
+            </optgroup>
+            <optgroup label="Domaine de la Terre">
+              <option value="1Air">Minéral</option>
+              <option value="2Air">Végétal</option>
+              <option value="3Air">Vie</option>
+            </optgroup>
+            <optgroup label="Domaine de l'Arcane">
+              <option value="1Ar">Réel</option>
+              <option value="2Ar">Hasard</option>
+              <option value="3Ar">Inconnu</option>
+            </optgroup>
+            <optgroup label="Domaine des Dimensions">
+              <option value="1Dimensions">Temps/Espace/Gravité</option>
+            </optgroup>
+          </select> 
+        </p>
+        <p><label>Sous-domaine 3  </label>
+          <select id="sous-domaine-3">
+            <optgroup label="Domaine de l'Air">
+              <option value="1Air">Vent</option>
+              <option value="2Air">Foudre</option>
+              <option value="3Air">Connaissance</option>
+            </optgroup>
+            <optgroup label="Domaine de l'Eau">
+              <option value="1Air">Vapeur</option>
+              <option value="2Air">Liquide</option>
+              <option value="3Air">Glace</option>
+            </optgroup>
+            <optgroup label="Domaine du Feu">
+              <option value="1Air">Chaleur</option>
+              <option value="2Air">Esprit/Nécromancie</option>
+            </optgroup>
+            <optgroup label="Domaine de la Terre">
+              <option value="1Air">Minéral</option>
+              <option value="2Air">Végétal</option>
+              <option value="3Air">Vie</option>
+            </optgroup>
+            <optgroup label="Domaine de l'Arcane">
+              <option value="1Ar">Réel</option>
+              <option value="2Ar">Hasard</option>
+              <option value="3Ar">Inconnu</option>
+            </optgroup>
+            <optgroup label="Domaine des Dimensions">
+              <option value="1Dimensions">Temps/Espace/Gravité</option>
+            </optgroup>
+          </select> 
+        </p>
       </form>
 
       <p>Il y a sans doute un sous-domaine auquel votre personnage est particulièrement sensible. On dit que votre personnage a une affinité avec le domaine qui contient ce sous-domaine.</p>
 
-      <form name="choixDomaine">
-        <p>Affinité avec le domaine </p>
+      <form name="choixDomaine" class="container-domaine">
+        <p><label>Affinité avec le domaine  </label>
+          <select id="sous-domaine-3">
+            <option value="Air">de l'Air</option>
+            <option value="Eau">de l'Eau</option>
+            <option value="Feu">du Feu</option>
+            <option value="Terre">de la Terre</option>
+            <option value="Arcane">de l'Arcane</option>
+            <option value="Dimensions">des Dimensions</option>
+          </select> 
+        </p>
       </form>
 
       <p class="boxed">À cette étape de la création si le joueur souhaite créer un magicien apte à lancer de puissants sorts pour un coût réduit en points de fatigue mentale (PM), il peut songer à prendre le talent Ascendance : (description du talent ascendance).</p>
 
-      <h4>Points de corruption du personnage</h4>
+    
+
+
+
+
+      <h3 class="vspace">Les caractéristiques</h3>
+
+      <p><strong>Ce qui caractérise avant tout le personnage du point de vue des mécaniques de jeu, ce sont ses <a>caractéristiques primaires</a> : <a>FOR</a>, <a>AGI</a>, <a>CON</a>, <a>INT</a>, <a>MEM</a>, <a>VOL</a> et <a>CHA</a>. Le joueur doit prendre bien soin à les définir parce qu'elles influencent tout le reste de la feuille de personnage.</strong></p>
+
+      <p>Les caractéristiques sont évaluées sur une <a>échelle allant de 0 à 10</a>. 0 signifie que le personnage a un handicap insurmontable dans cette caractéristique et 10 signifie que le personnage a transcendé les limites humaines pour cette caractéristiques. 5 est la valeur moyenne.</p>
+
+      <p>Les points de caractéristiques sont alloués selon les règles suivantes :</p>
+
+      <ul>
+        <li>Tout personnage commence avec 5 points dans chaque caractéristique.</li>
+        <li>Les personnages joueurs commencent avec 2 points bonus à répartir comme ils le veulent.</li>
+        <li>Il est possible de personnaliser son personnage davantage en enlevant 1 point d'une caractéristique pour l'ajouter à une autre caractéristique.</li>
+        <li>Il n'est pas possible de faire l'étape précédente plus de 4 fois, sinon le personnage sera trop déséquilibré.</li>
+        <li>Tous les choix doivent être motivés par le concept du personnage !</li>
+        <li>Enfin, il est impossible d'avoir une caractéristique inférieure à 3 ou supérieure à 7 (même si l'échelle va de 0 à 10).</li>
+      </ul>
+
+      <form name="caracPrincipales" class="container-carac">
+        <p><label>FOR </label><input name="valFOR" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p><label>AGI </label><input name="valAGI" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p><label>CON </label><input name="valCON" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p><label>INT </label><input name="valINT" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p><label>MEM </label><input name="valMEM" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p><label>VOL </label><input name="valVOL" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p><!-- Pour des besoins d'affichage" --></p>
+        <p><label>CHA </label><input name="valCHA" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p class="eg"><span id="answerVal">Points restants : <span id="answerPts">2</span></span></p>
+      </form>
+
+      <p class="desc">Yeoun est naturellement dotée d'un cerveau performant, une des raisons qui l'ont amenée à s'intéresser à la magie. Ses statistiques de base sont 6 en INT et en MEM et 5 pour les autres.</p>
+      <p class="desc">Yeoun a toujours été de nature solitaire. Jouer avec les autres enfants ne l'a jamais spécialement intéressée. Elle préférait de loin étudier seule (+1 MEM et +1 INT). Ses parents, fiers de la grande intelligence de leur fille, la traitaient comme une petite princesse, lui évitant au maximum les tâches domestiques (-1 FOR) et la protégeant de situations de stress (-1 VOL). Certes, Yeoun est aujourd'hui une lanceuse de sorts assez compétente, mais elle est devenue une adulte distante et hautaine, peu douée pour les relations sociales. Pour tout avouer, elle sait se montrer franchement pénible.</p>
+      <p class="desc">Au niveau des chiffres, ceci se traduit par 4 en FOR et VOL, 5 en AGI, CON et CHA et 7 en INT et MEM.</p>
+
+      <h4>Les Points de corruption (PC)</h4>
 
       <p>Dernier point, le joueur doit pouvoir dire si son personnage est plutôt gentil ou plutôt foncièrement méchant. Cela détermine ses points de corruption (PC).</p>
       <p>Il existe deux manières de faire : soit le personnage est l'un des deux extrêmes et est un Coeur-pur ou un Corrompu, soit le personnage est une personne somme toute banale et ses points de corruption sont tirés au hasard.</p>
@@ -87,29 +227,14 @@
 
 
 
-      <h3>Les caractéristiques</h3>
 
-      <p>Ce qui caractérise avant tout le personnage du point de vue des mécaniques de jeu, ce sont ses caractéristiques principales : FOR, AGI, CON, INT, MEM, VOL et CHA. Le joueur doit prendre bien soin à les définir aprce qu'elles influencent tout le reste de la feuille de personnage.</p>
 
-      <p>Le joueur peut s'aider du calculateur de caractéristiques puis les reporter ci-dessous. Les règles sont les suivantes :</p>
 
-      <ul>
-        <li>Indiquer les règles ici</li>
-      </ul>
 
-      <form name="caracPrincipales">
-      <p>FOR</p>
-      <p>AGI</p>
-      <p>CON</p>
-      <p>INT</p>
-      <p>MEM</p>
-      <p>VOL</p>
-      <p>CHA</p>
-      </form>
 
-      <p>5 signifie que le personnage est dans la moyenne. En dessous, il est moins bon et au dessus il est meilleur. Pour donner un ordre d'idées, une caractéristique à 3 indique que le personnage est mauvais et une caractéristique à 7 indique que le personnage sort du lot. À 8 il est vraiment brillant et à 9 il est considéré comme un prodige.</p>
 
-      
+
+
     </section>
 
     <aside>

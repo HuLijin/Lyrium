@@ -1,19 +1,19 @@
 function update() {
 
-    var FOR = parseInt(document.calculateur.valFOR.value);
-    var AGI = parseInt(document.calculateur.valAGI.value);
-    var CON = parseInt(document.calculateur.valCON.value);
-    var INTEL = parseInt(document.calculateur.valINT.value);
-    var MEM = parseInt(document.calculateur.valMEM.value);
-    var VOL = parseInt(document.calculateur.valVOL.value);
-    var CHA = parseInt(document.calculateur.valCHA.value);
+    var FOR = parseInt(document.caracPrincipales.valFOR.value);
+    var AGI = parseInt(document.caracPrincipales.valAGI.value);
+    var CON = parseInt(document.caracPrincipales.valCON.value);
+    var INTEL = parseInt(document.caracPrincipales.valINT.value);
+    var MEM = parseInt(document.caracPrincipales.valMEM.value);
+    var VOL = parseInt(document.caracPrincipales.valVOL.value);
+    var CHA = parseInt(document.caracPrincipales.valCHA.value);
 
     var ans = 37;
     ans = ans - FOR - AGI - CON - INTEL - MEM - VOL - CHA;
     document.getElementById("answerPts").innerHTML = ans;
 
     /* Mise à jour de la section du bas */
-    var PV = CON+FOR+VOL;
+    /*var PV = CON+FOR+VOL;
     document.getElementById("infoPV").innerHTML = PV;
     var PF = CON+AGI+VOL;
     document.getElementById("infoPF").innerHTML = PF;
@@ -24,12 +24,12 @@ function update() {
     var POU = INTEL+MEM;
     document.getElementById("infoPOU").innerHTML = POU;
     var ADA = INTEL+AGI;
-    document.getElementById("infoADA").innerHTML = ADA;
+    document.getElementById("infoADA").innerHTML = ADA;*/
 
     /* Autres informations complémentaires */
-    var pdm = MEM+1;
+    /*var pdm = MEM+1;
     document.getElementById("infoPdm").innerHTML = pdm;
-    document.getElementById("infoINT").innerHTML = INTtoDice(INTEL);
+    document.getElementById("infoINT").innerHTML = INTtoDice(INTEL);*/
 
     return ans;
 }
@@ -57,13 +57,13 @@ function validateStats() {
             if (ans == -1) { s = ""; }
             document.getElementById("answerVal").innerHTML = "Le personnage a "+(-ans)+"point"+s+" en trop !";
         } else {
-            var deltaFOR = parseInt(document.calculateur.valFOR.value) - 5;
-            var deltaAGI = parseInt(document.calculateur.valAGI.value) - 5;
-            var deltaCON = parseInt(document.calculateur.valCON.value) - 5;
-            var deltaINT = parseInt(document.calculateur.valINT.value) - 5;
-            var deltaMEM = parseInt(document.calculateur.valMEM.value) - 5;
-            var deltaVOL = parseInt(document.calculateur.valVOL.value) - 5;
-            var deltaCHA = parseInt(document.calculateur.valCHA.value) - 5;
+            var deltaFOR = parseInt(document.caracPrincipales.valFOR.value) - 5;
+            var deltaAGI = parseInt(document.caracPrincipales.valAGI.value) - 5;
+            var deltaCON = parseInt(document.caracPrincipales.valCON.value) - 5;
+            var deltaINT = parseInt(document.caracPrincipales.valINT.value) - 5;
+            var deltaMEM = parseInt(document.caracPrincipales.valMEM.value) - 5;
+            var deltaVOL = parseInt(document.caracPrincipales.valVOL.value) - 5;
+            var deltaCHA = parseInt(document.caracPrincipales.valCHA.value) - 5;
             var delta = 0;
             if (deltaFOR < 0) { delta = delta + deltaFOR; }
             if (deltaAGI < 0) { delta = delta + deltaAGI; }
