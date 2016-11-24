@@ -52,7 +52,7 @@ h4::after { background-image: linear-gradient(to right, #9e5f10, #eadaca); }
 p.desc { color: #5f1e01; }
 p.opt { color: #555; }
 li.stroke { color: #777; text-decoration: line-through; }
-table { border: 1px solid #5f1e01; background: #eadaca url("parchment.jpg") repeat; } 
+table { border: 2px solid #5f1e01; background: #eadaca url("parchment.jpg") repeat; } 
 tr > th { border: 1px solid #9e5f10; background-color: rgba(158,95,16,0.1); }
 tr > td { border: 1px solid #9e5f10; }
 
@@ -202,22 +202,20 @@ table.t_50, table.t_75 { margin-right: auto; width: 100%; }
   table.t_50 { width: 50%; } 
   table.t_75 { width: 75%; }
 }
-tr { display: flex; flex-wrap: nowrap; }
-tr > * { flex: 1 1 100%; padding: 2px 4px; }
-
+tr > * { padding: 2px 4px; }
 table > caption { caption-side: bottom; }
 
-.t_domaine_mode_medium tr * { flex: 1 1 25%; }
+.t_domaine_mode_medium tr * { width: 25%; }
 .t_domaine_mode_medium tr td:first-child,
-.t_domaine_mode_medium tr th:first-child { flex: 1 1 50%; }
-.t_aliments tr * { flex: 1 1 30%; }
+.t_domaine_mode_medium tr th:first-child { width: 50%; }
+.t_aliments tr * { width: 30%; }
 .t_aliments tr td:last-child,
-.t_aliments tr th:last-child { flex: 1 1 40%; }
-.t_consommables tr * { flex: 1 1 40%; }
+.t_aliments tr th:last-child { width: 40%; }
+.t_consommables tr * { width: 40%; }
 .t_consommables tr td:nth-child(2),
-.t_consommables tr th:nth-child(2) { flex: 1 1 20%; }
-.t_objets tr * { flex: 1 1 15%; }
+.t_consommables tr th:nth-child(2) { width: 20%; }
+.t_objets tr * { width: 15%; }
 .t_objets tr td:first-child, .t_objets tr td:last-child,
-.t_objets tr th:first-child, .t_objets tr th:last-child { flex: 1 1 35%; }
-.t_it1 tr * { flex: 1 1 10%; text-align: center; }
-.t_it1 tr th:first-child { flex: 1 1 20%; }
+.t_objets tr th:first-child, .t_objets tr th:last-child { width: 35%; }
+.t_it1 tr * { width: 10%; text-align: center; }
+.t_it1 tr th:first-child { width: 20%; }

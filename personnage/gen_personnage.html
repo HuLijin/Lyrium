@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta id="viewport" content="width=device-width, initial-scale=1">
   <title>Lyrium, le jeu de rôle</title>
   <link rel="stylesheet" href="../stylesheets/style.css">
   <link rel="stylesheet" href="../stylesheets/gen_personnage.css">
@@ -49,7 +49,7 @@
       <p>La magie étant un élément absolument banal de Lyrium, chaque personnage maitrise habituellement 3 sous-domaines de magie. C'est le moment de les choisir à l'aide de <a href="../magie/magie.html" target="_blank">cette page</a>.</p>
       <p>Deux exceptions notables : si un personnage maitrise l'Esprit, il maitrise automatiquement la Nécromancie, et vice-versa. Et un personnage qui maitrise un des sous-domaines des Dimensions maitrise en réalité les trois sous-domaines, et peut quand même maitriser deux-autres sous-domaines.</p>
 
-      <form name="choixSousDomaine" class="container-sous-domaines">
+      <form id="choixSousDomaine" class="container-sous-domaines">
         <p><label>Sous-domaine 1  </label>
           <select id="sous-domaine-1">
             <optgroup label="Domaine de l'Air">
@@ -147,7 +147,7 @@
 
       <p>Il y a sans doute un sous-domaine auquel votre personnage est particulièrement sensible. On dit que votre personnage a une affinité avec le domaine qui contient ce sous-domaine.</p>
 
-      <form name="choixDomaine" class="container-domaine">
+      <form id="choixDomaine" class="container-domaine">
         <p><label>Affinité avec le domaine  </label>
           <select id="sous-domaine-3">
             <option value="Air">de l'Air</option>
@@ -167,7 +167,7 @@
 
 
 
-      <h3 class="vspace">Les caractéristiques</h3>
+      <h3>Les caractéristiques</h3>
 
       <p><strong>Ce qui caractérise avant tout le personnage du point de vue des mécaniques de jeu, ce sont ses <a>caractéristiques primaires</a> : <a>FOR</a>, <a>AGI</a>, <a>CON</a>, <a>INT</a>, <a>MEM</a>, <a>VOL</a> et <a>CHA</a>. Le joueur doit prendre bien soin à les définir parce qu'elles influencent tout le reste de la feuille de personnage.</strong></p>
 
@@ -184,15 +184,15 @@
         <li>Enfin, il est impossible d'avoir une caractéristique inférieure à 3 ou supérieure à 7 (même si l'échelle va de 0 à 10).</li>
       </ul>
 
-      <form name="caracPrincipales" class="container-carac">
-        <p><label>FOR </label><input name="valFOR" type="number" value="5" min="3" max="7" onclick="update()"/></p>
-        <p><label>AGI </label><input name="valAGI" type="number" value="5" min="3" max="7" onclick="update()"/></p>
-        <p><label>CON </label><input name="valCON" type="number" value="5" min="3" max="7" onclick="update()"/></p>
-        <p><label>INT </label><input name="valINT" type="number" value="5" min="3" max="7" onclick="update()"/></p>
-        <p><label>MEM </label><input name="valMEM" type="number" value="5" min="3" max="7" onclick="update()"/></p>
-        <p><label>VOL </label><input name="valVOL" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+      <form id="caracPrincipales" class="container-carac">
+        <p><label>FOR </label><input id="valFOR" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p><label>AGI </label><input id="valAGI" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p><label>CON </label><input id="valCON" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p><label>INT </label><input id="valINT" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p><label>MEM </label><input id="valMEM" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p><label>VOL </label><input id="valVOL" type="number" value="5" min="3" max="7" onclick="update()"/></p>
         <p><!-- Pour des besoins d'affichage" --></p>
-        <p><label>CHA </label><input name="valCHA" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+        <p><label>CHA </label><input id="valCHA" type="number" value="5" min="3" max="7" onclick="update()"/></p>
         <p class="eg"><span id="answerVal">Points restants : <span id="answerPts">2</span></span></p>
       </form>
 
@@ -213,7 +213,7 @@
 
       <p>Pour plus d'informations sur la Corruption, les pouvoirs des Coeurs-purs et des Corrompus, la signification des PC et comment ils évoluent, se référer à cette page.</p>
 
-      <form name="choixCorruption">
+      <form id="choixCorruption">
         <p>Votre choix : </p>
         <ul>
           <li>Coeur-pur &rarr; 0 PC</li>
@@ -223,6 +223,83 @@
       </form>
 
       <p class="boxed">Les personnages Corrompus peuvent choisir le talent Bibelot magique pour pouvoir repousser la limite des 100 PC. (description du talent)</p>
+
+      <h4>Les jauges (PV, PF et PM)</h4>
+
+      <h4>Les caractéristiques de combat</h4>
+
+
+
+
+
+
+      <h3>Les compétences</h3>
+
+      <p></p>
+
+      <div id="form-competences">
+        <table>
+          <tr>
+            <th>Base</th><th class="t_small">Score</th><th class="t_small">Rés.</th>
+            <th>Base</th><th class="t_small">Score</th><th class="t_small">Rés.</th>
+          </tr>
+          <tr>
+            <th><label>Endurance</label><br/><input id="comp1" type="number" value="0" min="0" onclick="updateComp('1')"/></th>
+            <td><span class="t_score">CON</span><br/><span id="comp1Score">5</span></td><td class="t_res"><span id="comp1res"></span></td>
+            <th><label>Perception</label><br/><input id="comp2" type="number" value="0" min="0" onclick="updateComp('2')"/>
+            <td><span class="t_score">INT</span><br/><span id="comp2Score">5</span></td><td class="t_res"><span id="comp2res"></span></td>
+          </tr>
+          <tr>
+            <th><label>Puissance</label><br/><input id="comp3" type="number" value="0" min="0" onclick="updateComp('3')"/></th>
+            <td><span class="t_score">FOR</span><br/><span id="comp3Score">5</span></td><td class="t_res"><span id="comp3res"></span></td>
+            <th><label>Instinct</label><br/><input id="comp4" type="number" value="0" min="0" onclick="updateComp('4')"/>
+            <td><span class="t_score">INT</span><br/><span id="comp4Score">5</span></td><td class="t_res"><span id="comp4res"></span></td>
+          </tr>
+          <tr>
+            <th><label>Chevaucher</label><br/><input id="comp5" type="number" value="0" min="0" onclick="updateComp('5')"/></th>
+            <td><span class="t_score">FOR</span><br/><span id="comp5Score">5</span></td><td class="t_res"><span id="comp5res"></span></td>
+            <th><label>Perception magique</label><br/><input id="comp6" type="number" value="0" min="0" onclick="updateComp('6')"/>
+            <td><span class="t_score">INT</span><br/><span id="comp6Score">5</span></td><td class="t_res"><span id="comp6res"></span></td>
+          </tr>
+          <tr>
+            <th><label>Acrobatie</label><br/><input id="comp7" type="number" value="0" min="0" onclick="updateComp('7')"/></th>
+            <td><span class="t_score">AGI</span><br/><span id="comp7Score">5</span></td><td class="t_res"><span id="comp7res"></span></td>
+            <th><label>Évaluation magique</label><br/><input id="comp8" type="number" value="0" min="0" onclick="updateComp('8')"/>
+            <td><span class="t_score">INT</span><br/><span id="comp8Score">5</span></td><td class="t_res"><span id="comp8res"></span></td>
+          </tr>
+          <tr>
+            <th><label>Discrétion</label><br/><input id="comp9" type="number" value="0" min="0" onclick="updateComp('9')"/></th>
+            <td><span class="t_score">AGI</span><br/><span id="comp9Score">5</span></td><td class="t_res"><span id="comp9res"></span></td>
+            <th><label>Dominer</label><br/><input id="comp10" type="number" value="0" min="0" onclick="updateComp('10')"/>
+            <td><span class="t_score">CHA</span><br/><span id="comp10Score">5</span></td><td class="t_res"><span id="comp10res"></span></td>
+          </tr>
+          <tr>
+            <th><label>Ecamotage</label><br/><input id="comp11" type="number" value="0" min="0" onclick="updateComp('11')"/></th>
+            <td><span class="t_score">AGI</span><br/><span id="comp11Score">5</span></td><td class="t_res"><span id="comp11res"></span></td>
+            <th><label>Convaincre</label><br/><input id="comp12" type="number" value="0" min="0" onclick="updateComp('12')"/>
+            <td><span class="t_score">CHA</span><br/><span id="comp12Score">5</span></td><td class="t_res"><span id="comp12res"></span></td>
+          </tr>
+          <tr>
+            <th><label>Habileté manuelle</label><br/><input id="comp13" type="number" value="0" min="0" onclick="updateComp('13')"/></th>
+            <td><span class="t_score">AGI</span><br/><span id="comp13Score">5</span></td><td class="t_res"><span id="comp13res"></span></td>
+            <th><label>Psychologie</label><br/><input id="comp14" type="number" value="0" min="0" onclick="updateComp('14')"/>
+            <td><span class="t_score">CHA</span><br/><span id="comp14Score">5</span></td><td class="t_res"><span id="comp14res"></span></td>
+          </tr>
+          <tr>
+            <th><label>Culture générale</label><br/><input id="comp15" type="number" value="0" min="0" onclick="updateComp('15')"/></th>
+            <td><span class="t_score">MEM</span><br/><span id="comp15Score">5</span></td><td class="t_res"><span id="comp15res"></span></td>
+            <th><label>Culture spécifique</label><br/><input id="comp16" type="number" value="0" min="0" onclick="updateComp('16')"/>
+            <td><span class="t_score">MEM</span><br/><span id="comp16Score">5</span></td><td class="t_res"><span id="comp16res"></span></td>
+          </tr>
+          <tr>
+            <th><label>Apprentissage</label><br/><input id="comp17" type="number" value="0" min="0" onclick="updateComp('17')"/></th>
+            <td><span class="t_score">MEM</span><br/><span id="comp17Score">5</span></td><td class="t_res"><span id="comp17res"></span></td>
+            <td colspan="3" class="t_colspan">Points à attribuer : <span id="compRes">40</span></td>
+          </tr>
+        </table>
+      </div>
+
+
 
 
 

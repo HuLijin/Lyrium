@@ -34,6 +34,29 @@ function update() {
     return ans;
 }
 
+
+function updateComp(number) {
+    var comp = "comp"+number;
+    var dice = "comp"+number+"res";
+    var base = parseInt(document.getElementById(comp).value);
+    var modulo = (base/10)|0;
+    if (modulo > 0) { document.getElementById(dice).innerHTML = modulo; }
+    else { document.getElementById(dice).innerHTML = ""; }
+    var pts = 40 - computeCompPts();
+    document.getElementById("compRes").innerHTML = pts;
+}
+
+function computeCompPts() {
+    var pts = 0;
+    var comp = "";
+    var i = 1;
+    for (i; i <= 17; i++) {
+        comp = "comp" + i.toString();
+        pts += parseInt(document.getElementById(comp).value);
+    }
+    return pts;
+}
+
 function INTtoDice(intel) {
 
     if (intel < 5) { return "1D4"; }
