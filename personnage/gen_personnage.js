@@ -154,7 +154,7 @@ function updateComp(number) {
     if (modulo > 0) { document.getElementById(dice).innerHTML = modulo; }
     else { document.getElementById(dice).innerHTML = ""; }
     var pts = 40 - computeCompPts();
-    document.getElementById("comp-res").innerHTML = pts;
+    document.getElementById("comp-pts").innerHTML = pts;
 }
 
 function computeCompPts() {
