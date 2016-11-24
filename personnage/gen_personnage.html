@@ -46,121 +46,140 @@
 
       <h4>Influence de la magie sur le personnage</h4>
 
-      <p>La magie étant un élément absolument banal de Lyrium, chaque personnage maitrise habituellement 3 sous-domaines de magie. C'est le moment de les choisir à l'aide de <a href="../magie/magie.html" target="_blank">cette page</a>.</p>
-      <p>Deux exceptions notables : si un personnage maitrise l'Esprit, il maitrise automatiquement la Nécromancie, et vice-versa. Et un personnage qui maitrise un des sous-domaines des Dimensions maitrise en réalité les trois sous-domaines, et peut quand même maitriser deux-autres sous-domaines.</p>
+      <p>La magie étant un élément absolument banal de Lyrium, chaque personnage maitrise habituellement 3 sous-domaines de magie. C'est le moment de les choisir à l'aide de <a href="../magie/magie.html" target="_blank">cette page</a>. C'est également le moment de choisir si le personnage sera :</p>
+      <ul style="list-style-type:none;">
+        <li><input type="radio" name="choix-mage" id="profane" onclick="display('mage-profane')"/> un <a>lanceur de sorts profane</a> (choix des sous-domaines libres et malus au lancement des sorts)</li>
+        <li><input type="radio" name="choix-mage" id="elementaire" onclick="display('mage-elementaire')"/> un <a>mage élémentaire</a> (obligation de prendre les 3 sous-domaines d'un domaine élémentaire).</li>
+      </ul>
 
-      <form id="choixSousDomaine" class="container-sous-domaines">
-        <p><label>Sous-domaine 1  </label>
-          <select id="sous-domaine-1">
-            <optgroup label="Domaine de l'Air">
-              <option value="1Air">Vent</option>
-              <option value="2Air">Foudre</option>
-              <option value="3Air">Connaissance</option>
-            </optgroup>
-            <optgroup label="Domaine de l'Eau">
-              <option value="1Air">Vapeur</option>
-              <option value="2Air">Liquide</option>
-              <option value="3Air">Glace</option>
-            </optgroup>
-            <optgroup label="Domaine du Feu">
-              <option value="1Air">Chaleur</option>
-              <option value="2Air">Esprit/Nécromancie</option>
-            </optgroup>
-            <optgroup label="Domaine de la Terre">
-              <option value="1Air">Minéral</option>
-              <option value="2Air">Végétal</option>
-              <option value="3Air">Vie</option>
-            </optgroup>
-            <optgroup label="Domaine de l'Arcane">
-              <option value="1Ar">Réel</option>
-              <option value="2Ar">Hasard</option>
-              <option value="3Ar">Inconnu</option>
-            </optgroup>
-            <optgroup label="Domaine des Dimensions">
-              <option value="1Dimensions">Temps/Espace/Gravité</option>
-            </optgroup>
-          </select> 
-        </p>
-        <p><label>Sous-domaine 2  </label>
-          <select id="sous-domaine-3">
-            <optgroup label="Domaine de l'Air">
-              <option value="1Air">Vent</option>
-              <option value="2Air">Foudre</option>
-              <option value="3Air">Connaissance</option>
-            </optgroup>
-            <optgroup label="Domaine de l'Eau">
-              <option value="1Air">Vapeur</option>
-              <option value="2Air">Liquide</option>
-              <option value="3Air">Glace</option>
-            </optgroup>
-            <optgroup label="Domaine du Feu">
-              <option value="1Air">Chaleur</option>
-              <option value="2Air">Esprit/Nécromancie</option>
-            </optgroup>
-            <optgroup label="Domaine de la Terre">
-              <option value="1Air">Minéral</option>
-              <option value="2Air">Végétal</option>
-              <option value="3Air">Vie</option>
-            </optgroup>
-            <optgroup label="Domaine de l'Arcane">
-              <option value="1Ar">Réel</option>
-              <option value="2Ar">Hasard</option>
-              <option value="3Ar">Inconnu</option>
-            </optgroup>
-            <optgroup label="Domaine des Dimensions">
-              <option value="1Dimensions">Temps/Espace/Gravité</option>
-            </optgroup>
-          </select> 
-        </p>
-        <p><label>Sous-domaine 3  </label>
-          <select id="sous-domaine-3">
-            <optgroup label="Domaine de l'Air">
-              <option value="1Air">Vent</option>
-              <option value="2Air">Foudre</option>
-              <option value="3Air">Connaissance</option>
-            </optgroup>
-            <optgroup label="Domaine de l'Eau">
-              <option value="1Air">Vapeur</option>
-              <option value="2Air">Liquide</option>
-              <option value="3Air">Glace</option>
-            </optgroup>
-            <optgroup label="Domaine du Feu">
-              <option value="1Air">Chaleur</option>
-              <option value="2Air">Esprit/Nécromancie</option>
-            </optgroup>
-            <optgroup label="Domaine de la Terre">
-              <option value="1Air">Minéral</option>
-              <option value="2Air">Végétal</option>
-              <option value="3Air">Vie</option>
-            </optgroup>
-            <optgroup label="Domaine de l'Arcane">
-              <option value="1Ar">Réel</option>
-              <option value="2Ar">Hasard</option>
-              <option value="3Ar">Inconnu</option>
-            </optgroup>
-            <optgroup label="Domaine des Dimensions">
-              <option value="1Dimensions">Temps/Espace/Gravité</option>
-            </optgroup>
-          </select> 
-        </p>
-      </form>
+      <div id="mage-profane" class="hidden">
+        <p>Le personnage peut choisir 3 sous-domaines à deux exceptions près : si un personnage maitrise l'Esprit, il maitrise obligatoirement la Nécromancie, et vice-versa. Et un personnage qui maitrise un des sous-domaines des Dimensions maitrise en réalité les trois sous-domaines, et peut quand même maitriser deux-autres sous-domaines.</p>
 
-      <p>Il y a sans doute un sous-domaine auquel votre personnage est particulièrement sensible. On dit que votre personnage a une affinité avec le domaine qui contient ce sous-domaine.</p>
+        <div id="choix-sous-domaine" class="container-sous-domaines">
+          <p><label>Sous-domaine 1  </label>
+            <select id="sous-domaine-1">
+              <optgroup label="Domaine de l'Air">
+                <option value="1Air">Vent</option>
+                <option value="2Air">Foudre</option>
+                <option value="3Air">Connaissance</option>
+              </optgroup>
+              <optgroup label="Domaine de l'Eau">
+                <option value="1Air">Vapeur</option>
+                <option value="2Air">Liquide</option>
+                <option value="3Air">Glace</option>
+              </optgroup>
+              <optgroup label="Domaine du Feu">
+                <option value="1Air">Chaleur</option>
+                <option value="2Air">Esprit/Nécromancie</option>
+              </optgroup>
+              <optgroup label="Domaine de la Terre">
+                <option value="1Air">Minéral</option>
+                <option value="2Air">Végétal</option>
+                <option value="3Air">Vie</option>
+              </optgroup>
+              <optgroup label="Domaine de l'Arcane">
+                <option value="1Ar">Réel</option>
+                <option value="2Ar">Hasard</option>
+                <option value="3Ar">Inconnu</option>
+              </optgroup>
+              <optgroup label="Domaine des Dimensions">
+                <option value="1Dimensions">Temps/Espace/Gravité</option>
+              </optgroup>
+            </select> 
+          </p>
+          <p><label>Sous-domaine 2  </label>
+            <select id="sous-domaine-3">
+              <optgroup label="Domaine de l'Air">
+                <option value="1Air">Vent</option>
+                <option value="2Air">Foudre</option>
+                <option value="3Air">Connaissance</option>
+              </optgroup>
+              <optgroup label="Domaine de l'Eau">
+                <option value="1Air">Vapeur</option>
+                <option value="2Air">Liquide</option>
+                <option value="3Air">Glace</option>
+              </optgroup>
+              <optgroup label="Domaine du Feu">
+                <option value="1Air">Chaleur</option>
+                <option value="2Air">Esprit/Nécromancie</option>
+              </optgroup>
+              <optgroup label="Domaine de la Terre">
+                <option value="1Air">Minéral</option>
+                <option value="2Air">Végétal</option>
+                <option value="3Air">Vie</option>
+              </optgroup>
+              <optgroup label="Domaine de l'Arcane">
+                <option value="1Ar">Réel</option>
+                <option value="2Ar">Hasard</option>
+                <option value="3Ar">Inconnu</option>
+              </optgroup>
+              <optgroup label="Domaine des Dimensions">
+                <option value="1Dimensions">Temps/Espace/Gravité</option>
+              </optgroup>
+            </select> 
+          </p>
+          <p><label>Sous-domaine 3  </label>
+            <select id="sous-domaine-3">
+              <optgroup label="Domaine de l'Air">
+                <option value="1Air">Vent</option>
+                <option value="2Air">Foudre</option>
+                <option value="3Air">Connaissance</option>
+              </optgroup>
+              <optgroup label="Domaine de l'Eau">
+                <option value="1Air">Vapeur</option>
+                <option value="2Air">Liquide</option>
+                <option value="3Air">Glace</option>
+              </optgroup>
+              <optgroup label="Domaine du Feu">
+                <option value="1Air">Chaleur</option>
+                <option value="2Air">Esprit/Nécromancie</option>
+              </optgroup>
+              <optgroup label="Domaine de la Terre">
+                <option value="1Air">Minéral</option>
+                <option value="2Air">Végétal</option>
+                <option value="3Air">Vie</option>
+              </optgroup>
+              <optgroup label="Domaine de l'Arcane">
+                <option value="1Ar">Réel</option>
+                <option value="2Ar">Hasard</option>
+                <option value="3Ar">Inconnu</option>
+              </optgroup>
+              <optgroup label="Domaine des Dimensions">
+                <option value="1Dimensions">Temps/Espace/Gravité</option>
+              </optgroup>
+            </select> 
+          </p>
+        </div>
 
-      <form id="choixDomaine" class="container-domaine">
-        <p><label>Affinité avec le domaine  </label>
-          <select id="sous-domaine-3">
-            <option value="Air">de l'Air</option>
-            <option value="Eau">de l'Eau</option>
-            <option value="Feu">du Feu</option>
-            <option value="Terre">de la Terre</option>
-            <option value="Arcane">de l'Arcane</option>
-            <option value="Dimensions">des Dimensions</option>
-          </select> 
-        </p>
-      </form>
+        <p>Il y a sans doute un sous-domaine auquel le personnage est particulièrement sensible. On dit que le personnage a une affinité avec le domaine qui contient ce sous-domaine.</p>
 
-      <p class="boxed">À cette étape de la création si le joueur souhaite créer un magicien apte à lancer de puissants sorts pour un coût réduit en points de fatigue mentale (PM), il peut songer à prendre le talent Ascendance : (description du talent ascendance).</p>
+        <div id="choixDomaine" class="container-domaine">
+          <p><label>Affinité avec le domaine  </label>
+            <select id="sous-domaine-3">
+              <option value="Air">de l'Air</option>
+              <option value="Eau">de l'Eau</option>
+              <option value="Feu">du Feu</option>
+              <option value="Terre">de la Terre</option>
+              <option value="Arcane">de l'Arcane</option>
+              <option value="Dimensions">des Dimensions</option>
+            </select> 
+          </p>
+        </div>
+      </div>
+
+      <div id="mage-elementaire" class="hidden">
+        <div id="choix-domaine-elementaire" class="container-domaine">
+          <p><label>Domaine choisi  </label>
+            <select id="sous-domaine-3">
+              <option value="Air">de l'Air</option>
+              <option value="Eau">de l'Eau</option>
+              <option value="Feu">du Feu</option>
+              <option value="Terre">de la Terre</option>
+            </select> 
+          </p>
+        </div>
+        <p class="boxed">À cette étape de la création si le joueur souhaite créer un magicien apte à lancer de puissants sorts pour un coût réduit en points de fatigue mentale (PM), il peut songer à prendre le talent Ascendance : (description du talent ascendance).</p>
+      </div>
 
     
 

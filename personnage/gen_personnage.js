@@ -1,3 +1,23 @@
+function display(cat) {
+    document.getElementById("mage-profane").className = "hidden";
+    document.getElementById("mage-elementaire").className = "hidden";
+    document.getElementById(cat).className = "";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function getFOR () { return parseInt(document.getElementById("for").value); }
 function getAGI () { return parseInt(document.getElementById("agi").value); }
 function getCON () { return parseInt(document.getElementById("con").value); }
