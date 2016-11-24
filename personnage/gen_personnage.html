@@ -184,17 +184,17 @@
         <li>Enfin, il est impossible d'avoir une caractéristique inférieure à 3 ou supérieure à 7 (même si l'échelle va de 0 à 10).</li>
       </ul>
 
-      <form id="caracPrincipales" class="container-carac">
-        <p><label>FOR </label><input id="valFOR" type="number" value="5" min="3" max="7" onclick="update()"/></p>
-        <p><label>AGI </label><input id="valAGI" type="number" value="5" min="3" max="7" onclick="update()"/></p>
-        <p><label>CON </label><input id="valCON" type="number" value="5" min="3" max="7" onclick="update()"/></p>
-        <p><label>INT </label><input id="valINT" type="number" value="5" min="3" max="7" onclick="update()"/></p>
-        <p><label>MEM </label><input id="valMEM" type="number" value="5" min="3" max="7" onclick="update()"/></p>
-        <p><label>VOL </label><input id="valVOL" type="number" value="5" min="3" max="7" onclick="update()"/></p>
+      <div id="carac-principales">
+        <p><label>FOR </label><input id="for" type="number" value="5" min="3" max="7" onclick="updateFOR()"/></p>
+        <p><label>AGI </label><input id="agi" type="number" value="5" min="3" max="7" onclick="updateAGI()"/></p>
+        <p><label>CON </label><input id="con" type="number" value="5" min="3" max="7" onclick="updateCON()"/></p>
+        <p><label>INT </label><input id="int" type="number" value="5" min="3" max="7" onclick="updateINT()"/></p>
+        <p><label>MEM </label><input id="mem" type="number" value="5" min="3" max="7" onclick="updateMEM()"/></p>
+        <p><label>VOL </label><input id="vol" type="number" value="5" min="3" max="7" onclick="updateVOL()"/></p>
         <p><!-- Pour des besoins d'affichage" --></p>
-        <p><label>CHA </label><input id="valCHA" type="number" value="5" min="3" max="7" onclick="update()"/></p>
-        <p class="eg"><span id="answerVal">Points restants : <span id="answerPts">2</span></span></p>
-      </form>
+        <p><label>CHA </label><input id="cha" type="number" value="5" min="3" max="7" onclick="updateCHA()"/></p>
+        <p class="eg"><span id="answerVal"><span id="carac-pts">Points restants : 2</span></span></p>
+      </div>
 
       <p class="desc">Yeoun est naturellement dotée d'un cerveau performant, une des raisons qui l'ont amenée à s'intéresser à la magie. Ses statistiques de base sont 6 en INT et en MEM et 5 pour les autres.</p>
       <p class="desc">Yeoun a toujours été de nature solitaire. Jouer avec les autres enfants ne l'a jamais spécialement intéressée. Elle préférait de loin étudier seule (+1 MEM et +1 INT). Ses parents, fiers de la grande intelligence de leur fille, la traitaient comme une petite princesse, lui évitant au maximum les tâches domestiques (-1 FOR) et la protégeant de situations de stress (-1 VOL). Certes, Yeoun est aujourd'hui une lanceuse de sorts assez compétente, mais elle est devenue une adulte distante et hautaine, peu douée pour les relations sociales. Pour tout avouer, elle sait se montrer franchement pénible.</p>
@@ -245,56 +245,56 @@
           </tr>
           <tr>
             <th><label>Endurance</label><br/><input id="comp1" type="number" value="0" min="0" onclick="updateComp('1')"/></th>
-            <td><span class="t_score">CON</span><br/><span id="comp1Score">5</span></td><td class="t_res"><span id="comp1res"></span></td>
+            <td><span class="t_score">CON</span><br/><span id="comp1score">5</span></td><td class="t_res"><span id="comp1res"></span></td>
             <th><label>Perception</label><br/><input id="comp2" type="number" value="0" min="0" onclick="updateComp('2')"/>
-            <td><span class="t_score">INT</span><br/><span id="comp2Score">5</span></td><td class="t_res"><span id="comp2res"></span></td>
+            <td><span class="t_score">INT</span><br/><span id="comp2score">5</span></td><td class="t_res"><span id="comp2res"></span></td>
           </tr>
           <tr>
             <th><label>Puissance</label><br/><input id="comp3" type="number" value="0" min="0" onclick="updateComp('3')"/></th>
-            <td><span class="t_score">FOR</span><br/><span id="comp3Score">5</span></td><td class="t_res"><span id="comp3res"></span></td>
+            <td><span class="t_score">FOR</span><br/><span id="comp3score">5</span></td><td class="t_res"><span id="comp3res"></span></td>
             <th><label>Instinct</label><br/><input id="comp4" type="number" value="0" min="0" onclick="updateComp('4')"/>
-            <td><span class="t_score">INT</span><br/><span id="comp4Score">5</span></td><td class="t_res"><span id="comp4res"></span></td>
+            <td><span class="t_score">INT</span><br/><span id="comp4score">5</span></td><td class="t_res"><span id="comp4res"></span></td>
           </tr>
           <tr>
             <th><label>Chevaucher</label><br/><input id="comp5" type="number" value="0" min="0" onclick="updateComp('5')"/></th>
-            <td><span class="t_score">FOR</span><br/><span id="comp5Score">5</span></td><td class="t_res"><span id="comp5res"></span></td>
+            <td><span class="t_score">FOR</span><br/><span id="comp5score">5</span></td><td class="t_res"><span id="comp5res"></span></td>
             <th><label>Perception magique</label><br/><input id="comp6" type="number" value="0" min="0" onclick="updateComp('6')"/>
-            <td><span class="t_score">INT</span><br/><span id="comp6Score">5</span></td><td class="t_res"><span id="comp6res"></span></td>
+            <td><span class="t_score">INT</span><br/><span id="comp6score">5</span></td><td class="t_res"><span id="comp6res"></span></td>
           </tr>
           <tr>
             <th><label>Acrobatie</label><br/><input id="comp7" type="number" value="0" min="0" onclick="updateComp('7')"/></th>
-            <td><span class="t_score">AGI</span><br/><span id="comp7Score">5</span></td><td class="t_res"><span id="comp7res"></span></td>
+            <td><span class="t_score">AGI</span><br/><span id="comp7score">5</span></td><td class="t_res"><span id="comp7res"></span></td>
             <th><label>Évaluation magique</label><br/><input id="comp8" type="number" value="0" min="0" onclick="updateComp('8')"/>
-            <td><span class="t_score">INT</span><br/><span id="comp8Score">5</span></td><td class="t_res"><span id="comp8res"></span></td>
+            <td><span class="t_score">INT</span><br/><span id="comp8score">5</span></td><td class="t_res"><span id="comp8res"></span></td>
           </tr>
           <tr>
             <th><label>Discrétion</label><br/><input id="comp9" type="number" value="0" min="0" onclick="updateComp('9')"/></th>
-            <td><span class="t_score">AGI</span><br/><span id="comp9Score">5</span></td><td class="t_res"><span id="comp9res"></span></td>
+            <td><span class="t_score">AGI</span><br/><span id="comp9score">5</span></td><td class="t_res"><span id="comp9res"></span></td>
             <th><label>Dominer</label><br/><input id="comp10" type="number" value="0" min="0" onclick="updateComp('10')"/>
-            <td><span class="t_score">CHA</span><br/><span id="comp10Score">5</span></td><td class="t_res"><span id="comp10res"></span></td>
+            <td><span class="t_score">CHA</span><br/><span id="comp10score">5</span></td><td class="t_res"><span id="comp10res"></span></td>
           </tr>
           <tr>
             <th><label>Ecamotage</label><br/><input id="comp11" type="number" value="0" min="0" onclick="updateComp('11')"/></th>
-            <td><span class="t_score">AGI</span><br/><span id="comp11Score">5</span></td><td class="t_res"><span id="comp11res"></span></td>
+            <td><span class="t_score">AGI</span><br/><span id="comp11score">5</span></td><td class="t_res"><span id="comp11res"></span></td>
             <th><label>Convaincre</label><br/><input id="comp12" type="number" value="0" min="0" onclick="updateComp('12')"/>
-            <td><span class="t_score">CHA</span><br/><span id="comp12Score">5</span></td><td class="t_res"><span id="comp12res"></span></td>
+            <td><span class="t_score">CHA</span><br/><span id="comp12score">5</span></td><td class="t_res"><span id="comp12res"></span></td>
           </tr>
           <tr>
             <th><label>Habileté manuelle</label><br/><input id="comp13" type="number" value="0" min="0" onclick="updateComp('13')"/></th>
-            <td><span class="t_score">AGI</span><br/><span id="comp13Score">5</span></td><td class="t_res"><span id="comp13res"></span></td>
+            <td><span class="t_score">AGI</span><br/><span id="comp13score">5</span></td><td class="t_res"><span id="comp13res"></span></td>
             <th><label>Psychologie</label><br/><input id="comp14" type="number" value="0" min="0" onclick="updateComp('14')"/>
-            <td><span class="t_score">CHA</span><br/><span id="comp14Score">5</span></td><td class="t_res"><span id="comp14res"></span></td>
+            <td><span class="t_score">CHA</span><br/><span id="comp14score">5</span></td><td class="t_res"><span id="comp14res"></span></td>
           </tr>
           <tr>
             <th><label>Culture générale</label><br/><input id="comp15" type="number" value="0" min="0" onclick="updateComp('15')"/></th>
-            <td><span class="t_score">MEM</span><br/><span id="comp15Score">5</span></td><td class="t_res"><span id="comp15res"></span></td>
+            <td><span class="t_score">MEM</span><br/><span id="comp15score">5</span></td><td class="t_res"><span id="comp15res"></span></td>
             <th><label>Culture spécifique</label><br/><input id="comp16" type="number" value="0" min="0" onclick="updateComp('16')"/>
-            <td><span class="t_score">MEM</span><br/><span id="comp16Score">5</span></td><td class="t_res"><span id="comp16res"></span></td>
+            <td><span class="t_score">MEM</span><br/><span id="comp16score">5</span></td><td class="t_res"><span id="comp16res"></span></td>
           </tr>
           <tr>
             <th><label>Apprentissage</label><br/><input id="comp17" type="number" value="0" min="0" onclick="updateComp('17')"/></th>
-            <td><span class="t_score">MEM</span><br/><span id="comp17Score">5</span></td><td class="t_res"><span id="comp17res"></span></td>
-            <td colspan="3" class="t_colspan">Points à attribuer : <span id="compRes">40</span></td>
+            <td><span class="t_score">MEM</span><br/><span id="comp17score">5</span></td><td class="t_res"><span id="comp17res"></span></td>
+            <td colspan="3" class="t_colspan">Points à attribuer : <span id="comp-pts">40</span></td>
           </tr>
         </table>
       </div>

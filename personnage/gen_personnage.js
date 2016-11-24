@@ -1,3 +1,94 @@
+function getFOR () { return parseInt(document.getElementById("for").value); }
+function getAGI () { return parseInt(document.getElementById("agi").value); }
+function getCON () { return parseInt(document.getElementById("con").value); }
+function getINT () { return parseInt(document.getElementById("int").value); }
+function getMEM () { return parseInt(document.getElementById("mem").value); }
+function getVOL () { return parseInt(document.getElementById("vol").value); }
+function getCHA () { return parseInt(document.getElementById("cha").value); }
+
+function updateFOR() {
+    var FOR = getFOR();
+    computeCaracPts();
+
+    /* Mise à jour des valeurs dans la feuille de personnage */
+}
+
+function updateAGI() {
+    var FOR = getAGI();
+    computeCaracPts();
+
+    /* Mise à jour des valeurs dans la feuille de personnage */
+}
+
+function updateCON() {
+    var FOR = getCON();
+    computeCaracPts();
+
+    /* Mise à jour des valeurs dans la feuille de personnage */
+}
+
+function updateINT() {
+    var FOR = getINT();
+    computeCaracPts();
+
+    /* Mise à jour des valeurs dans la feuille de personnage */
+}
+
+function updateMEM() {
+    var FOR = getMEM();
+    computeCaracPts();
+
+    /* Mise à jour des valeurs dans la feuille de personnage */
+}
+
+function updateVOL() {
+    var FOR = getVOL();
+    computeCaracPts();
+
+    /* Mise à jour des valeurs dans la feuille de personnage */
+}
+
+function updateCHA() {
+    var FOR = getCHA();
+    computeCaracPts();
+
+    /* Mise à jour des valeurs dans la feuille de personnage */
+}
+
+function computeCaracPts() {
+    var   FOR = parseInt(document.getElementById("for").value);
+    var   AGI = parseInt(document.getElementById("agi").value);
+    var   CON = parseInt(document.getElementById("con").value);
+    var INTEL = parseInt(document.getElementById("int").value);
+    var   MEM = parseInt(document.getElementById("mem").value);
+    var   VOL = parseInt(document.getElementById("vol").value);
+    var   CHA = parseInt(document.getElementById("cha").value);
+
+    var ans = 37 - FOR - AGI - CON - INTEL - MEM - VOL - CHA;
+    if (ans != 0) {
+        var s = "s";
+        if (Math.abs(ans) == 1) { s = ""; }
+        document.getElementById("carac-pts").innerHTML = "Point"+s+" restant"+s+" : "+ans;
+    } else {
+        ans = "Le personnage est valide."
+
+        /* Calcul du cas où le personnage est déséquilibré */
+        var delta = 0;
+        var deltaFOR =   FOR - 5; if (deltaFOR < 0) { delta += deltaFOR; }
+        var deltaAGI =   AGI - 5; if (deltaAGI < 0) { delta += deltaAGI; }
+        var deltaCON =   CON - 5; if (deltaCON < 0) { delta += deltaCON; }
+        var deltaINT = INTEL - 5; if (deltaINT < 0) { delta += deltaINT; }
+        var deltaMEM =   MEM - 5; if (deltaMEM < 0) { delta += deltaMEM; }
+        var deltaVOL =   VOL - 5; if (deltaVOL < 0) { delta += deltaVOL; }
+        var deltaCHA =   CHA - 5; if (deltaCHA < 0) { delta += deltaCHA; }
+        
+        if (delta < -4) { ans = "Le personnage est déséquilibré\xa0!" }
+        document.getElementById("carac-pts").innerHTML = ans;
+    }
+}
+
+
+
 function update() {
 
     var FOR = parseInt(document.caracPrincipales.valFOR.value);
@@ -43,7 +134,7 @@ function updateComp(number) {
     if (modulo > 0) { document.getElementById(dice).innerHTML = modulo; }
     else { document.getElementById(dice).innerHTML = ""; }
     var pts = 40 - computeCompPts();
-    document.getElementById("compRes").innerHTML = pts;
+    document.getElementById("comp-res").innerHTML = pts;
 }
 
 function computeCompPts() {

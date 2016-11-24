@@ -3,10 +3,10 @@
 .container-sous-domaines label, .container-domaine label { font-weight: bold; }
 
 /* Caractéristiques principales */
-.container-carac { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-end; width: 60%; margin: 2em auto; }
-.container-carac p { flex: 1 1 30%; text-align: center; margin: 0.5em 0; }  
-.container-carac label { display: inline-block; width: 3em; font-weight: bold; }
-.container-carac input { width: 2.5em; padding-left: 1ex; }
+#carac-principales { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-end; width: 60%; margin: 2em auto; }
+#carac-principales p { flex: 1 1 30%; text-align: center; margin: 0.5em 0; }  
+#carac-principales label { display: inline-block; width: 3em; font-weight: bold; }
+#carac-principales input { width: 2.5em; padding-left: 1ex; }
 
 /* Compétences */
 #form-competences table { margin-left: auto; margin-right: auto; width: 100%; text-align: center; }
