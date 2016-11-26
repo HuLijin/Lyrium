@@ -75,6 +75,7 @@ h5 { font-size: inherit; margin-bottom: 0; }
 body > header > nav a { font-size: 16px; font-weight: normal; }
 @media (min-width: 1024px) { article:not(h3), article:not(h4), dl.boxed { font-size: 13px; } }
 @media (max-width: 768px) { .t_smallfont { font-size: 13px; } }
+.content > header p { font-size: small; }
 
 
 

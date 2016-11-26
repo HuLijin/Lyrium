@@ -32,9 +32,23 @@
 
     <section class="content">
       
-      <h2>Création d'un personnage</h2>
+      <header>
+        <h2>Création d'un personnage</h2>
 
-      <p class="NdA"><b>Note d'Hu Lijin : attention ! Les liens présents sur cette page ne fonctionnent pas encore. Les formulaires non plus. Ceci est juste de la mise en page.</b></p>
+        <p class="NdA"><b>Note d'Hu Lijin : attention ! Les liens présents sur cette page ne fonctionnent pas encore. Les formulaires non plus. Ceci est juste de la mise en page.</b></p>
+
+        <p>Cette page est un guide de création de personnage interactif : au fur et à mesure de la lecture de ce guide, vous serez amené à faire des choix et à calculer des valeurs. Pour vous simplifier la tâche, une bonne partie des calculs sont gérés directement sur la page, vous n'aurez plus qu'à reporter les résultats sur votre feuille de personnage.</p>
+
+        <p>Parfois il vous faudra choisir entre deux ou trois options (précédées par<input type="radio"/>). Le contenu de la page change dynamiquement en fonction de l'option que vous sélectionnez.</p>
+
+        <p>L'ordre des sections de cette page suit l'ordre de remplissage de la feuille de personnage : la partie droite du recto puis le verso. Un seul détail ne suit pas cet ordre linéaire de remplissage : le choix des talents. En effet, il nous a paru plus judicieux de vous indiquer qu'un talent existe dans la section où il se révèle utile, plutôt que de vous fournir une immense liste de talents sortis de leur contexte. Vous verrez donc régulièrement du texte encadré avec une case à cocher à l'intérieur pour indiquer que vous souhaitez prendre ce talent ou non.</p>
+        <p>Vous pouvez cocher plusieurs talents au cours de votre lecture. Une section dédiée à la fin du guide vous permettra de sélectionner ceux qui vous intéressent le plus et vous indiquera, si cela s'avère nécessaire, la section du guide qu'il vous faudra adapter en conséquence. Retenez simplement que les talents définissent finement le concept de votre personnage, donc pensez à ne cocher que ceux qui collent vraiment au concept. Et si aucun ne semble convenir au cours de votre lecture, pas d'inquiétudes, vous en trouverez d'autres en fin de guide.</p>
+      </header>
+
+
+
+
+
 
       <h3>Le concept</h3>
 
@@ -48,8 +62,8 @@
 
       <p>La magie étant un élément absolument banal de Lyrium, chaque personnage maitrise habituellement 3 sous-domaines de magie. C'est le moment de les choisir à l'aide de <a href="../magie/magie.html" target="_blank">cette page</a>. C'est également le moment de choisir si le personnage sera :</p>
       <ul style="list-style-type:none;">
-        <li><input type="radio" name="choix-mage" id="profane" onclick="display('mage-profane')"/> un <a>lanceur de sorts profane</a> (choix des sous-domaines libres et malus au lancement des sorts)</li>
-        <li><input type="radio" name="choix-mage" id="elementaire" onclick="display('mage-elementaire')"/> un <a>mage élémentaire</a> (obligation de prendre les 3 sous-domaines d'un domaine élémentaire).</li>
+        <li><input type="radio" name="choix-mage" id="profane" onclick="displayMagie('mage-profane')"/> un <a>lanceur de sorts profane</a> (choix des sous-domaines libres et malus au lancement des sorts)</li>
+        <li><input type="radio" name="choix-mage" id="elementaire" onclick="displayMagie('mage-elementaire')"/> un <a>mage élémentaire</a> (obligation de prendre les 3 sous-domaines d'un domaine élémentaire).</li>
       </ul>
 
       <div id="mage-profane" class="hidden">
@@ -132,7 +146,6 @@
               </optgroup>
               <optgroup label="Domaine du Feu">
                 <option value="1Air">Chaleur</option>
-                <option value="2Air">Esprit/Nécromancie</option>
               </optgroup>
               <optgroup label="Domaine de la Terre">
                 <option value="1Air">Minéral</option>
@@ -178,7 +191,9 @@
             </select> 
           </p>
         </div>
-        <p class="boxed">À cette étape de la création si le joueur souhaite créer un magicien apte à lancer de puissants sorts pour un coût réduit en points de fatigue mentale (PM), il peut songer à prendre le talent Ascendance : (description du talent ascendance).</p>
+        <p class="boxed">À cette étape de la création si le joueur souhaite créer un magicien apte à lancer de puissants sorts pour un coût réduit en points de fatigue mentale (PM), il peut songer à prendre le talent le talent suivant.
+      <br/><input id="talent-ascendance" type="checkbox"/><b>Ascendance</b> : (inclure définition)
+      <br/><br/>Attention cependant, il leur sera impossible de sélectionner un autre talent et il leur faudra prendre obligatoirement un défaut lors de la finalisation du personnage.</p>
       </div>
 
     
@@ -254,68 +269,157 @@
 
       <h3>Les compétences</h3>
 
-      <p></p>
+      <p>Un autre choix important est à faire ici. Soit le personnage est un touche-à-tout qui maitrise de manière égale toutes les compétences et qui commence l'aventure avec un avantage certain sur ses compagnons pour faire face à la diversité des situation qui les attendent, soit le personnage va se spécialiser au fur et à mesure de sa montée en niveau. Dans le deuxième cas, il pourra faire face à moins de situations, mais celles auxquelles il pourra faire face, il les surmontera avec plus de facilité.</p>
 
-      <div id="form-competences">
-        <table>
-          <tr>
-            <th>Base</th><th class="t_small">Score</th><th class="t_small">Rés.</th>
-            <th>Base</th><th class="t_small">Score</th><th class="t_small">Rés.</th>
-          </tr>
-          <tr>
-            <th><label>Endurance</label><br/><input id="comp1" type="number" value="0" min="0" onclick="updateComp('1')"/></th>
-            <td><span class="t_score">CON</span><br/><span id="comp1score">5</span></td><td class="t_res"><span id="comp1res"></span></td>
-            <th><label>Perception</label><br/><input id="comp2" type="number" value="0" min="0" onclick="updateComp('2')"/>
-            <td><span class="t_score">INT</span><br/><span id="comp2score">5</span></td><td class="t_res"><span id="comp2res"></span></td>
-          </tr>
-          <tr>
-            <th><label>Puissance</label><br/><input id="comp3" type="number" value="0" min="0" onclick="updateComp('3')"/></th>
-            <td><span class="t_score">FOR</span><br/><span id="comp3score">5</span></td><td class="t_res"><span id="comp3res"></span></td>
-            <th><label>Instinct</label><br/><input id="comp4" type="number" value="0" min="0" onclick="updateComp('4')"/>
-            <td><span class="t_score">INT</span><br/><span id="comp4score">5</span></td><td class="t_res"><span id="comp4res"></span></td>
-          </tr>
-          <tr>
-            <th><label>Chevaucher</label><br/><input id="comp5" type="number" value="0" min="0" onclick="updateComp('5')"/></th>
-            <td><span class="t_score">FOR</span><br/><span id="comp5score">5</span></td><td class="t_res"><span id="comp5res"></span></td>
-            <th><label>Perception magique</label><br/><input id="comp6" type="number" value="0" min="0" onclick="updateComp('6')"/>
-            <td><span class="t_score">INT</span><br/><span id="comp6score">5</span></td><td class="t_res"><span id="comp6res"></span></td>
-          </tr>
-          <tr>
-            <th><label>Acrobatie</label><br/><input id="comp7" type="number" value="0" min="0" onclick="updateComp('7')"/></th>
-            <td><span class="t_score">AGI</span><br/><span id="comp7score">5</span></td><td class="t_res"><span id="comp7res"></span></td>
-            <th><label>Évaluation magique</label><br/><input id="comp8" type="number" value="0" min="0" onclick="updateComp('8')"/>
-            <td><span class="t_score">INT</span><br/><span id="comp8score">5</span></td><td class="t_res"><span id="comp8res"></span></td>
-          </tr>
-          <tr>
-            <th><label>Discrétion</label><br/><input id="comp9" type="number" value="0" min="0" onclick="updateComp('9')"/></th>
-            <td><span class="t_score">AGI</span><br/><span id="comp9score">5</span></td><td class="t_res"><span id="comp9res"></span></td>
-            <th><label>Dominer</label><br/><input id="comp10" type="number" value="0" min="0" onclick="updateComp('10')"/>
-            <td><span class="t_score">CHA</span><br/><span id="comp10score">5</span></td><td class="t_res"><span id="comp10res"></span></td>
-          </tr>
-          <tr>
-            <th><label>Ecamotage</label><br/><input id="comp11" type="number" value="0" min="0" onclick="updateComp('11')"/></th>
-            <td><span class="t_score">AGI</span><br/><span id="comp11score">5</span></td><td class="t_res"><span id="comp11res"></span></td>
-            <th><label>Convaincre</label><br/><input id="comp12" type="number" value="0" min="0" onclick="updateComp('12')"/>
-            <td><span class="t_score">CHA</span><br/><span id="comp12score">5</span></td><td class="t_res"><span id="comp12res"></span></td>
-          </tr>
-          <tr>
-            <th><label>Habileté manuelle</label><br/><input id="comp13" type="number" value="0" min="0" onclick="updateComp('13')"/></th>
-            <td><span class="t_score">AGI</span><br/><span id="comp13score">5</span></td><td class="t_res"><span id="comp13res"></span></td>
-            <th><label>Psychologie</label><br/><input id="comp14" type="number" value="0" min="0" onclick="updateComp('14')"/>
-            <td><span class="t_score">CHA</span><br/><span id="comp14score">5</span></td><td class="t_res"><span id="comp14res"></span></td>
-          </tr>
-          <tr>
-            <th><label>Culture générale</label><br/><input id="comp15" type="number" value="0" min="0" onclick="updateComp('15')"/></th>
-            <td><span class="t_score">MEM</span><br/><span id="comp15score">5</span></td><td class="t_res"><span id="comp15res"></span></td>
-            <th><label>Culture spécifique</label><br/><input id="comp16" type="number" value="0" min="0" onclick="updateComp('16')"/>
-            <td><span class="t_score">MEM</span><br/><span id="comp16score">5</span></td><td class="t_res"><span id="comp16res"></span></td>
-          </tr>
-          <tr>
-            <th><label>Apprentissage</label><br/><input id="comp17" type="number" value="0" min="0" onclick="updateComp('17')"/></th>
-            <td><span class="t_score">MEM</span><br/><span id="comp17score">5</span></td><td class="t_res"><span id="comp17res"></span></td>
-            <td colspan="3" class="t_colspan">Points à attribuer : <span id="comp-pts">40</span></td>
-          </tr>
-        </table>
+      <p class="boxed">Les personnages qui souhaitent suivre la voie du touche-à-tout doivent sélectionner le talent suivant.
+      <br/><input id="talent-touche-a-tout" type="checkbox"/><b>Touche à tout</b> : (inclure définition)
+      <br/><br/>Attention cependant, il leur sera impossible de sélectionner un autre talent et il leur faudra prendre obligatoirement un défaut lors de la finalisation du personnage.</p>
+
+      <ul style="list-style-type:none;">
+        <li><input type="radio" name="choix-mage" id="choix-touche-a-tout" onclick="displayComp('touche-a-tout')"/> Le personnage dispose du talent <a>Touche-à-tout</a></li>
+        <li><input type="radio" name="choix-mage" id="choix-specialiste" onclick="displayComp('specialiste')"/> Le personnage choisit la manière dont il va développer ses compétences</li>
+      </ul>
+
+      <div id="specialiste" class="hidden">
+        <p>À la création, le personnage dispose de 40 points de compétence à répartir librement entre les 17 compétences. Il gagne un dé de réserve tous les 10 points dépensés dans une compétence.</p>
+        <p><strong>Pour débloquer une compétence, le joueur doit investir au moins 1 point dans cette compétence.</strong> Pour rappel, si un personnage doit effectuer un test une compétence non débloquée, il se fatiguera obligatoirement.</p>
+
+        <p>Conseil de répartition :</p>
+        <ul>
+          <li>Soit vois dépensez un point dans chaque compétence pour toutes les débloquer et vous dépensez vos 23 points restants comme vous l'entendez (en montant deux compétences à 10 ou une compétence à 20 et une dernière à 6).</li>
+          <li>Soit vous dépensez 30 points dans une à trois compétences et vous débloquez dix autres compétences avec vos 10 points restants.</li>
+        </ul>
+
+        <div class="form-competences">
+          <table>
+            <tr>
+              <th>Base</th><th class="t_small">Score</th><th class="t_small">Rés.</th>
+              <th>Base</th><th class="t_small">Score</th><th class="t_small">Rés.</th>
+            </tr>
+            <tr>
+              <th><label>Endurance</label><br/><input id="comp1" type="number" value="0" min="0" onclick="updateComp('1')"/></th>
+              <td><span class="t_score">CON</span><br/><span id="comp1score">5</span></td><td class="t_res"><span id="comp1res"></span></td>
+              <th><label>Perception</label><br/><input id="comp2" type="number" value="0" min="0" onclick="updateComp('2')"/></th>
+              <td><span class="t_score">INT</span><br/><span id="comp2score">5</span></td><td class="t_res"><span id="comp2res"></span></td>
+            </tr>
+            <tr>
+              <th><label>Puissance</label><br/><input id="comp3" type="number" value="0" min="0" onclick="updateComp('3')"/></th>
+              <td><span class="t_score">FOR</span><br/><span id="comp3score">5</span></td><td class="t_res"><span id="comp3res"></span></td>
+              <th><label>Instinct</label><br/><input id="comp4" type="number" value="0" min="0" onclick="updateComp('4')"/></th>
+              <td><span class="t_score">INT</span><br/><span id="comp4score">5</span></td><td class="t_res"><span id="comp4res"></span></td>
+            </tr>
+            <tr>
+              <th><label>Chevaucher</label><br/><input id="comp5" type="number" value="0" min="0" onclick="updateComp('5')"/></th>
+              <td><span class="t_score">FOR</span><br/><span id="comp5score">5</span></td><td class="t_res"><span id="comp5res"></span></td>
+              <th><label>Perception magique</label><br/><input id="comp6" type="number" value="0" min="0" onclick="updateComp('6')"/></th>
+              <td><span class="t_score">INT</span><br/><span id="comp6score">5</span></td><td class="t_res"><span id="comp6res"></span></td>
+            </tr>
+            <tr>
+              <th><label>Acrobatie</label><br/><input id="comp7" type="number" value="0" min="0" onclick="updateComp('7')"/></th>
+              <td><span class="t_score">AGI</span><br/><span id="comp7score">5</span></td><td class="t_res"><span id="comp7res"></span></td>
+              <th><label>Évaluation magique</label><br/><input id="comp8" type="number" value="0" min="0" onclick="updateComp('8')"/></th>
+              <td><span class="t_score">INT</span><br/><span id="comp8score">5</span></td><td class="t_res"><span id="comp8res"></span></td>
+            </tr>
+            <tr>
+              <th><label>Discrétion</label><br/><input id="comp9" type="number" value="0" min="0" onclick="updateComp('9')"/></th>
+              <td><span class="t_score">AGI</span><br/><span id="comp9score">5</span></td><td class="t_res"><span id="comp9res"></span></td>
+              <th><label>Dominer</label><br/><input id="comp10" type="number" value="0" min="0" onclick="updateComp('10')"/></th>
+              <td><span class="t_score">CHA</span><br/><span id="comp10score">5</span></td><td class="t_res"><span id="comp10res"></span></td>
+            </tr>
+            <tr>
+              <th><label>Ecamotage</label><br/><input id="comp11" type="number" value="0" min="0" onclick="updateComp('11')"/></th>
+              <td><span class="t_score">AGI</span><br/><span id="comp11score">5</span></td><td class="t_res"><span id="comp11res"></span></td>
+              <th><label>Convaincre</label><br/><input id="comp12" type="number" value="0" min="0" onclick="updateComp('12')"/></th>
+              <td><span class="t_score">CHA</span><br/><span id="comp12score">5</span></td><td class="t_res"><span id="comp12res"></span></td>
+            </tr>
+            <tr>
+              <th><label>Habileté manuelle</label><br/><input id="comp13" type="number" value="0" min="0" onclick="updateComp('13')"/></th>
+              <td><span class="t_score">AGI</span><br/><span id="comp13score">5</span></td><td class="t_res"><span id="comp13res"></span></td>
+              <th><label>Psychologie</label><br/><input id="comp14" type="number" value="0" min="0" onclick="updateComp('14')"/></th>
+              <td><span class="t_score">CHA</span><br/><span id="comp14score">5</span></td><td class="t_res"><span id="comp14res"></span></td>
+            </tr>
+            <tr>
+              <th><label>Culture générale</label><br/><input id="comp15" type="number" value="0" min="0" onclick="updateComp('15')"/></th>
+              <td><span class="t_score">MEM</span><br/><span id="comp15score">5</span></td><td class="t_res"><span id="comp15res"></span></td>
+              <th><label>Culture spécifique</label><br/><input id="comp16" type="number" value="0" min="0" onclick="updateComp('16')"/></th>
+              <td><span class="t_score">MEM</span><br/><span id="comp16score">5</span></td><td class="t_res"><span id="comp16res"></span></td>
+            </tr>
+            <tr>
+              <th><label>Apprentissage</label><br/><input id="comp17" type="number" value="0" min="0" onclick="updateComp('17')"/></th>
+              <td><span class="t_score">MEM</span><br/><span id="comp17score">5</span></td><td class="t_res"><span id="comp17res"></span></td>
+              <td colspan="3" class="t_colspan">Points à attribuer : <span id="comp-pts">40</span></td>
+            </tr>
+          </table>
+        </div>
+
+        <p class="desc">Au cours de son enfance, Yeoun a beaucoup mis à contribution son sens de l'analyse. Par conséquent, elle dispose de 10 points (= un dé de réserve) en Perception et Perception magique. Par ailleurs, en dehors de la magie de l'eau, elle s'est beaucoup intéressée à la botanique, plus particulièrement aux plantes médicinales. Elle dispose également de 10 points en Culture spécifique, avec une spécialisation en herboristerie (ce qui lui permet entre autres de repérer si des plantes sont comestibles ou non). Les domaines où elle ne brille absolument pas en revanche sont la Puissance, l'Escamotage, Convaincre et Psychologie. Toutes les autres compétences sont débloquées avec 1 point attribué.</p>
+      </div>
+
+      <div id="touche-a-tout" class="hidden">
+        <p>Le personnage dispose de 170 points de base, répartis équitablement entre toutes les compétences : 10 points de base dans chaque compétence. Comme tous les personnages, il gagne 1 dé de réserve par tranche de 10 points dans une compétence. Il dispose donc d'un dé de réserve pour chacune de ses compétences.</p>
+        <p>Sa feuille de eprsonnage devrait donc ressembler à ceci : </p>
+
+        <div class="form-competences">
+          <table>
+            <tr>
+              <th>Base</th><th class="t_small">Score</th><th class="t_small">Rés.</th>
+              <th>Base</th><th class="t_small">Score</th><th class="t_small">Rés.</th>
+            </tr>
+            <tr>
+              <th><label>Endurance</label><br/>10</th>
+              <td><span class="t_score">CON</span><br/><span id="comp1score-bis">5</span></td><td class="t_res">1</td>
+              <th><label>Perception</label><br/>10</th>
+              <td><span class="t_score">INT</span><br/><span id="comp2score-bis">5</span></td><td class="t_res">1</td>
+            </tr>
+            <tr>
+              <th><label>Puissance</label><br/>10</th>
+              <td><span class="t_score">FOR</span><br/><span id="comp3score-bis">5</span></td><td class="t_res">1</td>
+              <th><label>Instinct</label><br/>10</th>
+              <td><span class="t_score">INT</span><br/><span id="comp4score-bis">5</span></td><td class="t_res">1</td>
+            </tr>
+            <tr>
+              <th><label>Chevaucher</label><br/>10</th>
+              <td><span class="t_score">FOR</span><br/><span id="comp5score-bis">5</span></td><td class="t_res">1</td>
+              <th><label>Perception magique</label><br/>10</th>
+              <td><span class="t_score">INT</span><br/><span id="comp6score-bis">5</span></td><td class="t_res">1</td>
+            </tr>
+            <tr>
+              <th><label>Acrobatie</label><br/>10</th>
+              <td><span class="t_score">AGI</span><br/><span id="comp7score-bis">5</span></td><td class="t_res">1</td>
+              <th><label>Évaluation magique</label><br/>10</th>
+              <td><span class="t_score">INT</span><br/><span id="comp8score-bis">5</span></td><td class="t_res">1</td>
+            </tr>
+            <tr>
+              <th><label>Discrétion</label><br/>10</th>
+              <td><span class="t_score">AGI</span><br/><span id="comp9score-bis">5</span></td><td class="t_res">1</td>
+              <th><label>Dominer</label><br/>10</th>
+              <td><span class="t_score">CHA</span><br/><span id="comp10score-bis">5</span></td><td class="t_res">1</td>
+            </tr>
+            <tr>
+              <th><label>Ecamotage</label><br/>10</th>
+              <td><span class="t_score">AGI</span><br/><span id="comp11score-bis">5</span></td><td class="t_res">1</td>
+              <th><label>Convaincre</label><br/>10</th>
+              <td><span class="t_score">CHA</span><br/><span id="comp12score-bis">5</span></td><td class="t_res">1</td>
+            </tr>
+            <tr>
+              <th><label>Habileté manuelle</label><br/>10</th>
+              <td><span class="t_score">AGI</span><br/><span id="comp13score-bis">5</span></td><td class="t_res">1</td>
+              <th><label>Psychologie</label><br/>10</th>
+              <td><span class="t_score">CHA</span><br/><span id="comp14score-bis">5</span></td><td class="t_res">1</td>
+            </tr>
+            <tr>
+              <th><label>Culture générale</label><br/>10</th>
+              <td><span class="t_score">MEM</span><br/><span id="comp15score-bis">5</span></td><td class="t_res">1</td>
+              <th><label>Culture spécifique</label><br/>10</th>
+              <td><span class="t_score">MEM</span><br/><span id="comp16score-bis">5</span></td><td class="t_res">1</td>
+            </tr>
+            <tr>
+              <th><label>Apprentissage</label><br/>10</th>
+              <td><span class="t_score">MEM</span><br/><span id="comp17score-bis">5</span></td><td class="t_res">1</td>
+              <td colspan="3" class="t_colspan">Culture spécifique : une spécialité à choisir au choix dans divers domaines (voir compétence).</td>
+            </tr>
+          </table>
+        </div>
       </div>
 
 
@@ -324,12 +428,142 @@
 
 
 
+      <h3>Répartition des points de manoeuvre</h3>
+
+      <p>Grâce à sa caractéristique de MEM, le personnage dispose de <span id="pts-manoeuvre">6</span> points de manoeuvre.</p>
+      <p>Les points de manoeuvre sont à répartir entre les maitrises d'arme, les sorts et les manoeuvres proprement dites : </p>
+
+      <ul>
+        <li><label>Points alloués pour les maitrises d'arme :  </label></li>
+        <li><label>Points alloués pour les sorts :  </label></li>
+        <li><label>Points alloués pour les manoeuvres :  </label></li>
+      </ul>
+
+      <p class="eg">Note : À ce moment de la lecture du guide, l'allocation des points de manoeuvre est faite à titre indicatif. Vous reviendrez souvent à cette section pour ajuster, déplacer un point de manoeuvre d'une catégorie à l'autre, jongler avec les talents et la section finalisation du personnage.</p> 
+
+      <h4>Les maitrises d'arme</h4>
+
+      <p>La première maitrise d'arme est toujours gratuite ! En revanche, chaque nouvelle maitrise d'arme ou chaque point supplémentaire alloué dans une maitrise d'arme coûte 1 point de manoeuvre.</p>
+      <p>Un personnage qui attaque avec une arme dont il n'a pas la maitrise a un malus de 2 points lors du calcul du DDP. A contrario, pour chaque point alloué dans une maitrise au delà du premier, le personnage reçoit un bonus d'1 point lors du calcul du DDP.</p>
+
+      <p><a href="">Actualiser la liste des armes que le personnage peut maitriser.</a></p>
+
+      <ul id="liste-armes"></ul>
+
+      <p class="boxed">Le personnage peut gagner des points de manoeuvre supplémentaires dédiés aux maitrises d'armes grâce au talent suivant.
+      <br/><input id="talent-maitre-d-arme-1" type="checkbox"/><b>Maitre d'armes</b> (linker la description)
+      <br/><br/><input id="talent-maitre-d-arme-2" type="checkbox"/> : permet de sélectionner une deuxième fois ce talent. Attention, prendre un autre talent demandera de choisir un défaut lors de la finalisation de votre personnage.
+      <br/><br/><input id="talent-maitre-d-arme-3" type="checkbox"/> : permet de sélectionner une troisième fois ce talent. Attention, il sera impossible de sélectionner un autre talent et il faudra prendre obligatoirement un défaut lors de la finalisation de votre personnage.</p>
+
+      <h4>Les sorts</h4>
+
+      <p>D'après, vos choix au tout début du guide, votre personnage est apte à lancer des sorts des sous-domaines suivants : <span id="sort-sous-domaine-1">X</span>, <span id="sort-sous-domaine-2">X</span> et <span id="sort-sous-domaine-3">X</span>. Par ailleurs, grâce à sa caractéristique d'INT, il est apte à lancer des sorts d'évocation causant Xd4<span id="sort-degat"></span> dégâts.</p>
+
+      <p>La création de sorts est un système à part entière. Une fois que vous avez une idée du nombre de sorts que vous souhaitez créer, rendez-vous sur cette page.</p>
+
+      <p class="boxed">Le personnage peut gagner des points de manoeuvre supplémentaires dédiés aux sorts grâce au talent suivant.
+      <br/><input id="talent-connaissance-sort-1" type="checkbox"/><b>Connaissance innée d'un sort</b> (linker la description)
+      <br/><br/><input id="talent-connaissance-sort-2" type="checkbox"/> : permet de sélectionner une deuxième fois ce talent. Attention, prendre un autre talent demandera de choisir un défaut lors de la finalisation de votre personnage.
+      <br/><br/><input id="talent-connaissance-sort-3" type="checkbox"/> : permet de sélectionner une troisième fois ce talent. Attention, il sera impossible de sélectionner un autre talent et il faudra prendre obligatoirement un défaut lors de la finalisation de votre personnage.</p>
+
+      <p class="boxed">Les lanceurs de sort qui veulent éviter à tout prix un possible désastre lors d'un échec de sort pourront être intéressés par le talent suivant.
+      <br/><input id="talent-prevision-d-echec" type="checkbox"/><b>Prévision d'échec</b> (linker la description)</p>
+
+      <h4>Les manoeuvres</h4>
+
+      <p>Tous les personnages connaissent et peuvent utiliser les six manoeuvres ci-dessous. S'ils allouent 1 point à une de ces six manoeuvres, dites manoeuvres principales, ils débloquent l'accès à cinq nouvelles manoeuvres, dites manoeuvres secondaires. Si la manoeuvre principales et toutes les manoeuvres secondaires associées sont maitrisées, le personnage reçoit un bonus permanent.</p>
+      <p>Consulter cette page pour en savoir plus sur l'apprentissage et sur l'effet de chaque manoeuvre.</p>
+
+      <p><a href="javascript:toggleManoeuvres()"><span id="link-form-manoeuvres">Afficher</span> le mini-calculateur des points de manoeuvre</a> 
+      <div id="form-manoeuvres" class="hidden">
+        <p class="eg">Note 1 : vous pouvez cacher le mini calculateur sans craindre de perdre votre sélection actuelle. Lorsque vous afficherez à nouveau le mini-calculateur, votre sélection sera toujours là.</p>
+        <p class="eg">Note 2 : contrairement aux manoeuvres principales, les manoeuvres secondaires ne sont utilisables que si le personnage investissent au moins 1 point dedans.</p>
+        <p class="eg">Note 3 : Il est impossible de sélectionner plus de 10 manoeuvres au total. Une fois que 10 manoeuvres auront été sélectionnées, les autres seront grisées (pas encore implémenté).</p> 
+        
+        <div>
+          <p><strong>Coût de votre sélection en points de manoeuvre : <span id="pts-manoeuvre-previ"></span></strong></p>
+
+          <div class="container triple">
+            <article>
+              <p><input id="atk1" type="number" value="0" min="0" onclick="updateManoeuvre('atk')"/><label>  Frappe puissante</label></p>
+              <ul id="manoeuvre-atk" class="hidden">
+                <li><input id="atk2" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Briser</label></li>
+                <li><input id="atk3" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Désarmer</label></li>
+                <li><input id="atk4" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Assomer</label></li>
+                <li><input id="atk5" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Charger</label></li>
+              </ul>
+              <p id="manoeuvre-atk-bonus" class="eg hidden">Bonus : +1 dé de réserve de MAE</p>
+            </article>
+            <article>
+              <p><input id="tir1" type="number" value="0" min="0" onclick="updateManoeuvre('tir')"/><label>  Viser</label></p>
+              <ul id="manoeuvre-tir" class="hidden">
+                <li><input id="tir2" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Recharger</label></li>
+                <li><input id="tir3" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Tir à bout portant</label></li>
+                <li><input id="tir4" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Tir en nuée</label></li>
+                <li><input id="tir5" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Tir en aveugle</label></li>
+              </ul>
+              <p id="manoeuvre-tir-bonus" class="eg hidden">Bonus : +4m de portée</p>
+            </article>
+            <article>
+              <p><input id="mag1" type="number" value="0" min="0" onclick="updateManoeuvre('mag')"/><label>  Focalisation</label></p>
+              <ul id="manoeuvre-mag" class="hidden">
+                <li><input id="mag2" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Aura</label></li>
+                <li><input id="mag3" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Attaque magique</label></li>
+                <li><input id="mag4" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Défense magique</label></li>
+                <li><input id="mag5" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Duel de flux</label></li>
+              </ul>
+              <p id="manoeuvre-mag-bonus" class="eg hidden">Bonus : +1 dé de réserve de POU</p>
+            </article>
+          </div>
+          <div class="container triple">
+            <article>
+              <p><input id="def1" type="number" value="0" min="0" onclick="updateManoeuvre('def')"/><label>  Encaisser</label></p>
+              <ul id="manoeuvre-def" class="hidden">
+                <li><input id="def2" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Parade de proj./rayons</label></li>
+                <li><input id="def3" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Parade de zone</label></li>
+                <li><input id="def4" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Position défensive</label></li>
+                <li><input id="def5" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Couvrir</label></li>
+              </ul>
+              <p id="manoeuvre-def-bonus" class="eg hidden">Bonus : +3 PF max</p>
+            </article>
+            <article>
+              <p><input id="esq1" type="number" value="0" min="0" onclick="updateManoeuvre('esq')"/><label>  Esquive</label></p>
+              <ul id="manoeuvre-esq" class="hidden">
+                <li><input id="esq2" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Feinte</label></li>
+                <li><input id="esq3" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Contre-attaque</label></li>
+                <li><input id="esq4" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Evasion</label></li>
+                <li><input id="esq5" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Aveugler</label></li>
+              </ul>
+              <p id="manoeuvre-esq-bonus" class="eg hidden">Bonus : +1 dé de réserve d'ADA</p>
+            </article>
+            <article>
+              <p><input id="util1" type="number" value="0" min="0" onclick="updateManoeuvre('util')"/><label>  Deviner le sort</label></p>
+              <ul id="manoeuvre-util" class="hidden">
+                <li><input id="util2" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Rituel rapide</label></li>
+                <li><input id="util3" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Contrecarrer</label></li>
+                <li><input id="util4" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Bouclier mental</label></li>
+                <li><input id="util5" type="number" value="0" min="0" onclick="updateManoeuvre()"/><label>  Dissimuler le sort</label></li>
+              </ul>
+              <p id="manoeuvre-util-bonus" class="eg hidden">Bonus : réduction du coût de ces manoeuvres</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <p class="boxed">Le personnage peut gagner des points de manoeuvre supplémentaires dédiés aux maitrises d'armes grâce au talent suivant.
+      <br/><input id="talent-experience" type="checkbox"/><b>Expérience</b> (linker la description)
+      <br/><br/><input id="talent-experience-2" type="checkbox"/> : permet de sélectionner une deuxième fois ce talent. Attention, prendre un autre talent demandera de choisir un défaut lors de la finalisation de votre personnage.
+      <br/><br/><input id="talent-experience-3" type="checkbox"/> : permet de sélectionner une troisième fois ce talent. Attention, il sera impossible de sélectionner un autre talent et il faudra prendre obligatoirement un défaut lors de la finalisation de votre personnage.</p>
 
 
 
 
 
+      <h3>Finalisation</h3>
 
+      <h4>Les talents</h4>
+
+      <h4>L'équipement</h4>
 
     </section>
 
