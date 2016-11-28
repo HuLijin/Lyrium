@@ -23,6 +23,7 @@ function updateFOR() {
     computeCaracPts();
 
     /* Mise à jour des valeurs dans la feuille de personnage */
+    computeCompCaractFOR();
 }
 
 function updateAGI() {
@@ -30,6 +31,7 @@ function updateAGI() {
     computeCaracPts();
 
     /* Mise à jour des valeurs dans la feuille de personnage */
+    computeCompCaractAGI();
 }
 
 function updateCON() {
@@ -37,6 +39,7 @@ function updateCON() {
     computeCaracPts();
 
     /* Mise à jour des valeurs dans la feuille de personnage */
+    computeCompCaractCON();
 }
 
 function updateINT() {
@@ -44,6 +47,7 @@ function updateINT() {
     computeCaracPts();
 
     /* Mise à jour des valeurs dans la feuille de personnage */
+    computeCompCaractINT();
 }
 
 function INTtoDice(intel) {
@@ -60,6 +64,7 @@ function updateMEM() {
     computeCaracPts();
 
     /* Mise à jour des valeurs dans la feuille de personnage */
+    computeCompCaractMEM();
 }
 
 function updateVOL() {
@@ -74,6 +79,7 @@ function updateCHA() {
     computeCaracPts();
 
     /* Mise à jour des valeurs dans la feuille de personnage */
+    computeCompCaractCHA();
 }
 
 function computeCaracPts() {
@@ -116,6 +122,78 @@ function displayComp(cat) {
     document.getElementById("specialiste").className = "hidden";
     document.getElementById("touche-a-tout").className = "hidden";
     document.getElementById(cat).className = "";
+    computeCompCaractFOR();
+    computeCompCaractAGI();
+    computeCompCaractCON();
+    computeCompCaractINT();
+    computeCompCaractMEM();
+    computeCompCaractCHA();
+}
+
+function canComputeCompCaracs() {
+    var hidden = document.getElementById("specialiste").className;
+    if (hidden == "hidden") {
+        hidden = document.getElementById("touche-a-tout").className;
+        if (hidden == "hidden") {
+            return "";
+        } else {
+            return "score-bis";
+        }
+    }
+    return "score";
+}
+
+function computeCompCaractFOR () {
+    var ad = canComputeCompCaracs();
+    if (ad == "") { return; }
+    var FOR = getFOR();
+    document.getElementById("comp3"+ad).innerHTML = FOR;
+    document.getElementById("comp5"+ad).innerHTML = FOR;
+}
+
+function computeCompCaractAGI () {
+    var ad = canComputeCompCaracs();
+    if (ad == "") { return; }
+    var AGI = getAGI();
+    document.getElementById("comp7"+ad).innerHTML = AGI;
+    document.getElementById("comp9"+ad).innerHTML = AGI;
+    document.getElementById("comp11"+ad).innerHTML = AGI;
+    document.getElementById("comp13"+ad).innerHTML = AGI;
+}
+
+function computeCompCaractCON () {
+    var ad = canComputeCompCaracs();
+    if (ad == "") { return; }
+    var CON = getCON();
+    document.getElementById("comp1"+ad).innerHTML = CON;
+}
+
+function computeCompCaractINT () {
+    var ad = canComputeCompCaracs();
+    if (ad == "") { return; }
+    var INTEL = getINT();
+    document.getElementById("comp2"+ad).innerHTML = INTEL;
+    document.getElementById("comp4"+ad).innerHTML = INTEL;
+    document.getElementById("comp6"+ad).innerHTML = INTEL;
+    document.getElementById("comp8"+ad).innerHTML = INTEL;
+}
+
+function computeCompCaractMEM () {
+    var ad = canComputeCompCaracs();
+    if (ad == "") { return; }
+    var MEM = getMEM();
+    document.getElementById("comp15"+ad).innerHTML = MEM;
+    document.getElementById("comp16"+ad).innerHTML = MEM;
+    document.getElementById("comp17"+ad).innerHTML = MEM;
+}
+
+function computeCompCaractCHA () {
+    var ad = canComputeCompCaracs();
+    if (ad == "") { return; }
+    var CHA = getCHA();
+    document.getElementById("comp10"+ad).innerHTML = CHA;
+    document.getElementById("comp12"+ad).innerHTML = CHA;
+    document.getElementById("comp14"+ad).innerHTML = CHA;
 }
 
 function updateComp(number) {
