@@ -1,7 +1,9 @@
 document.write("<h3>Navigation rapide</h3>");
 document.write("<nav class='menu'>");
 document.write("<a href='./magie.html'>La magie dans lyrium</a>");
-document.write("<p class='eg'>Pour en apprendre davantage sur les domaines de magie, la magie profane et la magie élémentaire.</p>");
+document.write("<p class='eg'>Pour en apprendre davantage sur la magie profane et la magie élémentaire.</p>");
+document.write("<a href='./domaines.html'>Les domaines de magie</a>");
+document.write("<p class='eg'>Pour en apprendre davantage sur les domaines de magie.</p>");
 document.write("<a href='#'>La magie au quotidien</a>");
 document.write("<p class='eg'>Où l'on apprend pourquoi lancer un sort est risqué (DDS et fumbles).</p>");
 document.write("</nav>");
