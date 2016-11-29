@@ -1,1 +1,1 @@
-document.write("<p>Pied de page / Texture provenant de <a href='http://www.zingerbug.com/'>Zinger Bug</a></p>");
+document.write("<p><a href='/mentions_legales.html'>Mentions légales</a> / Texture provenant de <a href='http://www.zingerbug.com/'>Zinger Bug</a></p>");
