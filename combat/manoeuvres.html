@@ -65,7 +65,7 @@
         <dt>Faire appel à l'expérience</dt><dd>le personnage peut choisir de sacrifier tout ou une partie de ses dés de réserve pour tenter d'améliorer un lancer.</dd>
       </dl>
 
-      <p class="NdA">Note : réuniformiser les descriptions des manoeuvres : celles qui consomment des dés de réservent DOIVENT mentionner qu'un point investi offre une occasion supplémentaire d'utiliser la manoeuvre au cours d'un tour d'action et les autres doivent mentionner qu'elles sont utilisables à volonté.</p>
+      <p class="NdA">Note : les manoeuvres qui portent le sigle TODO sont les manoeuvres qui n'ont pas de description avec des variables. Avancement : Manoeuvres offensives check !</p>
       
       <div class="container">
 
@@ -77,35 +77,39 @@
           <div class="ppalManoeuver">
             <h5>&diams; Frappe puissante <a href="javascript:toggle('atk1')" class="atk1Link">(afficher)</a></h5>
             <p class="atk1 hidden eg">Manoeuvre offensive</p>
-            <p class="atk1 hidden">Dépenser <var>1</var> PF pour augmenter le DDP de la prochaine attaque physique de <var>1</var>.</p>
-            <p class="atk1 hidden">Chaque point investi dans cette manoeuvre permet de dépenser <var>1</var> PF supplémentaire, donc d'aumenter le DDP d'<var>1</var> point supplémentaire. Le personnage choisit combien de PF il souhaite dépenser de cette manière.</p>
+            <p class="atk1 hidden">Niveau <var>n</var> : dépenser entre 1 et <var>n+1</var> PF pour augmenter le DDP de la prochaine attaque physique de 1 à <var>n+1</var>.</p>
             <p class="atk1 hidden">Le personnage peut utiliser cette manoeuvre autant de fois qu'il le souhaite pendant son tour d'action.</p>
           </div>
 
           <div class="2ndManoeuver">
             <h5>Briser <a href="javascript:toggle('atk2')" class="atk2Link">(afficher)</a></h5>
-            <p class="atk2 hidden eg">Manoeuvre offensive</p>
-            <p class="atk2 hidden">Sacrifier <var>1</var> dé de réserve de MAE pour tenter de briser l'arme ou l'armure de la cible. La manoeuvre se déroule comme si le personnage effectuait une attaque physique. Si l'attaque passe, au lieu d'infliger des blessures à la cible, le personnage fait un jet de Puissance (FOR) opposé à la solidité de l'arme ou de l'armure. Si le test est réussi, pour chaque point au dessus de la valeur de solidité, la cible retranche 1 point de solidité à son arme ou son armure. Si l'attaque passe avec un coup critique, la cible retranche encore <var>1</var> point de solidité pour un critique mineur ou <var>3</var> points de solidité pour un critique majeur.</p>
-            <p class="atk2 hidden">Note : si le personnage vise une arme ou un bouclier avec une arme de contact, il applique les règles du combat relatives à une <b>attaque offensive sans visée</b>. Cependant, s'il vise une pièce d'armure ou s'il attaque avec une arme à distance, il applique les règles du combat relatives à une <b>attaque offensive avec visée</b>.</p>
-            <p class="atk2 hidden">Chaque point investi dans cette manoeuvre permet d'augmenter de <var>1</var> point le score du jet de Puissance. <b>Cette manoeuvre n'est utilisable qu'<var>1</var> seule fois par tour d'action.</b></p>
-            <p class="atk2 hidden">Note : cette manoeuvre offre un passif permanent aux jets de Puissance visant à détruire des objets, comme les murs par exemple. Chaque point investi dans cette manoeuvre augmente d'<var>1</var> point le score du jet de Puissance.</p>
+            <p class="atk2 hidden eg">Manoeuvre offensive et passif</p>
+            <p class="atk2 hidden">Niveau <var>n</var> : sacrifier 1 dé de réserve de MAE pour tenter de briser l'arme ou l'armure de la cible. Au lieu d'effectuer une attaque physique, le personnage fait un jet de Puissance (FOR) opposé à la solidité de l'arme ou de l'armure. Il ajoute <var>n</var> à son score de Puissance. Si le test est réussi, pour chaque point au dessus de la valeur de solidité, la cible retranche 1 point de solidité à son arme ou son armure. Si l'attaque passe avec un coup critique, la cible retranche encore <var>1</var> point de solidité pour un critique mineur ou <var>3</var> points de solidité pour un critique majeur.</p>
+            <p class="atk2 hidden">Note : si le personnage vise une arme ou un bouclier avec une arme de contact, il n'applique aucun malus à son jet de Puissance. Cependant, s'il vise une pièce d'armure ou s'il attaque avec une arme à distance, il doit appliquer un <b>malus de visée</b> à son jet de Puissance. Il s'agit du même malus qu'on applique au calcul du DDP, il peut être réduit ou même transformé en bonus grâce à la manoeuvre <a>Viser</a>.</p>
+            <p class="atk2 hidden"><b>Cette manoeuvre n'est utilisable qu'une seule fois par tour d'action.</b></p>
+            <p class="atk2 hidden"><b>Passif</b> : cette manoeuvre offre un passif permanent aux jets de Puissance visant à détruire des objets, comme les murs par exemple. Au niveau <var>n</var> : elle augmente d'<var>n</var> points le score du jet de Puissance.</p>
           </div>
 
           <div class="2ndManoeuver">
-            <h5>Désarmer &rarr; Maitriser <a href="javascript:toggle('atk3')" class="atk3Link">(afficher)</a></h5>
+            <h5>Désarmer &rarr; Maitriser TODO <a href="javascript:toggle('atk3')" class="atk3Link">(afficher)</a></h5>
             <p class="atk3 hidden eg">Manoeuvre offensive</p>
-            <p class="atk3 hidden">le personnage tente de désarmer son adversaire (il est vraiment vide le wiki...)</p>
-            <p class="atk3 hidden">le personnage tente de maîtriser sa cible, clef de bras, prise, tout est bon. La cible est immobilisée et ne peut agir. Condition : le lanceur ne peut se déplacer tant que la prise est effective, attaquer deviens une action complexe au tour suivant.</p>
+            <p class="atk3 hidden">Désarmer : le personnage tente de désarmer son adversaire</p>
+            <p class="atk3 hidden">Maitriser : le personnage tente de maîtriser sa cible, clef de bras, prise, tout est bon. La cible est immobilisée et ne peut agir. Condition : le lanceur ne peut se déplacer tant que la prise est effective, attaquer deviens une action complexe au tour suivant.</p>
           </div>
 
           <div class="2ndManoeuver">
             <h5>Assommer <a href="javascript:toggle('atk4')" class="atk4Link">(afficher)</a></h5>
-            <p class="atk4 hidden">le personnage tente d’assommer sa cible d'un coup sur la tête, ce qui immobilisera l’adversaire. Condition : une telle manœuvre ne peut être lancé que si la cible est prise par surprise (jet de sens opposé a discrétion).</p>
+            <p class="atk4 hidden eg">Manoeuvre offensive</p>
+            <p class="atk4 hidden">Niveau <var>n</var> : le personnage tente d’assommer sa cible d'un coup sur la tête, ce qui immobilisera l’adversaire. La manœuvre ne peut être lancée que si la cible est prise par surprise : le personnage fait un jet de Discrétion (AGI) opposé à un jet d'Instinct (INT) de la cible. Il ajoute <var>n</var> à son score de Discrétion. Si la manoeuvre passe, l'ennemi est assomé et hors d'état de combattre jusqu'à la fin de la phase de combat en cours.</p>
+            <p class="atk4 hidden">Cette manoeuvre peut être utilisée sur <var>n</var> cibles différentes par tour d'action. Le MJ peut donner un bonus au jet d'Instinct des cibles suivantes si le personnage a raté son jet de Discrétion (pour représenter le fait que les cibles sont en alerte).</p>
           </div>
 
           <div class="2ndManoeuver">
             <h5>Charger <a href="javascript:toggle('atk5')" class="atk5Link">(afficher)</a></h5>
-            <p class="atk5 hidden">Effet : le personnage charge un adversaire pour lui porter une attaque avec de l'élan. Condition : 4 mètres de portée minimale, 12 mètres de portée maximale, en ligne droite (si des obstacles sont sur la voie un test d'acrobatie peut être demandé). Il n'est pas possible de passer par dessus un personnage ennemi : le premier ennemi attaqué sera la cible de la charge. Si l’ennemi est à moins de 4 mètres, le bonus de charge n’est pas appliqué. Bonus : +1 au test par point investi, +1 dé d’intensité aux dégâts tous les 2 points investis</p>
+            <p class="atk5 hidden eg">Manoeuvre offensive</p>
+            <p class="atk5 hidden">Niveau <var>n</var> : le personnage charge un adversaire situé au minimum à <b>4 mètres</b> et au maximum à <b>12 mètres</b> pour lui porter une attaque avec de l'élan. Le DDP de l'attaque augmente de <var>n</var> points et les dommages de l'attaque augmentent de <var>n/2</var> points (arrondis à l'inférieur).</p>
+            <p class="atk5 hidden">Note : si des obstacles se trouvent sur la trajectoire, un test d'Acrobatie (AGI) peut être demandé par le MJ. Le MJ définit la difficulté du test en fonction de la taille de l'obstacle.</p>
+            <p class="atk5 hidden"><b>Cette manoeuvre n'est utilisable qu'une seule fois par tour d'action.</b></p>
           </div>
           <p class="boxed">Avantage si toutes les manoeuvres sont débloquées : un dé de réserve de MAE est ajouté de manière permanente à la réserve du personnage.</p>
         </article>
