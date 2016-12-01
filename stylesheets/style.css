@@ -3,7 +3,13 @@
  * (largement inspiré du livre CSS3 Flexbox, plongez dans les CSS modernes 
  * de Raphaël Goetter, grand merci à lui !)
  */
-@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Roboto');
+@font-face{ 
+  font-family: 'Fertigo';
+  src: url('Fertigo.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
 
 
 
@@ -60,17 +66,18 @@ tr > td { border: 1px solid #9e5f10; }
 /* Polices spéciales, reset de tailles de police, graisse */
 body { font-family: 'Droid Serif', serif; font-size: 90%; }
 .no-reduction { font-size: small; }
-h1, h2, h3, h4, aside > nav a { font-family: 'Oswald', sans-serif; }
-body > header > nav a { font-weight: bold; font-size: small; }
+h1, h2, h3, h4 { font-family: 'Fertigo', 'Roboto', sans-serif; }
+nav a { font-family: 'Roboto', sans-serif; font-weight: bold; font-size: small; }
+/* aside > nav a { font-size: medium; } */
 h1, h2 { font-size: x-large; }
 h3, h4 { font-size: large; }
-aside h3, aside h4 { font-size: medium; }
 h5 { font-size: inherit; margin-bottom: 0; }
 @media (min-width: 1024px) { article:not(h3), article:not(h4), dl.boxed { font-size: small; } }
 @media (max-width: 768px) { .t_smallfont { font-size: inherit; } }
-.content > header p { font-size: small; font-family: 'Oswald', sans-serif; font-weight: 100; }
+.content > header p { font-size: small; font-family: 'Roboto', sans-serif; }
 b { font-weight: bolder; }
-strong { font-family: 'Oswald', sans-serif; font-weight: 100; }
+.notice, strong { font-family: 'Roboto', sans-serif; }
+aside p.eg { font-size: x-small; }
 
 
 
