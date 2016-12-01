@@ -3,7 +3,7 @@
  * (largement inspiré du livre CSS3 Flexbox, plongez dans les CSS modernes 
  * de Raphaël Goetter, grand merci à lui !)
  */
-@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab');
 @font-face{ 
   font-family: 'Fertigo';
   src: url('Fertigo.ttf') format('truetype');
@@ -16,12 +16,13 @@
 
 
 /* Mise en forme principale en 2 colonnes, affichage responsive */
-body { min-height: 100vh; display: flex; flex-direction: column; margin: 10px; }
+body { min-height: 100vh; display: flex; flex-direction: column; margin: 1px 10px; }
 main { display: flex; flex: 1 1 auto; }
-main > *+* { margin-left: 10px; }
+main > *+* { margin-left: 20px; }
 aside { width: 25%; }
 .content { flex: 1; }
-nav a { display: block; padding: .4em 1em; }
+nav a { display: block; padding: .4em .7em; }
+aside nav a { padding: 0 .7em; }
 
 @media (max-width: 768px) { 
   main { flex-direction: column; } 
@@ -64,19 +65,19 @@ tr > td { border: 1px solid #9e5f10; }
 
 
 /* Polices spéciales, reset de tailles de police, graisse */
-body { font-family: 'Droid Serif', serif; font-size: 90%; }
+body { font-family: 'Roboto', sans-serif; font-size: medium; }
 .no-reduction { font-size: small; }
-h1, h2, h3, h4 { font-family: 'Fertigo', 'Roboto', sans-serif; }
-nav a { font-family: 'Roboto', sans-serif; font-weight: bold; font-size: small; }
-/* aside > nav a { font-size: medium; } */
+h1, h2, h3, h4 { font-family: 'Fertigo', sans-serif; }
+nav a { font-family: 'Roboto Condensed', sans-serif; /*font-size: medium;*/ }
+header > nav a { font-weight: bold; }
 h1, h2 { font-size: x-large; }
 h3, h4 { font-size: large; }
 h5 { font-size: inherit; margin-bottom: 0; }
 @media (min-width: 1024px) { article:not(h3), article:not(h4), dl.boxed { font-size: small; } }
 @media (max-width: 768px) { .t_smallfont { font-size: inherit; } }
-.content > header p { font-size: small; font-family: 'Roboto', sans-serif; }
+.content > header p { font-style: italic; font-size: 90%; }
 b { font-weight: bolder; }
-.notice, strong { font-family: 'Roboto', sans-serif; }
+.notice, strong { font-family: 'Roboto Condensed', sans-serif; font-weight: bold; }
 aside p.eg { font-size: x-small; }
 
 
@@ -168,7 +169,7 @@ h3, h4 { display: flex; }
 h3::before, h3::after,
 h4::before, h4::after { display: block; content: ""; align-self: center; height: 2px; }
 h3::before, 
-h4::before { flex: 0; flex-basis: 2em; margin-right: 5px; }
+h4::before { flex: 0; flex-basis: 40px; margin-right: 5px; }
 h3::after, 
 h4::after { flex: 1; margin-left: 5px; }
 
@@ -178,7 +179,7 @@ ol > li { margin-bottom: 1em; }
 ol > li:last-child { margin-bottom: initial; }
 
 p.eg { font-style: italic; font-size: small; }
-p.desc { font-style: italic; margin-left: 30px; margin-right: 30px; }
+p.desc { font-style: italic; margin-left: 40px; margin-right: 40px; font-family: 'Roboto Slab', serif; font-size: 90%; }
 p.desc .source::before { content: "\2013  "; }
 p.NdA { margin-left: 30px; }
 p.opt { font-size: small; }
