@@ -106,7 +106,7 @@ body > header > nav > a {
     background: #eadaca url("parchment.jpg") repeat;
     text-align: center;
     line-height: 4rem;
-    font-weight: bold;
+    font-family: 'Fertigo', 'Roboto', sans-serif;
     font-size: x-large;
   }
 }
