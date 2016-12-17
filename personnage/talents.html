@@ -8,7 +8,6 @@
   <link rel="shortcut icon" href="../favicon.ico" />
   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <link rel="icon" type="image/png" href="../favicon.png" />
-  <script src="personnage.js"></script>
 </head>
 <body>
 
@@ -34,9 +33,115 @@
 
     <section class="content">
       
-      <h2>Incarner un personnage de Lyrium</h2>
+      <h2>Talents et défauts</h2>
 
-      <p>Section en cours de construction, se référer au menu latéral.</p>
+      <p>(Les fautes ne sont aps corrigées, à faire ASAP)</p>
+
+      <h3>Les talents, comment ça marche ?</h3>
+
+      <p>Règle numéro 1 : un personnage dispose naturellement de deux emplacements de talent (représentés par <input type="checkbox" disabled="disabled" />).</p>
+      <p>Règle numéro 2 : un personange peut gagner un emplacement de talent supplémentaire s'il acquiert un défaut.</p>
+
+      <h3>Listes de talents et de défauts</h3>
+
+      <p>Les talents sont plus ou moins puissants.</p>
+      <ul>
+        <li>certains occupent un seul emplacement &rarr; <input type="checkbox" disabled="disabled" /></li>
+        <li>d'autres deux emplacements &rarr; <input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /></li>
+        <li>et les plus puissants nécessitent trois emplacements &rarr; <input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /></li>
+      </ul>
+
+      <p>Sélectionner un défaut permet donc d'acquérir un talent à un emplacement supplémentaire ou bien l'un des très puissants talents à trois emplacements.</p>
+
+      <p>Certains talents occupant un emplacement peuvent être sélectionnés deux ou trois fois. Ils seront indiqués sous la forme <input type="checkbox" disabled="disabled" />(x2) et <input type="checkbox" disabled="disabled" />(x3). Attention, ce n'est pas le cas de tous les talents !</p>
+
+      <h4>Les talents</h4>
+
+      <h5>Animal de compagnie</h5>
+      <p>Le personnage possède un compagnon animal avec lequel il possède des liens très forts. Il commence le jeu avec, et devra s'en occuper. Si l'animal devais mourir le joueur perd un tiers de ses PM maximum.</p>
+      <p>Le coût de ce talent est variable : <input type="checkbox" disabled="disabled" /> petit animal, <input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /> animal moyen, <input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /> gros animal</p>
+      <ul>
+        <li>Petit : Chouette, Furet, Chat, Chien, Iguane, Serpent</li>
+        <li>Chien-loup, Lynx, Panthère, Salamandre</li>
+        <li>Cheval, Aurochs, Crabe de terre, Drake</li>
+      </ul>
+
+      <h5>Ascendance</h5>
+      <p><input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /> Le personnage possède un parent, ou est la réincarnation d'un esprit élémentaire. Par conséquent, le coût en PM de tout sort du domaine de magie choisi est réduit de moitié. Mais le coût en PM de tout sort d’un autre domaine est doublé et le personnage ne peut pas apprendre les tours de passe-passe appartenant à un autre domaine, à l'exception des tours de passe-passe des Corrompus ou des Coeurs-Purs.</p>
+
+      <h5>Beau parleur</h5>
+      <p><input type="checkbox" disabled="disabled" /> un dé de réserve supplémentaire pour les compétences sociales (même si la compétence n'est pas débloquée)</p>
+
+      <h5>Bibelot magique</h5>
+      <p>le personnage possède un objet particulier qui possède des pouvoirs plus ou moins puissants. En accord avec le MdJ l'objet peut être une arme, une armure ou tout autre objet. Ce dernier possédera un pouvoir utilisable une fois par jour ou un pouvoir passif.</p>
+      <p>Le coût de ce talent est variable : <input type="checkbox" disabled="disabled" />(x3) petit bibelot magique, <input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /> bibelot magique assez puissant, <input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /> bibelot magique très puissant</p>
+
+      <h5>Chanceux</h5>
+      <p><input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /> La chance du personnage est hors norme, il n'est jamais la cible d'un effet aléatoire. La chance a tout de même des limites et cela ne marche pas pour les jeux de hasard.</p>
+
+      <h5>Connaissance innée d’un sort</h5>
+      <p><input type="checkbox" disabled="disabled" />(x3) Le personnage connaît un sort supplémentaire à la création.</p>
+
+      <h5>Experience</h5>
+      <p><input type="checkbox" disabled="disabled" />(x3) gagne la maîtrise d'une manœuvre supplémentaire.</p>
+
+      <h5>Immunité à l’alcool</h5>
+      <p><input type="checkbox" disabled="disabled" /> ne peut etre affecté par les effets de l’alcool.</p>
+
+      <h5>Immunité au poison</h5>
+      <p><input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /> ne peut etre affecté par un poison.</p>
+      <p><i>Attention, le poison n'a pas encoré été implémenté dans le jeu !</i></p>
+
+      <h5>Maitre d'arme</h5>
+      <p><input type="checkbox" disabled="disabled" />(x3) gagne la maîtrise d'un type d'arme supplémentaire (ne permet pas d'améliorer une compétence d'arme déjà existante).</p>
+
+      <h5>Prévision d'échec</h5>
+      <p><input type="checkbox" disabled="disabled" /> lors d'un échec de sort, au lieu de relancer 1D10 pour déterminer si le sort évolue en fumble, le personnage peut choisir de sacrifier 1 dé de POU : le sort n'évoluera pas en fumble. (Limité à 1 seule fois par tour d'action en combat.)</p>
+
+      <h5>Résistance à l’épuisement</h5>
+      <p><input type="checkbox" disabled="disabled" />(x2) réduit la difficulté du test de voyage physique de 10 points. Cela ne s'applique aps aux caravanes.</p>
+
+      <h5>Savant</h5>
+      <p><input type="checkbox" disabled="disabled" />(x2) le personnage possède un domaine de culture spécifique supplémentaire.</p>
+
+      <h5>Thèse</h5>
+      <p><input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /> Grâce a des recherches poussées, le personnage peut se vanter d'avoir fait progressé l'humanité dans un domaine. Il est expert dans un domaine choisi et ainsi reconnu par ses pairs. Il a un passe droit qui lui permet de couvrir ses dépenses pour les besoins courants.</p>
+
+      <h5>Touche à tout</h5>
+      <p><input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /><input type="checkbox" disabled="disabled" /> Le personnage ne gagne pas de points de compétence quand il monte de niveau. En revanche, il gagne un dé de réserve pour toutes ses compétences à la création. Il gagne encore un dé supplémentaire aux niveaux 4, 7, 10, 13, 16 et 19.</p>
+
+      <h5>Volonté de fer</h5>
+      <p><input type="checkbox" disabled="disabled" /> réduit la difficulté du test contre le démon de x points (pas encore défini).</p>
+
+
+
+      <h4>Les défauts</h4>
+
+      <p>Il n'y a que huit défauts, mais attention, chacun d'eux contient un gros désavantage pour le personnage dans une situation donnée. Cependant, plutôt que voir ce défaut comme un boulet enchainé au pied du personnage, il peut être incorporé au background du personnage pour le rendre plus profond et plus plaisant à jouer !</p>
+
+      <h5>Laid</h5>
+      <p>Gravement défiguré par un accident ou une maladie, le personnage n'est pas agréable a regarder. Ses interlocuteurs ne peuvent le regarder dans les yeux sans avoir la nausée. Jet pour convaincre n’utilise pas CHA</p>
+
+      <h5>Malchanceux</h5>
+      <p>Tout ce qui peut mal tourner pour le personnage tourne mal (exemple : le personnage, fatigé par une longue chevauchée, tombe de fatigue dnas la seule mare de boue des environs). Résultat augmenté d’un pallier pour les fumbles !</p>
+
+      <h5>Maladie incapacitante</h5>
+      <p>Le personnage a attrapé une maladie incapacitante qui ne lui permet pas de se reposer comme tout le monde. PF récupérés en se reposant réduits de 50%</p>
+
+      <h5>Vice</h5>
+      <p>Le personnage possède un vice, plus ou moins caché, il doit consommer un produit ou faire une action particulière pour assouvir ses pulsions. -1 PM max par jour où le vice n’est pas assouvi Si le vice est particulièrement malsain, des PC peuvent être gagnés. Notez que la forêt de Val est réputée pour ses petits champignons "relaxants".</p>
+
+      <h5>Phobie</h5>
+      <p>Le personnage a peur d’une chose en particulier. S’il y est confronté, il doit faire un jet de VOL contre un DDD de 12. S’il échoue, il perd autant de PM que la marge d’échec.</p>
+
+      <h5>Allergie</h5>
+      <p>Le corps du personnage réagit violemment a une substance en particulier. S’il entre en contact avec, il doit faire un jet de CON contre un DDD de 12. S’il échoue il perd autant de PF que la marge d’échec. Éeviter de coupler une allergie aux plantes avec un personnage Coeur-pur, ou celui-ci risque d'avoir des difficultés à se nourrir convenablement sur la route.</p>
+
+      <h5>Pauvre</h5>
+      <p>général Le joueur commence la partie avec des équipements de qualité médiocre. incompatible avec l'avantage bibelot magique.</p>
+
+      <h5>Illettré</h5>
+      <p>Le personnage ne sais pas ou très peu lire, et est incapable d'écrire. S’il doit lire, il doit faire un test de connaissances générales. Le DDD dépend de ses aptitudes. S’il échoue, il perd autant de PM que la marge d’échec.</p>
       
     </section>
 
@@ -53,120 +158,3 @@
 
 </body>
 </html>
-
-
-Les avantages sont classés par ordre alphabétique.
-Affinité magique supr
-Animal de compagnie
-
-    Coût : selon la taille
-    Modificateur : compagnon
-    Effet : Le personnage possède un compagnon animal avec lequel il possède des liens très forts. Il commence le jeu avec, et devra s'en occuper. Si l'animal devais mourir le joueur perd un tiers de ses PM maximum.
-    Petit : Chouette, Furet, Chat, Chien (petit), Iguane, Serpent (petit)
-    Moyen : Chien-loup, Lynx, Panthère, Salamandre (moyen)
-    Grand : Cheval, Aurochs, Crabe de terre, Drake
-
-Ascendance
-
-    Coût : 3
-    Modificateur : sorts
-    Effet : Le personnage possède un parent, ou est la réincarnation d'un esprit élémentaire. Par conséquent, le coût en PM de tout sort du domaine de magie choisi est réduit de moitié. Mais le coût en PM de tout sort d’un autre domaine est doublé et le personnage ne peut pas apprendre les tours de passe-passe appartenant à un autre domaine.
-    À l'exception des tours de passe-passe des Corrompus ou des Coeurs-Purs.
-
-Athlète supr
-Beau parleur
-
-    Coût : 1
-    Modificateur : compétences
-    Effet : un dé de réserve supplémentaire pour les compétences sociales (même si la compétence n'est pas débloquée)
-
-Bibelot magique
-
-    Coût : variable
-    Modificateur : équipement
-    Effet : le personnage possède un objet particulier qui possède des pouvoirs plus ou moins puissants. En accord avec le MdJ l'objet peut être une arme, une armure ou tout autre objet. Ce dernier possédera un pouvoir utilisable une fois par jour ou un pouvoir passif.
-
-Chanceux
-
-    Coût : 2
-    Modificateur : divers
-    Effet : La chance du personnage est hors norme, il n'est jamais la cible d'un effet aléatoire. La chance a tout de même des limites et cela ne marche pas pour les jeux de hasard.
-
-Connaissance innée d’un sort
-
-    Coût : 1
-    Modificateur : sorts
-    Effet : Le personnage connaît un sort supplémentaire à la création
-
-Débordant d'énergie supr
-Des mains d’or supr
-Don mystique supr
-Esprit completsupr
-Experience ajout
-
-    Coût : 1
-    Modificateur : général
-    Effet : gagne la maîtrise d'une manœuvre supplémentaire
-
-Infatigable supr
-Immunité à l’alcool
-
-    Coût : 1
-    Modificateur : résistances
-    Effet : ne peut etre affecté par les effets de l’alcool
-
-Immunité au poison
-
-    Coût : 2
-    Modificateur : résistances
-    Effet : ne peut etre affecté par un poison
-
-Maitre d'arme
-
-    Coût : 1
-    Modificateur : général
-    Effet : gagne la maîtrise d'un type d'arme supplémentaire
-
-Maitre des arts martiaux supr
-Mental d'acier supr
-Prévision d'échec ajout
-
-    Coût : 1
-    Modificateur : fumble
-    Effet : lors d'un échec de sort, au lieu de relancer 1D10 pour déterminer si le sort évolue en fumble, le personnage peut choisir de sacrifier 1 dé de POU : le sort n'évoluera pas en fumble. (Limité à 1 seule fois par tour d'action en combat.)
-
-Récupération rapide supr
-Régénénarion améliorée supr
-Résistance à l’épuisement Modifier
-
-    Coût : 2
-    Modificateur : degré de difficulté
-    Effet : réduit la difficulté du test de voyage physique de 10 points
-
-Résistance aux critiques supr
-Résistance magique supr
-Résistance physique supr
-Résistant aux coups supr
-Savant
-
-    Coût : 1
-    Modificateur : compétences
-    Effet : le personnage possède un domaine de culture spécifique supplémentaire (peut être pris 2 fois)
-
-Thèse
-
-    Coût : 2
-    Modificateur : général
-    Effet : Grâce a des recherches poussées, le personnage peut se vanter d'avoir fait progressé l'humanité dans un domaine. Il est expert dans un domaine choisi et ainsi reconnu par ses pairs. Il a un passe droit qui lui permet de couvrir ses dépenses pour les besoins courants.
-
-Touche à tout
-
-    Coût : 3
-    Modificateur : compétences
-    Effet : Le personnage ne gagne pas de point de compétence quand il monte de niveau. En revanche, il gagne un dé de réserve pour toutes ses compétences à la création. Il gagne encore un dé supplémentaire aux niveaux 4, 7, 10, 13, 16 et 19.
-
-Volonté de fer modif
-
-    Coût : 1
-    Modificateur : degré de difficulté
-    Effet : réduit la difficulté du test contre le démon de x points
