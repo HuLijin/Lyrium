@@ -1,7 +1,7 @@
 function calculate(pieds) {
     /* temps de trajet */
     var base = document.pieds.dist.value;
-    var vit = base / 6;
+    var vit = base / 12;
     var hour = vit - vit % 1;
     var min = (vit - hour) * 60;
     min = min - min % 1;
