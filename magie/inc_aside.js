@@ -15,6 +15,8 @@ document.write("<a href='./intensites.html'>L'intensité d'un sort</a>");
 document.write("<p class='eg'>Où l'on peut trouver les différentes échelles d'intensité qui existent.</p>");
 document.write("<a href='./calculateur_intensites.html'>Calculateur d'intensités</a>");
 document.write("<p class='eg'>Parce que c'est rudement plus pratique d'estimer rapidement le coût d'un sort sur un champ de bataille.</p>");
+document.write("<a href='./exemples_sorts.html'>Exemples de sorts</a>");
+document.write("<p class='eg'>Pour vous donner des idées, sera peut-être déplacé ?</p>");
 document.write("</nav>");
 document.write("<h3>La convocation</h3>");
 document.write("<nav class='menu'>");
