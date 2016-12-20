@@ -175,6 +175,11 @@ h4::after { flex: 1; margin-left: 5px; }
 
 .hidden { display: none; }
 
+.fiche-perso-manoeuvres input { margin: 0; width: 1.5em; text-align: center; font-weight: bold; }
+.fiche-perso-manoeuvres .stroke input { font-weight: normal; }
+.fiche-perso-manoeuvres p { font-weight: bold; margin-bottom: 1ex; }
+.fiche-perso-manoeuvres ul { list-style-type: none; margin-top: 1ex; }
+
 ol > li { margin-bottom: 1em; }
 ol > li:last-child { margin-bottom: initial; }
 

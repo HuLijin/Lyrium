@@ -80,68 +80,68 @@
 
       <h3>Manoeuvres (8 points de manoeuvre, 5 alloués)</h3>
 
-      <div class="container triple">
+      <div class="container triple fiche-perso-manoeuvres">
         <article class="no-reduction">
           <h4>Attaque</h4>
+          <p><input type="text" value="0" disabled="disabled" /> Frappe puissante</p>
           <ul>
-            <li>Frappe puissante 0</li>
-            <li class="stroke">Briser</li>
-            <li class="stroke">Désarmer</li>
-            <li class="stroke">Assommer</li>
-            <li class="stroke">Charger</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Briser</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Désarmer</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Assommer</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Charger</li>
           </ul>
         </article>
         <article class="no-reduction">
           <h4>Tir</h4>
+          <p><input type="text" value="1" disabled="disabled" /> Viser</p>
           <ul>
-            <li>Viser 1</li>
-            <li class="stroke">Recharger</li>
-            <li class="stroke">Tir à bout portant</li>
-            <li class="stroke">Tir en nuée</li>
-            <li class="stroke">Tir en aveugle</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Recharger</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Tir à bout portant</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Tir en nuée</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Tir en aveugle</li>
           </ul>
         </article>
         <article class="no-reduction">
           <h4>Magie</h4>
+          <p><input type="text" value="1" disabled="disabled" /> Focalisation</p>
           <ul>
-            <li>Focalisation 1</li>
-            <li class="stroke">Aura</li>
-            <li class="stroke">Attaque magique</li>
-            <li>Défense magique 1</li>
-            <li class="stroke">Duel de flux</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Aura</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Attaque magique</li>
+            <li><input type="text" value="1" disabled="disabled" /> Défense magique</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Duel de flux</li>
           </ul>
         </article>
       </div>
 
-      <div class="container triple">
+      <div class="container triple fiche-perso-manoeuvres">
         <article class="no-reduction">
           <h4>Défense</h4>
+          <p><input type="text" value="0" disabled="disabled" /> Encaisser</p>
           <ul>
-            <li>Encaisser 0</li>
-            <li class="stroke">Parade de projectile</li>
-            <li class="stroke">Parade de zone</li>
-            <li class="stroke">Position défensive</li>
-            <li class="stroke">Couvrir</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Parade de projectile</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Parade de zone</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Position défensive</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Couvrir</li>
           </ul>
         </article>
         <article class="no-reduction">
           <h4>Esquive</h4>
+          <p><input type="text" value="1" disabled="disabled" /> Esquiver</p>
           <ul>
-            <li>Esquiver 1</li>
-            <li class="stroke">Feinte</li>
-            <li class="stroke">Contre-attaque</li>
-            <li class="stroke">Evasion</li>
-            <li class="stroke">Aveugler</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Feinte</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Contre-attaque</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Evasion</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Aveugler</li>
           </ul>
         </article>
         <article class="no-reduction">
           <h4>Utilitaire</h4>
+          <p><input type="text" value="1" disabled="disabled" /> Deviner le sort</p>
           <ul>
-            <li>Deviner le sort 1</li>
-            <li class="stroke">Rituel rapide</li>
-            <li class="stroke">Contrecarrer</li>
-            <li class="stroke">Bouclier mental</li>
-            <li class="stroke">Dissimuler</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Rituel rapide</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Contrecarrer</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Bouclier mental</li>
+            <li class="stroke"><input type="text" value="0" disabled="disabled" /> Dissimuler</li>
           </ul>
         </article>
       </div>
@@ -150,16 +150,59 @@
 
       <p class="eg">Yeoun bénéficie du talent "Sort inné" (gain d'un emplacement de sort au niveau 1) et du talent "Annulation d'échec" (possibilité d'annuler un fumble en sacrifiant un dé de réserve de POU, une seule fois par tour d'action).</p>
 
-      <p>Sort inné <b>Transformation en loup</b> : sort de transformation, caractéristique de combat améliorée au choix (RP : MAE ou ADA), prend l'apparence d'un grand loup.</p>
+      <div class="skills">
+        <article class="dom_eau">
+          <header><h5>Transformation en&nbsp;loup</h5><p>Sort&nbsp;de&nbsp;transformation d'eau</p></header>
+          <div>
+            <p>Lancé au contact, Yeoun prend l'apparence d'un grand loup, ce qui lui permet d'avoir une caractéristique de combat améliorée au choix.</p>
+            <p>C'est sa forme de voyage préférée.</p>
+          </div>
+          <footer><p>Échelles utilisées : bonus
+          <br>(RP : MAE ou ADA)</p></footer>
+        </article>
 
-      <p><b>Apparence du loup</b> : sort de transformation, 1 compétence améliorée et des oreilles de loup apparaissent, 2 compétences améliorées et des oreilles et une queue apparaissent (caractéristiques RP : perception et acrobatie).</p>
+        <article class="dom_eau">
+          <header><h5>Apparence du loup</h5><p>Sort&nbsp;de&nbsp;transformation d'eau</p></header>
+          <div>
+            <p>Lancé au contact, ce sort a deux niveaux :
+            <br/>1 compétence améliorée et des oreilles de loup apparaissent
+            <br/>2 compétences améliorées et des oreilles et une queue apparaissent</p>
+          </div>
+          <footer><p>Échelles utilisées : bonus
+          <br/>(RP : perception et acrobatie)</p></footer>
+        </article>
 
-      <p><b>Aiguille de glace</b> : sort d'évocation, un projectile de glace frappe un ennemi, sur le mode gel ou physique en fonction de l'envie, attaque à distance. Dans ses bons jours, Yeoun prend même la peine de lui donner une forme de flèche et de générer un bel arc glacé. Cet effet est purement cosmétique et n'apporte aucun bonus à l'attaque.</p>
+        <article class="dom_eau">
+          <header><h5>Flèche de glace</h5><p>Sort&nbsp;d'évocation de&nbsp;glace</p></header>
+          <div>
+            <p>Un projectile de glace frappe un ennemi, sur le mode gel ou physique en fonction de l'envie.</p>
+            <p>Parfois Yeoun génère en même temps un arc glacé. Cet effet est purement cosmétique.</p>
+          </div>
+          <footer><p>Échelles utilisées : dommages et portée
+          <br/>(Option : cible supplémentaire)</p></footer>
+        </article>
 
-      <p><b>Boule vampirisante</b> : sort d'évocation, un projectile d'eau (liquide) frappe un ennemi puis revient à Yeoun pour la soigner. Dans ses très bons jours, Yeoun pense à rediriger la boule vers un allié au lieu de la faire venir à elle.</p>
+        <article class="dom_eau">
+          <header><h5>Boule vampirisante</h5><p>Sort&nbsp;d'évocation d'eau</p></header>
+          <div>
+            <p>Lancé via un projectile, ce sort prend la forme d'une boule d'eau qui inflige des blessures à un ennemi pus restaure une partie des dégâts à Yeoun.</p>
+            <p>Yeoun peut rediriger les soins vers un allié.</p>
+          </div>
+          <footer><p>Échelles utilisées : dommages (x2), portée (x2) et cible supplémentaire</p></footer>
+        </article>
+      </div>
 
-      <p>Rappel, chaque personnage dispose d'un tour de passe-passe lié à son domaine.
-      <br/>Tour de passe-passe <b>Source</b> : fait j'aillir une source d'eau pure, donc potable (5L en continu).</p>
+      <p>Chaque personnage utilisant la magie profane dispose en plus d'un des trois tours de passe-passe liés à son domaine de prédilection. Yeoun maitrise celui de l'eau liquide.</p>
+
+      <div class="skills">
+        <article class="dom_eau">
+          <header><h5>Source</h5><p>Tour de passe-passe</p></header>
+          <div>
+            <p>Fait jaillir une source d'eau pure, donc potable (5L en continu).</p>
+          </div>
+          <footer><p>Sous-domaine de l'eau</p></footer>
+        </article>
+      </div>
 
       <h3>Équipement</h3>
 
