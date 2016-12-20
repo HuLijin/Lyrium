@@ -229,10 +229,23 @@ table > caption { caption-side: bottom; }
 /* Formatage des cartes de sorts */
 /* TODO : responsive ! */
 .skills { display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: -6px; margin-bottom: -6px;}
-.skills article { flex: 0 0 14em; border: 1px solid #5f1e01; border-radius: 5px; padding: 3px; min-height: 250px; display: flex; flex-direction: column; margin: 6px 1px; }
+.skills article { flex: 0 0 14em; border: 1px solid #5f1e01; border-radius: 5px; padding: 3px; min-height: 35ex; display: flex; flex-direction: column; margin: 6px 1px; }
 .skills article div { flex: 1 1 auto; }
 .skills article > header, .skills article > footer { border: 1px solid #5f1e01; border-radius: 5px; padding: 2px; }
-.skills article > header { margin: 0 0 5px 0; }
-.skills article > footer { margin: 5px 0 0 0; }
+.skills article > header { margin: 0 0 5px 0; text-align: center; }
+.skills article > footer { margin: 5px 0 0 0; font-size: 90%; font-style: italic; }
 .skills article p { margin: 0; padding: 2px 0; }
-.skills article h5 { margin-top: 0; font-size: larger; text-align: center;}
+.skills article h5 { margin-top: 0; font-size: larger; }
+/* Couleurs des cartes */
+.skills .dom_feu { border-color: #ac3232; background-color: rgba(172,50,50,0.2); }
+.skills .dom_feu header, .skills .dom_feu footer { border-color: #ac3232; background-color: rgba(172,50,50,0.3); }
+.skills .dom_eau { border-color: #3f3f73; background-color: rgba(63,63,115,0.2); }
+.skills .dom_eau header, .skills .dom_eau footer { border-color: #3f3f73; background-color: rgba(63,63,115,0.3); }
+.skills .dom_terre { border-color: #4b692f; background-color: rgba(75,105,47,0.2); }
+.skills .dom_terre header, .skills .dom_terre footer { border-color: #4b692f; background-color: rgba(75,105,47,0.3); }
+.skills .dom_air { border-color: #8a6f30; background-color: rgba(138,111,48,0.2); }
+.skills .dom_air header, .skills .dom_air footer { border-color: #8a6f30; background-color: rgba(138,111,48,0.3); }
+.skills .dom_arcane { border-color: #000; background-color: rgba(203,219,252,0.2); }
+.skills .dom_arcane header, .skills .dom_arcane footer { border-color: #000; background-color: rgba(203,219,252,0.3); }
+.skills .dom_dim { border-color: #45283c; background-color: rgba(69,40,60,0.2); }
+.skills .dom_dim header, .skills .dom_dim footer { border-color: #45283c; background-color: rgba(69,40,60,0.3); }
