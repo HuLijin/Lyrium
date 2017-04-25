@@ -1,0 +1,1007 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"sm",
+				"smaller"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"la",
+				"larger"
+			],
+			[
+				"sp",
+				"space-between"
+			],
+			[
+				"GetPlay",
+				"Player::GetPlayerLife()\treal"
+			],
+			[
+				"SetPlayer",
+				"Player::SetPlayerLife(value)\tvoid"
+			],
+			[
+				"Tplayerl",
+				"TPlayerLifeRPG"
+			],
+			[
+				"getplayerid",
+				"Player::GetPlayerObjectID()\tobj"
+			],
+			[
+				"getval",
+				"Obj_GetValueD(obj, key, default)\tfree"
+			],
+			[
+				"obj",
+				"objPlayer"
+			],
+			[
+				"objgetva",
+				"Obj_GetValueD(obj, key, default)\tfree"
+			],
+			[
+				"objdel",
+				"Obj_Delete(obj)\tvoid"
+			],
+			[
+				"objrendersetsc",
+				"ObjRender_SetScaleXYZ(obj, x, y, z)\tvoid"
+			],
+			[
+				"max",
+				"Math::max(a, b)\treal"
+			],
+			[
+				"ObjRender",
+				"ObjRender_SetAlpha(obj, alpha)\tvoid"
+			],
+			[
+				"setrenderp",
+				"Obj_SetRenderPriorityI(obj, priority)\tvoid"
+			],
+			[
+				"Is",
+				"IsGoingLeft"
+			],
+			[
+				"o",
+				"objPlayer"
+			],
+			[
+				"TS",
+				"TShake"
+			],
+			[
+				"Objsetrend",
+				"Obj_SetRenderPriorityI(obj, priority)\tvoid"
+			],
+			[
+				"objS",
+				"objSpell"
+			],
+			[
+				"ObjMove",
+				"ObjMove_SetY(obj, y)\tvoid"
+			],
+			[
+				"ObjSrite",
+				"ObjSprite2D_SetDestCenter(obj)\tvoid"
+			],
+			[
+				"objs",
+				"objSpell"
+			],
+			[
+				"ObjPrim",
+				"ObjPrim_SetTexture(obj, path)\tvoid"
+			],
+			[
+				"VK",
+				"VK_SLOWMOVE"
+			],
+			[
+				"effec",
+				"effectEnd"
+			],
+			[
+				"effe",
+				"effectEnd"
+			],
+			[
+				"GetStgFrame",
+				"System::GetStgFrameHeight()\treal"
+			],
+			[
+				"GetStgFra",
+				"System::GetStgFrameLeft()\treal"
+			],
+			[
+				"circle",
+				"circleVertexCount"
+			],
+			[
+				"inner",
+				"innerCircleCount"
+			],
+			[
+				"Getstgframe",
+				"System::GetStgFrameTop()\treal"
+			],
+			[
+				"NB",
+				"NB_EFFECTS"
+			],
+			[
+				"Obj_setre",
+				"Obj_SetRenderPriorityI(obj, priority)\tvoid"
+			],
+			[
+				"Obj",
+				"ObjMove_GetY(obj)\treal"
+			],
+			[
+				"anti",
+				"antiCheat"
+			],
+			[
+				"GetPla",
+				"Player::GetPlayerLife()\treal"
+			],
+			[
+				"CreateDigit",
+				"CreateDigitArray"
+			],
+			[
+				"LoadS",
+				"Script::LoadScript(path)\treal"
+			],
+			[
+				"HL",
+				"HL_MagDef"
+			],
+			[
+				"HL_Ma",
+				"HL_MagAtk"
+			],
+			[
+				"HL_",
+				"HL_PhyAtk_Range"
+			],
+			[
+				"Game",
+				"Game_BattlerBase"
+			],
+			[
+				"create",
+				"createBubbleWindow"
+			],
+			[
+				"update",
+				"updatePosition"
+			],
+			[
+				"event",
+				"eventID"
+			],
+			[
+				"is",
+				"_isBubble"
+			],
+			[
+				"load",
+				"loadBitmapsDuringCreation"
+			],
+			[
+				"actual",
+				"actualPeriod"
+			],
+			[
+				"actua",
+				"actualPeriod"
+			],
+			[
+				"height",
+				"height1"
+			],
+			[
+				"text",
+				"textInside"
+			],
+			[
+				"Scene",
+				"Scene_MenuBase"
+			],
+			[
+				"Windw",
+				"Window_Basic"
+			],
+			[
+				"full",
+				"full_atb"
+			],
+			[
+				"GetStgFram",
+				"System::GetStgFrameHeight()\treal"
+			],
+			[
+				"enemy",
+				"enemyY"
+			],
+			[
+				"is_",
+				"is_slowing"
+			],
+			[
+				"for",
+				"for_player"
+			],
+			[
+				"getpla",
+				"Player::GetPlayerY()\treal"
+			],
+			[
+				"ene",
+				"enemyY"
+			],
+			[
+				"Render",
+				"RenderInvincibility"
+			],
+			[
+				"getplayer",
+				"Player::GetPlayerY()\treal"
+			],
+			[
+				"alpha",
+				"alpha_max"
+			],
+			[
+				"GetPlayerFra",
+				"Player::GetPlayerInvincibilityFrame()\treal"
+			],
+			[
+				"actor",
+				"actor2"
+			],
+			[
+				"ac",
+				"actor1"
+			],
+			[
+				"SaveCommonDat",
+				"CommonData::SaveCommonDataAreaA2(area, path)\tbool"
+			],
+			[
+				"ObjDialog",
+				"ObjDialog_StickToLeft"
+			],
+			[
+				"Gets",
+				"System::GetStgFrameHeight()\treal"
+			],
+			[
+				"GetPlayerS",
+				"Player::GetPlayerSpell()\treal"
+			],
+			[
+				"SYS",
+				"SYSTEM_DY"
+			],
+			[
+				"Displa",
+				"DisplayLabels"
+			],
+			[
+				"COLO",
+				"COLOR_BORDER"
+			],
+			[
+				"COL",
+				"COLOR_TOP"
+			],
+			[
+				"cos",
+				"Math::cos(angle)\treal"
+			],
+			[
+				"Textur",
+				"Render::RemoveTexture(path)\tvoid"
+			],
+			[
+				"GetsTg",
+				"System::GetStgFrameWidth()\treal"
+			],
+			[
+				"ObjMov",
+				"ObjMove_GetY(obj)\treal"
+			],
+			[
+				"GetX",
+				"ObjMove_GetX(obj)\treal"
+			],
+			[
+				"CreateIte",
+				"Item::CreateItemA1(item_type, x, y, score)\tobj"
+			],
+			[
+				"I_",
+				"I_length"
+			],
+			[
+				"setDamag",
+				"ObjEnemy_SetDamageRate(obj, shot_rate, bomb_rate)\tvoid"
+			],
+			[
+				"WINDOW",
+				"WINDOW_HEIGHT"
+			],
+			[
+				"GetStgFR",
+				"System::GetStgFrameWidth()\treal"
+			],
+			[
+				"GetStgFr",
+				"System::GetStgFrameLeft()\treal"
+			],
+			[
+				"SYST",
+				"SYSTEM_DX"
+			],
+			[
+				"ObjRen",
+				"ObjRender_SetY(obj, y)\tvoid"
+			],
+			[
+				"GetSTGFra",
+				"System::GetStgFrameTop()\treal"
+			],
+			[
+				"SYSTEM",
+				"SYSTEM_DX"
+			],
+			[
+				"SYSTE",
+				"SYSTEM_LEFT"
+			],
+			[
+				"SetStgFra",
+				"System::GetStgFrameWidth()\treal"
+			],
+			[
+				"GetSTG",
+				"System::GetStgFrameWidth()\treal"
+			],
+			[
+				"GetScreen",
+				"System::GetScreenHeight()\treal"
+			],
+			[
+				"WI",
+				"WINDOW_HEIGHT"
+			],
+			[
+				"sele",
+				"select"
+			],
+			[
+				"Mana",
+				"ManageCommonData"
+			],
+			[
+				"DATA_",
+				"DATA_DIFFICULTY"
+			],
+			[
+				"selected",
+				"selected_difficulty"
+			],
+			[
+				"SaveC",
+				"CommonData::SaveCommonDataAreaA2(area, path)\tbool"
+			],
+			[
+				"SetCommon",
+				"CommonData::SetAreaCommonData(area, key, value)\tvoid"
+			],
+			[
+				"DATA",
+				"DATA_DIFFICULTY"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"EX",
+				"EXTRA_STAGE"
+			],
+			[
+				"SaveArea",
+				"CommonData::SaveCommonDataAreaA2(area, path)\tbool"
+			],
+			[
+				"SetArea",
+				"CommonData::SetAreaCommonData(area, key, value)\tvoid"
+			],
+			[
+				"GetCurren",
+				"Path::GetCurrentScriptDirectory()\tchar"
+			],
+			[
+				"LoadComm",
+				"CommonData::LoadCommonDataAreaA2(area, path)\tbool"
+			],
+			[
+				"getStgF",
+				"System::GetStgFrameTop()\treal"
+			],
+			[
+				"getStg",
+				"System::GetStgFrameHeight()\treal"
+			],
+			[
+				"Player",
+				"Player::GetPlayerX()\treal"
+			],
+			[
+				"ObjRende",
+				"ObjRender_SetX(obj, x)\tvoid"
+			],
+			[
+				"RenderPri",
+				"Obj_SetRenderPriority(obj, priority_ratio)\tvoid"
+			],
+			[
+				"ObjEnemy",
+				"ObjEnemy_SetLife(obj, life)\tvoid"
+			],
+			[
+				"Tit",
+				"TitleScene"
+			],
+			[
+				"sel",
+				"select"
+			],
+			[
+				"extra",
+				"extra_available"
+			],
+			[
+				"ex",
+				"extra_available"
+			],
+			[
+				"Diff",
+				"DifficultyScene"
+			],
+			[
+				"NORMAL",
+				"NORMAL_STAGE"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Lyrium.sublime-project",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/projects/Lyrium/Lyrium",
+		"/D/projects/Lyrium/Lyrium/combat",
+		"/D/projects/Lyrium/Lyrium/combat/manoeuvres"
+	],
+	"file_history":
+	[
+		"/D/projects/Lyrium/Lyrium/combat/manoeuvres/manoeuvres_utilitaires.html",
+		"/D/projects/Lyrium/Lyrium/combat/manoeuvres/manoeuvres_defensives.html",
+		"/D/projects/Lyrium/Lyrium/combat/manoeuvres/manoeuvres_furtives.html",
+		"/D/projects/Lyrium/Lyrium/combat/manoeuvres/manoeuvres__de_tir.html",
+		"/D/projects/Lyrium/Lyrium/combat/manoeuvres/manoeuvres_magiques.html",
+		"/F/FFXIV/structure.tex",
+		"/C/Users/HuLijin/Downloads/game-of-life-modif.py",
+		"/C/Users/HuLijin/Downloads/Rule30-1.py",
+		"/D/projects/Lyrium/Lyrium/combat/manoeuvres.html",
+		"/D/projects/Lyrium/Lyrium/combat/manoeuvres/manoeuvres_physiques.html",
+		"/C/Users/HuLijin/Downloads/game-of-life.py",
+		"/D/projects/Lyrium/Lyrium/personnage/talents.html",
+		"/D/projects/Lyrium/Lyrium/voyage/voyage.js",
+		"/D/projects/Lyrium/Lyrium/magie/exemples_sorts.html",
+		"/D/projects/Lyrium/Lyrium/stylesheets/style.css",
+		"/D/projects/Lyrium/Lyrium/lore/histoire/chronologie.html",
+		"/D/projects/Lyrium/Lyrium/lore/histoire/saga_d_eole.html",
+		"/D/projects/Lyrium/Lyrium/lore/cartographie/Val.html",
+		"/D/projects/Lyrium/Lyrium/lore/cartographie/Herganon.html",
+		"/D/projects/Lyrium/Lyrium/lore/cartographie/Chun_Gen.html",
+		"/D/projects/Lyrium/Lyrium/lore/races_et_cultures/chun_gen.html",
+		"/D/projects/Lyrium/Lyrium/lore/magie_et_technologie/Lyrium.html",
+		"/D/projects/Lyrium/Lyrium/lore/magie_et_technologie/elements_primordiaux.html",
+		"/D/projects/Lyrium/Lyrium/lore/races_et_cultures/nordes.html",
+		"/D/projects/Lyrium/Lyrium/lore/factions_et_guildes/dormeurs.html",
+		"/D/projects/Lyrium/Lyrium/lore/factions_et_guildes/academie_de_magie.html",
+		"/D/projects/Lyrium/Lyrium/lore/factions_et_guildes/chasseurs_d_engeance.html",
+		"/D/projects/Lyrium/Lyrium/lore/factions_et_guildes/ordre_de_nolej.html",
+		"/D/projects/Lyrium/Lyrium/lore/factions_et_guildes/druides_crames.html",
+		"/D/projects/Lyrium/Lyrium/lore/personnages_principaux/dieux.html",
+		"/D/projects/Lyrium/Lyrium/lore/lore.html",
+		"/D/projects/Lyrium/Lyrium/personnage/PJ/YeoundErayo.html",
+		"/D/projects/Lyrium/Lyrium/personnage/competences.html",
+		"/D/projects/Lyrium/Lyrium/lore/glossaire/toile_de_la_realite.html",
+		"/D/projects/Lyrium/save.html",
+		"/D/projects/Lyrium/Lyrium/personnage/PJ/inc_manoeuvers.js",
+		"/D/projects/Lyrium/Lyrium/magie/inc_aside.js",
+		"/E/DanmakufuPh3/script/player/Yeoun/Yeoun.dnh",
+		"/E/DanmakufuPh3/script/sample/showcase.dnh",
+		"/E/DanmakufuPh3/script/player/default_player.zip",
+		"/E/DanmakufuPh3/readme.md",
+		"/F/DanmakufuPh3bis/script/RnY/Package.dnh",
+		"/F/DanmakufuPh3bis/script/RnY/stg01/dlg/dlg1.dnh",
+		"/F/DanmakufuPh3bis/script/system/common/ExtendedEnemy.dnh",
+		"/F/DanmakufuPh3bis/script/RnY/stg01/enemy/Enemy01.dnh",
+		"/E/DanmakufuPh3/script/sample/SamplePS03.txt",
+		"/E/DanmakufuPh3/script/sample/SampleE02.txt",
+		"/E/DanmakufuPh3/script/sample/Effect02.png",
+		"/E/DanmakufuPh3/script/sample/Effect01.png",
+		"/E/DanmakufuPh3/script/sample/SamplePS02_Mask.png",
+		"/E/DanmakufuPh3/script/sample/SampleRB03.txt",
+		"/E/DanmakufuPh3/script/sample/SampleRB02.txt",
+		"/E/DanmakufuPh3/script/sample/SampleRB01.txt",
+		"/E/DanmakufuPh3/script/sample/SamplePS02.txt",
+		"/E/DanmakufuPh3/script/sample/SamplePS01.txt",
+		"/E/DanmakufuPh3/script/sample/SampleE01.txt",
+		"/E/DanmakufuPh3/script/sample/SampleA04.txt",
+		"/F/DanmakufuPh3bis/script/system/common/Texts.dnh",
+		"/F/DanmakufuPh3bis/script/RnY/stg01/Stage.dnh",
+		"/E/DanmakufuPh3/script/sample/SampleA03.txt",
+		"/F/DanmakufuPh3bis/script/system/effects/Transitions.dnh",
+		"/E/DanmakufuPh3/script/system/system.dnh",
+		"/E/DanmakufuPh3/script/sample/SampleA01.txt",
+		"/E/DanmakufuPh3/script/player/Yeoun/Yeoun.txt",
+		"/E/DanmakufuPh3/script/ExRumia/ExRumia_Package_Main.txt",
+		"/E/DanmakufuPh3/script/ExRumia/ExRumia_Plural.txt",
+		"/E/DanmakufuPh3/script/ExRumia/ExRumia_Stage.txt",
+		"/E/DanmakufuPh3/script/ExRumia/ExRumiaSpell01.txt",
+		"/E/DanmakufuPh3/script/default_system/Default_System.txt",
+		"/E/DanmakufuPh3/script/player/Yeoun/Default_Player_RumiaShotData.txt",
+		"/E/DanmakufuPh3/img/shots/Yeoun.txt",
+		"/D/projects/RnY/script/system/System.dnh",
+		"/F/DanmakufuPh3bis/offlinedoc/test/Home/Fonctions/Array/concatenate.html",
+		"/F/Danmakufu/script/sample/SampleA01.txt",
+		"/C/Users/HuLijin/Documents/My Games/Skyrim/SKSE/Crashdumps/2016-05-20_17.24.25.dmp",
+		"/D/rmmv/projets/Classes/js/rpg_objects.js",
+		"/D/rmmv/projets/Classes/save/file2.rpgsave",
+		"/D/rmmv/projets/Classes/save/global.rpgsave",
+		"/D/rmmv/projets/Classes/data/Skills.json",
+		"/D/rmmv/projets/Classes/js/plugins/AltMenuScreen.js",
+		"/D/rmmv/projets/Classes/js/plugins/NovelMessage.js",
+		"/D/rmmv/projets/Tests_JS/js/rpg_managers.js",
+		"/D/rmmv/projets/Tests_JS/js/rpg_scenes.js",
+		"/D/rmmv/projets/Tests_JS/js/rpg_core.js",
+		"/D/rmmv/projets/Tests_JS/js/rpg_objects.js",
+		"/D/rmmv/projets/Tests_JS/js/rpg_windows.js",
+		"/D/rmmv/projets/Tests_JS/js/plugins/HL_AnimatedTitleBackground.js",
+		"/C/Users/HuLijin/Desktop/test.html",
+		"/D/rmmv/projets/Classes/js/plugins/TouchUI.js",
+		"/D/games/platforms/Steam/steamapps/common/RPG Maker MV/dlc/KadokawaPlugins_New/js/plugins/TouchUI.js",
+		"/D/games/platforms/Steam/steamapps/common/Game Character Hub/items/VX/Body/Female human/Black human.gchli",
+		"/D/rmmv/projets/Tests_JS/js/plugins/SimpleMsgSideView.js",
+		"/D/rmmv/projets/Tests_JS/js/plugins/Tuto.js",
+		"/C/Users/HuLijin/Desktop/SOUL_MV Title Screen Reimu.js",
+		"/D/rmmv/projets/Tests_JS/js/rpg_sprites.js",
+		"/C/Users/HuLijin/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/HuLijin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/RMMV/projets/Classes/js/rpg_core.js",
+		"/D/RMMV/projets/Classes/js/plugins/----------------------------.js",
+		"/D/RMMV/projets/Classes/js/plugins/AntiBlur.js",
+		"/D/RMMV/projets/Project1/js/main.js",
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/system/effects/Explosion.dnh",
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/system/effects/MagicCircle2.dnh",
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/system/effects/MagicCircle.dnh",
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/system/shot/SlowShot.dnh",
+		"/C/Users/HuLijin/Desktop/RnY/script/player/Reikon/Player.dnh",
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/package/stg01/enemy/Enemy01.dnh",
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/package/stg01/Stage.dnh",
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/system/lang/menu.txt",
+		"/D/games/platforms/Steam/steamapps/common/RPGVXAce/VXAce_install.vdf",
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/RnYgrey.png",
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/system/System.dnh",
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/package/stg01/enemy/Test.png",
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/package/stg01/dlg/dlg1.dnh",
+		"/D/RnY/script/RnY/Package.dnh",
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/system/player/Reikon/Player.dnh",
+		"/D/RnY/script/system/System.dnh",
+		"/D/RnY/script/system/effects/MagicCircle.dnh",
+		"/D/RnY/script/system/common/ExtendedEnemy.dnh",
+		"/D/RnY/script/RnY/stg01/boss/Spell01.dnh",
+		"/D/RnY/script/system/routes/SetDestAtFrame.dnh",
+		"/D/RnY/script/system/anim/DisplaySprite3MvmtNoAnim.dnh",
+		"/D/RnY/script/RnY/stg01/enemy/Enemy02.dnh",
+		"/D/RnY/script/template/BasicEnemy.dnh",
+		"/D/RnY/script/RnY/stg01/boss/Enemy01.dnh",
+		"/D/RnY/script/RnY/stg01/enemy/Enemy01.dnh",
+		"/D/RnY/script/system/common/Texts.dnh",
+		"/D/RnY/script/default/BasicEnemy.dnh"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"objSpell",
+			"bNextShot",
+			"shotCount",
+			"countRemStep",
+			"lifeRateRender",
+			"refresh()",
+			"settp",
+			"tp",
+			"members()",
+			"Actor",
+			"$dataSkills",
+			"_itemWindow",
+			"useitem",
+			"$dataSkills",
+			"contains",
+			"isskill",
+			"useitem",
+			"payskillcost",
+			"skillTpCost",
+			"this._tp -= this.skillTpCost(skill);",
+			"onactorok",
+			"payskillcost",
+			"useItem",
+			"paySkillCost",
+			"onbattlestart",
+			"tp",
+			"canattack",
+			"canuse",
+			"meetsSkillConditions",
+			"canpaysk",
+			"executeDamage",
+			"ondamage",
+			"chargetpbydamage",
+			"gainsilentTP",
+			"gainTP",
+			"setTp",
+			"apply",
+			"makeda",
+			"reset",
+			"resettp",
+			"tp",
+			"learns",
+			"traitsset",
+			"trait",
+			"traitset",
+			"settrait",
+			"trait",
+			"trait ",
+			"trait",
+			"dataId",
+			"trait.dataId",
+			"traitsSet",
+			"sparam",
+			"trait",
+			"actor",
+			"TRAIT_SKILL",
+			"traits",
+			"learnskill",
+			"skill",
+			"setAttack",
+			"setskill",
+			"battleMembers()",
+			"hprate",
+			"hp",
+			"name",
+			"drawActorName",
+			"drawGaugeArea",
+			"drawGaugeAreaWithTp",
+			"drawActorHp",
+			"hp",
+			"param",
+			"hp",
+			"$dataActor",
+			"$dataActors",
+			"battler",
+			"mhp",
+			"hp",
+			"maxhp",
+			"selfSwitch",
+			"selfSwitchCh",
+			"$gameSelfSwitches",
+			"event",
+			"switchid",
+			"event",
+			"switche",
+			"map",
+			"anim",
+			"game_map",
+			"_animations",
+			"startan",
+			"anima",
+			"loadmapdata",
+			"mapid",
+			"mapid()",
+			"commandesc",
+			"Partyco",
+			"selectNextCommand",
+			"CommandSelection",
+			"startPartyCommandSelection",
+			"setup",
+			"_partycommandwindow",
+			"partycommandwindow",
+			"partycommandwind",
+			"commanditem",
+			"canescape",
+			"battle",
+			"apNameWindow",
+			"map",
+			"$gameVariables",
+			"showPicture",
+			"command",
+			"interpr",
+			"event",
+			"game_battl",
+			"eval",
+			"dataSkil",
+			"damage.formula",
+			"applyVa",
+			"mdr",
+			"Game_Action",
+			"isPhysica",
+			"isPhysical()",
+			"mdr",
+			"makedama",
+			"evaldama",
+			"damage",
+			"message",
+			"createMapNameWindow"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"obj",
+			"obj_enem",
+			"obj_enemy",
+			"SoftTransition",
+			"select",
+			"dir",
+			".dnh",
+			"",
+			"System",
+			"system",
+			"Package_Transition(WIDTH,HEIGHT)",
+			"CallStageScene",
+			"Package_Transition",
+			"end_of_package",
+			"path_replay",
+			"id_stage",
+			"CallEndScene",
+			"CallSelectReplayScene",
+			"CallSaveReplayScene",
+			"CallPauseScene",
+			"go_to_next_scene",
+			"title_bg",
+			"title_text",
+			"delta_a",
+			"new"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Lyrium.sublime-project",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Lyrium.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 285.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
