@@ -1,0 +1,17 @@
+document.write("<h3>Navigation rapide</h3>");
+document.write("<nav class='menu'>");
+document.write("<a href='./tests.html'>Tests et réussite</a>");
+document.write("<p class='eg'>Soit la page de règles la plus importante de Lyrium</p>");
+document.write("<a href='./appel_a_experience.html'>Faire appel à l'expérience</a>");
+document.write("<p class='eg'>Soit l'une des grandes spécificités de Lyrium : comment influencer son destin !</p>");
+document.write("</nav>");
+document.write("<h3>Réservé au MJ</h3>");
+document.write("<nav class='menu'>");
+document.write("<p class='eg'>Où le MJ trouvera toutes les valeurs chiffrées nécessaire pour faire passer toutes sortes de tests à ses joueurs. Section interdite aux joueurs !</p>");
+document.write("<a href='./tests_caracteristiques_principales.html'>Tests de carac. primaires</a>");
+document.write("<p class='eg'>Table de difficulté pour FOR/CON/AGI INT/MEM/VOL et CHA</p>");
+document.write("<a href='./tests_caracteristiques_de_combat.html'>Tests de carac. de combat</a>");
+document.write("<p class='eg'>Table de difficulté pour MAE/POU/ADA (en et hors combat)</p>");
+document.write("<a href='./tests_caracteristiques_principales.html'>Tests de comp. secondaires</a>");
+document.write("<p class='eg'>Table de difficulté pour compétences secondaires</p>");
+document.write("</nav>");
