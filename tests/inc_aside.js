@@ -12,6 +12,6 @@ document.write("<a href='./tests_caracteristiques_principales.html'>Tests de car
 document.write("<p class='eg'>Table de difficulté pour FOR/CON/AGI INT/MEM/VOL et CHA</p>");
 document.write("<a href='./tests_caracteristiques_de_combat.html'>Tests de carac. de combat</a>");
 document.write("<p class='eg'>Table de difficulté pour MAE/POU/ADA (en et hors combat)</p>");
-document.write("<a href='./tests_caracteristiques_principales.html'>Tests de comp. secondaires</a>");
+document.write("<a href='./tests_competences_secondaires.html'>Tests de comp. secondaires</a>");
 document.write("<p class='eg'>Table de difficulté pour compétences secondaires</p>");
 document.write("</nav>");

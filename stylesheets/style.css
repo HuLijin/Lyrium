@@ -183,7 +183,7 @@ h4::after { flex: 1; margin-left: 5px; }
 ol > li { margin-bottom: 1em; }
 ol > li:last-child { margin-bottom: initial; }
 
-p.eg { font-style: italic; font-size: small; }
+p.eg, td.eg { font-style: italic; font-size: small; }
 p.desc { font-style: italic; margin-left: 40px; margin-right: 40px; font-family: 'Roboto Slab', serif; font-size: 90%; }
 p.desc .source::before { content: "\2013  "; }
 p.NdA { margin-left: 30px; }
@@ -215,6 +215,9 @@ tr > * { padding: 2px 4px; }
 table td.ctr { text-align: center; }
 table > caption { caption-side: bottom; }
 
+.t_recap_niveau tr * { width: 22%; }
+.t_recap_niveau tr th:first-child { width: 12%; }
+@media (max-width: 1025px) { .t_recap_niveau tr * { font-size: small; } }
 .t_domaine_mode_medium tr * { width: 25%; }
 .t_domaine_mode_medium tr td:first-child,
 .t_domaine_mode_medium tr th:first-child { width: 50%; }
