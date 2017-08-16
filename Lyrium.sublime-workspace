@@ -520,11 +520,66 @@
 	"buffers":
 	[
 		{
-			"file": "Lyrium.sublime-project",
+			"file": "tests/tests.html",
 			"settings":
 			{
-				"buffer_size": 45,
-				"line_ending": "Unix"
+				"buffer_size": 10282,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tests/inc_aside.js",
+			"settings":
+			{
+				"buffer_size": 1324,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ressources/ressources.html",
+			"settings":
+			{
+				"buffer_size": 1759,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "personnage/personnage.html",
+			"settings":
+			{
+				"buffer_size": 1488,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "personnage/experience.html",
+			"settings":
+			{
+				"buffer_size": 14183,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/projects/Lyrium/save.html",
+			"settings":
+			{
+				"buffer_size": 10210,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "stylesheets/style.css",
+			"settings":
+			{
+				"buffer_size": 10653,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -566,11 +621,32 @@
 	"expanded_folders":
 	[
 		"/D/projects/Lyrium/Lyrium",
-		"/D/projects/Lyrium/Lyrium/combat",
-		"/D/projects/Lyrium/Lyrium/combat/manoeuvres"
+		"/D/projects/Lyrium/Lyrium/stylesheets",
+		"/D/projects/Lyrium/Lyrium/tests"
 	],
 	"file_history":
 	[
+		"/D/games/platforms/Steam/steamapps/common/ARK/ShooterGame/Saved/Config/WindowsNoEditor/Game.ini",
+		"/C/Users/HuLijin/Documents/My Games/FINAL FANTASY XIV - A Realm Reborn/FFXIV_CHR0040002E92CC29A0/log/00000016.log",
+		"/C/Users/HuLijin/Documents/My Games/FINAL FANTASY XIV - A Realm Reborn/FFXIV_CHR0040002E92CC29A0/log/00000000.log",
+		"/E/projets/LGDGDM-TRPG/js/plugins/README.md",
+		"/C/Users/HuLijin/Downloads/swrecordfarm_swarfarm_win10_optimizer_export.json",
+		"/F/Atelier-Raven/README.md",
+		"/D/projects/Lyrium/Lyrium/personnage/inc_aside.js",
+		"/D/projects/Lyrium/Lyrium/tests/tests_caracteristiques_principales.html",
+		"/D/projects/Lyrium/Lyrium/stylesheets/style.css",
+		"/D/projects/Lyrium/Lyrium/tests/tests_caracteristiques_de_combat.html",
+		"/D/projects/Lyrium/Lyrium/tests/tests_competences_secondaires.html",
+		"/D/projects/Lyrium/Lyrium/tests/appel_a_experience.html",
+		"/D/projects/Lyrium/Lyrium/tests/inc_aside.js",
+		"/D/projects/Lyrium/Lyrium/combat/combat.html",
+		"/D/projects/Lyrium/Lyrium/combat/manoeuvres.html",
+		"/D/projects/Lyrium/Lyrium/combat/regles_combat.html",
+		"/D/projects/Lyrium/Lyrium/combat/tactiques_avancees.html",
+		"/D/projects/Lyrium/Lyrium/magie/intensites.html",
+		"/D/projects/Lyrium/Lyrium/magie/magie.html",
+		"/D/projects/Lyrium/Lyrium/magie/theories.html",
+		"/D/projects/Lyrium/Lyrium/personnage/gen_personnage.html",
 		"/D/projects/Lyrium/Lyrium/combat/manoeuvres/manoeuvres_utilitaires.html",
 		"/D/projects/Lyrium/Lyrium/combat/manoeuvres/manoeuvres_defensives.html",
 		"/D/projects/Lyrium/Lyrium/combat/manoeuvres/manoeuvres_furtives.html",
@@ -579,13 +655,11 @@
 		"/F/FFXIV/structure.tex",
 		"/C/Users/HuLijin/Downloads/game-of-life-modif.py",
 		"/C/Users/HuLijin/Downloads/Rule30-1.py",
-		"/D/projects/Lyrium/Lyrium/combat/manoeuvres.html",
 		"/D/projects/Lyrium/Lyrium/combat/manoeuvres/manoeuvres_physiques.html",
 		"/C/Users/HuLijin/Downloads/game-of-life.py",
 		"/D/projects/Lyrium/Lyrium/personnage/talents.html",
 		"/D/projects/Lyrium/Lyrium/voyage/voyage.js",
 		"/D/projects/Lyrium/Lyrium/magie/exemples_sorts.html",
-		"/D/projects/Lyrium/Lyrium/stylesheets/style.css",
 		"/D/projects/Lyrium/Lyrium/lore/histoire/chronologie.html",
 		"/D/projects/Lyrium/Lyrium/lore/histoire/saga_d_eole.html",
 		"/D/projects/Lyrium/Lyrium/lore/cartographie/Val.html",
@@ -679,26 +753,7 @@
 		"/C/Users/HuLijin/Desktop/RnY/script/player/Reikon/Player.dnh",
 		"/C/Users/HuLijin/Desktop/RnY/script/RnY/package/stg01/enemy/Enemy01.dnh",
 		"/C/Users/HuLijin/Desktop/RnY/script/RnY/package/stg01/Stage.dnh",
-		"/C/Users/HuLijin/Desktop/RnY/script/RnY/system/lang/menu.txt",
-		"/D/games/platforms/Steam/steamapps/common/RPGVXAce/VXAce_install.vdf",
-		"/C/Users/HuLijin/Desktop/RnY/script/RnY/RnYgrey.png",
-		"/C/Users/HuLijin/Desktop/RnY/script/RnY/system/System.dnh",
-		"/C/Users/HuLijin/Desktop/RnY/script/RnY/package/stg01/enemy/Test.png",
-		"/C/Users/HuLijin/Desktop/RnY/script/RnY/package/stg01/dlg/dlg1.dnh",
-		"/D/RnY/script/RnY/Package.dnh",
-		"/C/Users/HuLijin/Desktop/RnY/script/RnY/system/player/Reikon/Player.dnh",
-		"/D/RnY/script/system/System.dnh",
-		"/D/RnY/script/system/effects/MagicCircle.dnh",
-		"/D/RnY/script/system/common/ExtendedEnemy.dnh",
-		"/D/RnY/script/RnY/stg01/boss/Spell01.dnh",
-		"/D/RnY/script/system/routes/SetDestAtFrame.dnh",
-		"/D/RnY/script/system/anim/DisplaySprite3MvmtNoAnim.dnh",
-		"/D/RnY/script/RnY/stg01/enemy/Enemy02.dnh",
-		"/D/RnY/script/template/BasicEnemy.dnh",
-		"/D/RnY/script/RnY/stg01/boss/Enemy01.dnh",
-		"/D/RnY/script/RnY/stg01/enemy/Enemy01.dnh",
-		"/D/RnY/script/system/common/Texts.dnh",
-		"/D/RnY/script/default/BasicEnemy.dnh"
+		"/C/Users/HuLijin/Desktop/RnY/script/RnY/system/lang/menu.txt"
 	],
 	"find":
 	{
@@ -717,6 +772,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"</b>",
+			"<b>",
 			"objSpell",
 			"bNextShot",
 			"shotCount",
@@ -842,9 +899,7 @@
 			"mdr",
 			"makedama",
 			"evaldama",
-			"damage",
-			"message",
-			"createMapNameWindow"
+			"damage"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -852,6 +907,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"</strong>",
+			"<strong>",
 			"obj",
 			"obj_enem",
 			"obj_enemy",
@@ -887,16 +944,164 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Lyrium.sublime-project",
-					"semi_transient": true,
+					"file": "tests/tests.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 45,
+						"buffer_size": 10282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9455,
+								9485
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tests/inc_aside.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1172,
+								1172
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ressources/ressources.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1759,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								794,
+								794
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "personnage/personnage.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1252,
+								1252
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 142.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "personnage/experience.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13213,
+								13213
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 269.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/projects/Lyrium/save.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10210,
 						"regions":
 						{
 						},
@@ -909,13 +1114,43 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "stylesheets/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6747,
+								6747
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1794.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -960,7 +1195,7 @@
 	"project": "Lyrium.sublime-project",
 	"replace":
 	{
-		"height": 38.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
